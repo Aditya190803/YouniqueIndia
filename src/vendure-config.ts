@@ -87,8 +87,7 @@ export const config: VendureConfig = {
                 passwordResetUrl: 'http://localhost:8080/password-reset',
                 changeEmailAddressUrl: 'http://localhost:8080/verify-email-address-change'
             },
-        }),
-        AdminUiPlugin.init({
+        }),        AdminUiPlugin.init({
             route: 'admin',
             port: IS_PRODUCTION ? serverPort : serverPort + 2, // Use same port in production
             adminUiConfig: {
