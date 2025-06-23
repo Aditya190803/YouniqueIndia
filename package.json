@@ -1,5 +1,5 @@
 {
-  "name": "YouniqueIndia",
+  "name": "youniqueindia",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,12 +17,12 @@
     "@vendure/core": "3.3.4",
     "@vendure/email-plugin": "3.3.4",
     "@vendure/graphiql-plugin": "3.3.4",
+    "concurrently": "9.1.2",
     "dotenv": "16.5.0",
     "pg": "8.16.2"
   },
   "devDependencies": {
     "@vendure/cli": "3.3.4",
-    "concurrently": "9.1.2",
     "typescript": "5.8.2"
   }
 }
