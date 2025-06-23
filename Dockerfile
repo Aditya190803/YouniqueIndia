@@ -23,12 +23,12 @@ COPY --chown=vendure:nodejs . .
 # Install dev dependencies and build
 RUN npm ci && npm run build && npm prune --production
 
+# Fix permissions for AdminUI plugin to write config file (after npm install)
+RUN chown -R vendure:nodejs /usr/src/app/node_modules/@vendure/admin-ui-plugin/lib/admin-ui/browser/ || true
+
 # Create directories for static files with proper permissions
 RUN mkdir -p static/assets static/email/test-emails && \
     chown -R vendure:nodejs static/
-
-# Fix permissions for AdminUI plugin to write config file
-RUN chown -R vendure:nodejs /usr/src/app/node_modules/@vendure/admin-ui-plugin/lib/admin-ui/browser/ || true
 
 # Switch to non-root user
 USER vendure
