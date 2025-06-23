@@ -17,6 +17,7 @@ declare global {
             DB_PASSWORD: string;
             DB_SCHEMA: string;
             DB_SSL: string;
+            ASSET_URL_PREFIX?: string;
         }
     }
 }

@@ -13,6 +13,7 @@ import 'dotenv/config';
 import path from 'path';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
+const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 const serverPort = +process.env.PORT || 3000;
 
 export const config: VendureConfig = {
@@ -67,7 +68,7 @@ export const config: VendureConfig = {
             // For local dev, the correct value for assetUrlPrefix should
             // be guessed correctly, but for production it will usually need
             // to be set manually to match your production url.
-            assetUrlPrefix: IS_DEV ? undefined : 'https://www.my-shop.com/assets/',
+            assetUrlPrefix: IS_DEV ? undefined : process.env.ASSET_URL_PREFIX || `http://localhost:${serverPort}/assets/`,
         }),
         DefaultSchedulerPlugin.init(),
         DefaultJobQueuePlugin.init({ useDatabaseForBuffer: true }),
@@ -89,7 +90,7 @@ export const config: VendureConfig = {
         }),
         AdminUiPlugin.init({
             route: 'admin',
-            port: serverPort + 2,
+            port: IS_PRODUCTION ? serverPort : serverPort + 2, // Use same port in production
             adminUiConfig: {
                 apiPort: serverPort,
             },
