@@ -86,11 +86,20 @@ export const config: VendureConfig = {
                 passwordResetUrl: 'http://localhost:8080/password-reset',
                 changeEmailAddressUrl: 'http://localhost:8080/verify-email-address-change'
             },
-        }),        AdminUiPlugin.init({
+        }),
+        AdminUiPlugin.init({
             route: 'admin',
             port: IS_PRODUCTION ? serverPort : serverPort + 2,
+            ...(IS_PRODUCTION ? {
+                app: {
+                    path: path.join(__dirname, './admin-ui'),
+                },
+            } : {}),
             adminUiConfig: {
-                apiPort: serverPort,
+                apiHost: IS_PRODUCTION ? process.env.APP_URL || 'auto' : 'localhost',
+                apiPort: IS_PRODUCTION ? 'auto' : serverPort,
+                adminApiPath: 'admin-api',
+                tokenMethod: 'bearer',
             },
         }),
     ],
