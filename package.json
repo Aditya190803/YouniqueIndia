@@ -6,8 +6,7 @@
     "dev:server": "ts-node ./src/index.ts",
     "dev:worker": "ts-node ./src/index-worker.ts",
     "dev": "concurrently npm:dev:*",
-    "build": "tsc && npm run build:admin-ui",
-    "build:admin-ui": "vendure compile-admin-ui --outputDir ./dist/admin-ui",
+    "build": "tsc",
     "start:server": "node ./dist/index.js",
     "start:worker": "node ./dist/index-worker.js",
     "start": "concurrently npm:start:*"

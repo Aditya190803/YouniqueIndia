@@ -90,11 +90,6 @@ export const config: VendureConfig = {
         AdminUiPlugin.init({
             route: 'admin',
             port: IS_PRODUCTION ? serverPort : serverPort + 2,
-            ...(IS_PRODUCTION ? {
-                app: {
-                    path: path.join(__dirname, './admin-ui'),
-                },
-            } : {}),
             adminUiConfig: {
                 apiHost: IS_PRODUCTION ? process.env.APP_URL || 'auto' : 'localhost',
                 apiPort: IS_PRODUCTION ? 'auto' : serverPort,
