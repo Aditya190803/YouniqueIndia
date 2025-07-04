@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@callit-today/vendure-plugin-back-in-stock": "^2.0.2",
-    "@glarus-labs/vendure-social-auth": "^0.1.1",
     "@vendure/admin-ui-plugin": "3.3.4",
     "@vendure/asset-server-plugin": "3.3.4",
     "@vendure/core": "3.3.4",
