@@ -11,7 +11,11 @@
     "start:worker": "node ./dist/index-worker.js",
     "start": "concurrently npm:start:*",
     "migration:generate": "vendure migrate",
-    "migration:run": "vendure migrate"
+    "migration:run": "vendure migrate",
+    "migration:fix": "ts-node ./src/scripts/run-migrations.ts",
+    "setup:basic": "ts-node ./src/scripts/setup-basic-data.ts",
+    "seed:jewelry": "ts-node ./src/scripts/seed-jewelry-final.ts",
+    "cleanup:promotions": "ts-node ./src/scripts/cleanup-promotions.ts"
   },
   "dependencies": {
     "@callit-today/vendure-plugin-back-in-stock": "^2.0.2",

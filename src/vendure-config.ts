@@ -5,6 +5,7 @@ import {
     DefaultSearchPlugin,
     VendureConfig,
     NativeAuthenticationStrategy,
+    LanguageCode,
 } from '@vendure/core';
 import { defaultEmailHandlers, EmailPlugin, FileBasedTemplateLoader } from '@vendure/email-plugin';
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
@@ -42,6 +43,8 @@ export const config: VendureConfig = {
             shopApiDebug: true,
         } : {}),
     },
+    // Language configuration - essential for proper Product.languageCode handling
+    defaultLanguageCode: LanguageCode.en,
     authOptions: {
         tokenMethod: ['bearer', 'cookie'],
         superadminCredentials: {
@@ -71,6 +74,12 @@ export const config: VendureConfig = {
         synchronize: IS_DEV,
         migrations: [path.join(__dirname, './migrations/*.+(js|ts)')],
         logging: false,
+        // Connection pool settings for better reliability
+        extra: {
+            connectionLimit: 10,
+            acquireTimeout: 60000,
+            timeout: 60000,
+        },
         // Use DATABASE_URL if available, otherwise use individual connection params
         url: process.env.DATABASE_URL,
         database: process.env.DB_NAME,
