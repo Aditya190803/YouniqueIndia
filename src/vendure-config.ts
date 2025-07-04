@@ -10,7 +10,6 @@ import { defaultEmailHandlers, EmailPlugin, FileBasedTemplateLoader } from '@ven
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
-import { SocialAuthPlugin } from '@glarus-labs/vendure-social-auth';
 import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
 import { RazorpayPlugin } from 'vendure-razorpay-payment-plugin';
 import 'dotenv/config';
