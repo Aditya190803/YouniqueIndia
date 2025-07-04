@@ -9,17 +9,24 @@
     "build": "tsc",
     "start:server": "node ./dist/index.js",
     "start:worker": "node ./dist/index-worker.js",
-    "start": "concurrently npm:start:*"
+    "start": "concurrently npm:start:*",
+    "migration:generate": "vendure migrate",
+    "migration:run": "vendure migrate"
   },
   "dependencies": {
+    "@callit-today/vendure-plugin-back-in-stock": "^2.0.2",
+    "@glarus-labs/vendure-social-auth": "^0.1.1",
     "@vendure/admin-ui-plugin": "3.3.4",
     "@vendure/asset-server-plugin": "3.3.4",
     "@vendure/core": "3.3.4",
     "@vendure/email-plugin": "3.3.4",
     "@vendure/graphiql-plugin": "3.3.4",
+    "apollo-server-core": "^3.13.0",
     "concurrently": "9.1.2",
     "dotenv": "16.5.0",
-    "pg": "8.16.2"
+    "google-auth-library": "^10.1.0",
+    "pg": "8.16.2",
+    "vendure-razorpay-payment-plugin": "^0.0.10"
   },
   "devDependencies": {
     "@vendure/cli": "3.3.4",
