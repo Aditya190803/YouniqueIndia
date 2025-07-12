@@ -13,6 +13,7 @@ import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
 import { RazorpayPlugin } from 'vendure-razorpay-payment-plugin';
+import { WhatsAppPaymentPlugin } from './plugins/whatsapp-payment/whatsapp-payment.plugin';
 import 'dotenv/config';
 import path from 'path';
 
@@ -63,7 +64,7 @@ export const config: VendureConfig = {
             new NativeAuthenticationStrategy(),
         ],
         // Require verification for new customer accounts
-        requireVerification: true,
+        requireVerification: false,
         // Session duration (in seconds) - 30 days
         sessionDuration: 60 * 60 * 24 * 30,
     },
@@ -161,6 +162,8 @@ export const config: VendureConfig = {
         }),
         // Razorpay Payment Plugin
         RazorpayPlugin,
+        // WhatsApp Payment Plugin
+        WhatsAppPaymentPlugin,
         // Note: INR currency is set via migration, no plugin needed
     ],
 };
