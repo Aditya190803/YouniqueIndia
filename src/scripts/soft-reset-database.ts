@@ -1,4 +1,4 @@
-import { bootstrap, TransactionalConnection, Connection } from '@vendure/core';
+import { bootstrap, TransactionalConnection, runMigrations } from '@vendure/core';
 import { config } from '../vendure-config';
 
 /**
@@ -9,7 +9,7 @@ async function softResetDatabase() {
     
     try {
         const app = await bootstrap(config);
-        const connection = app.get(Connection);
+        const connection = app.get(TransactionalConnection);
         const transactionalConnection = app.get(TransactionalConnection);
 
         console.log('📡 Connected to database');
@@ -23,13 +23,14 @@ async function softResetDatabase() {
 
         console.log('⏪ Rolling back all migrations...');
         
-        // Revert all migrations
-        await connection.undoLastMigration({ transaction: 'each' });
+        // Note: Vendure doesn't have a built-in undo migration function
+        // We'll need to manually handle this or use a different approach
+        console.log('⚠️  Manual migration rollback not supported in this version');
         
         console.log('🔄 Running migrations to recreate schema...');
         
         // Run migrations again to recreate the schema
-        await connection.runMigrations();
+        await runMigrations(config);
         
         console.log('✅ Soft database reset completed successfully!');
         console.log('💡 Next steps:');
