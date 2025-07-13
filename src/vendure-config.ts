@@ -74,7 +74,7 @@ export const config: VendureConfig = {
         // the `synchronize` and `migrations` options.
         synchronize: IS_DEV,
         migrations: [path.join(__dirname, './migrations/*.+(js|ts)')],
-        logging: false,
+        logging: IS_DEV,
         // Connection pool settings for better reliability
         extra: {
             connectionLimit: 10,
@@ -84,9 +84,9 @@ export const config: VendureConfig = {
         // Use DATABASE_URL if available, otherwise use individual connection params
         url: process.env.DATABASE_URL,
         database: process.env.DB_NAME,
-        schema: process.env.DB_SCHEMA,
+        schema: process.env.DB_SCHEMA || 'public',
         host: process.env.DB_HOST,
-        port: +process.env.DB_PORT,
+        port: +process.env.DB_PORT || 5432,
         username: process.env.DB_USERNAME,
         password: process.env.DB_PASSWORD,
         ssl: process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : false,
@@ -96,7 +96,27 @@ export const config: VendureConfig = {
     },
     // When adding or altering custom field definitions, the database will
     // need to be updated. See the "Migrations" section in README.md.
-    customFields: {},
+    customFields: {
+        Order: [
+            {
+                name: 'Razorpay_order_id',
+                type: 'string',
+                nullable: true,
+                label: [
+                    {
+                        languageCode: LanguageCode.en,
+                        value: 'Razorpay Order ID',
+                    },
+                ],
+                description: [
+                    {
+                        languageCode: LanguageCode.en,
+                        value: 'The Razorpay order ID for this order',
+                    },
+                ],
+            },
+        ],
+    },
     plugins: [
         GraphiqlPlugin.init(),
         AssetServerPlugin.init({
