@@ -22,10 +22,10 @@
     "concurrently": "9.1.2",
     "dotenv": "16.5.0",
     "google-auth-library": "^10.1.0",
-    "pg": "8.16.2",
-    "vendure-razorpay-payment-plugin": "^0.0.10"
+    "pg": "8.16.2"
   },
   "devDependencies": {
+    "@types/pg": "^8.15.4",
     "@vendure/cli": "3.3.4",
     "typescript": "5.8.2"
   }

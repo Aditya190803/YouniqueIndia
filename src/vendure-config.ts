@@ -12,7 +12,6 @@ import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
-import { RazorpayPlugin } from 'vendure-razorpay-payment-plugin';
 import { WhatsAppPaymentPlugin } from './plugins/whatsapp-payment/whatsapp-payment.plugin';
 import 'dotenv/config';
 import path from 'path';
@@ -94,29 +93,7 @@ export const config: VendureConfig = {
     paymentOptions: {
         paymentMethodHandlers: [dummyPaymentHandler],
     },
-    // When adding or altering custom field definitions, the database will
-    // need to be updated. See the "Migrations" section in README.md.
-    customFields: {
-        Order: [
-            {
-                name: 'Razorpay_order_id',
-                type: 'string',
-                nullable: true,
-                label: [
-                    {
-                        languageCode: LanguageCode.en,
-                        value: 'Razorpay Order ID',
-                    },
-                ],
-                description: [
-                    {
-                        languageCode: LanguageCode.en,
-                        value: 'The Razorpay order ID for this order',
-                    },
-                ],
-            },
-        ],
-    },
+
     plugins: [
         GraphiqlPlugin.init(),
         AssetServerPlugin.init({
@@ -156,32 +133,11 @@ export const config: VendureConfig = {
                 // loginUrl: '/social-auth/login',
             },
         }),
-        // Social Auth Plugin for Shop API (customer authentication) - temporarily disabled
-        // SocialAuthPlugin.init({
-        //     google: {
-        //         strategyName: 'google',
-        //         clientId: process.env.GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID_HERE',
-        //     },
-        //     facebook: {
-        //         strategyName: 'facebook',
-        //         apiVersion: 'v6.0',
-        //         appId: process.env.FACEBOOK_APP_ID || 'YOUR_FACEBOOK_APP_ID_HERE',
-        //         appSecret: process.env.FACEBOOK_APP_SECRET || 'YOUR_FACEBOOK_APP_SECRET_HERE',
-        //     },
-        // }),
-        // Social Auth Plugin for Admin UI - temporarily disabled to resolve authentication issues
-        // AdminSocialAuthPlugin.init({
-        //     google: {
-        //         oAuthClientId: process.env.GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID_HERE',
-        //     },
-        // }),
-        // Back in Stock Plugin
+
         BackInStockPlugin.init({
             enableEmail: true,
             limitEmailToStock: true,
         }),
-        // Razorpay Payment Plugin
-        RazorpayPlugin,
         // WhatsApp Payment Plugin
         WhatsAppPaymentPlugin,
         // Note: INR currency is set via migration, no plugin needed
