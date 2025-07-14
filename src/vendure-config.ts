@@ -13,6 +13,7 @@ import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
 import { WhatsAppPaymentPlugin } from './plugins/whatsapp-payment/whatsapp-payment.plugin';
+import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
 import 'dotenv/config';
 import path from 'path';
 
@@ -61,6 +62,7 @@ export const config: VendureConfig = {
         // Shop API authentication strategies (for customers)
         shopAuthenticationStrategy: [
             new NativeAuthenticationStrategy(),
+            new GoogleAuthenticationStrategy(),
         ],
         // Require verification for new customer accounts
         requireVerification: false,
@@ -94,6 +96,33 @@ export const config: VendureConfig = {
         paymentMethodHandlers: [dummyPaymentHandler],
     },
 
+    // Custom fields for Google authentication
+    customFields: {
+        Customer: [
+            {
+                name: 'googleId',
+                type: 'string',
+                nullable: true,
+                label: [
+                    {
+                        languageCode: LanguageCode.en,
+                        value: 'Google ID',
+                    },
+                ],
+            },
+            {
+                name: 'avatar',
+                type: 'string',
+                nullable: true,
+                label: [
+                    {
+                        languageCode: LanguageCode.en,
+                        value: 'Avatar URL',
+                    },
+                ],
+            },
+        ],
+    },
     plugins: [
         GraphiqlPlugin.init(),
         AssetServerPlugin.init({

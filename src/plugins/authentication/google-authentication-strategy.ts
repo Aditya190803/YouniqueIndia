@@ -1,44 +1,27 @@
-import {
-    AuthenticationStrategy,
-    ExternalAuthenticationService,
-    Injector,
-    RequestContext,
-    User,
-} from '@vendure/core';
+import { AuthenticationStrategy, ExternalAuthenticationService, Injector, RequestContext, User } from '@vendure/core';
 import { OAuth2Client } from 'google-auth-library';
 import { DocumentNode } from 'graphql';
 import gql from 'graphql-tag';
 
-export type GoogleAuthData = {
+export interface GoogleAuthData {
     token: string;
-};
+}
 
-/**
- * Google Authentication Strategy for Customer Login
- * Based on the official Vendure documentation and examples
- * @see https://docs.vendure.io/guides/core-concepts/auth/#google-authentication
- */
 export class GoogleAuthenticationStrategy implements AuthenticationStrategy<GoogleAuthData> {
     readonly name = 'google';
+
     private client: OAuth2Client;
     private externalAuthenticationService: ExternalAuthenticationService;
 
-    constructor(private clientId: string) {
-        // The clientId is obtained by creating a new OAuth client ID as described
-        // in the Google guide: https://developers.google.com/identity/sign-in/web/backend-auth
-        this.client = new OAuth2Client(clientId);
+    constructor() {
+        this.client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
     }
 
     init(injector: Injector) {
-        // The ExternalAuthenticationService is a helper service which encapsulates much
-        // of the common functionality related to dealing with external authentication
-        // providers.
         this.externalAuthenticationService = injector.get(ExternalAuthenticationService);
     }
 
     defineInputType(): DocumentNode {
-        // Here we define the expected input object expected by the `authenticate` mutation
-        // under the "google" key.
         return gql`
             input GoogleAuthInput {
                 token: String!
@@ -46,44 +29,42 @@ export class GoogleAuthenticationStrategy implements AuthenticationStrategy<Goog
         `;
     }
 
-    /**
-     * Implements https://developers.google.com/identity/sign-in/web/backend-auth
-     */
     async authenticate(ctx: RequestContext, data: GoogleAuthData): Promise<User | false> {
-        // Here is the logic that uses the token provided by the storefront and uses it
-        // to find the user data from Google.
         try {
             const ticket = await this.client.verifyIdToken({
                 idToken: data.token,
-                audience: this.clientId,
+                audience: process.env.GOOGLE_CLIENT_ID,
             });
+
             const payload = ticket.getPayload();
-            if (!payload || !payload.email) {
+            if (!payload) {
                 return false;
             }
 
-            // First we check to see if this user has already authenticated in our
-            // Vendure server using this Google account. If so, we return that
-            // User object, and they will be now authenticated in Vendure.
+            const { email, name, picture } = payload;
+
+            if (!email) {
+                return false;
+            }
+
+            // Check if user exists, if not create one
             const user = await this.externalAuthenticationService.findCustomerUser(ctx, this.name, payload.sub);
             if (user) {
                 return user;
             }
 
-            // If no user was found, we need to create a new User and Customer based
-            // on the details provided by Google. The ExternalAuthenticationService
-            // provides a convenience method which encapsulates all of this into
-            // a single method call.
-            return this.externalAuthenticationService.createCustomerAndUser(ctx, {
+            // Create new user
+            const newUser = await this.externalAuthenticationService.createCustomerAndUser(ctx, {
                 strategy: this.name,
                 externalIdentifier: payload.sub,
                 verified: payload.email_verified || false,
-                emailAddress: payload.email,
-                firstName: payload.given_name || '',
-                lastName: payload.family_name || '',
+                emailAddress: email,
+                firstName: name?.split(' ')[0] || '',
+                lastName: name?.split(' ').slice(1).join(' ') || '',
             });
+
+            return newUser;
         } catch (error) {
-            // Log the error for debugging purposes
             console.error('Google authentication error:', error);
             return false;
         }
