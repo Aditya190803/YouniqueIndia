@@ -19,12 +19,13 @@ import {
     CountryService,
     ChannelService,
     ProductOptionService,
-    ProductOptionGroupService
+    ProductOptionGroupService,
 } from '@vendure/core';
 import { config } from '../vendure-config';
 import * as https from 'https';
 import * as fs from 'fs';
 import * as path from 'path';
+import { CloudinaryAssetStorageStrategy } from '../plugins/cloudinary-asset-storage-strategy';
 
 /**
  * Seeds the database with jewelry products, collections, and facets
@@ -45,7 +46,10 @@ async function seedJewelryData() {
         const safeDelete = async (tableName: string) => {
             try {
                 await connection.rawConnection.query(`DELETE FROM ${tableName}`);
-                console.log(`✅ Cleaned ${tableName}`);
+                // Log the row count after deletion
+                const countResult = await connection.rawConnection.query(`SELECT COUNT(*) as count FROM ${tableName}`);
+                const count = countResult[0]?.count || 0;
+                console.log(`✅ Cleaned ${tableName}, row count after delete: ${count}`);
             } catch (error) {
                 console.log(`⚠️  Table ${tableName} doesn't exist or already empty`);
             }
@@ -102,8 +106,12 @@ async function seedJewelryData() {
         // Helper function to reset ID sequences
         const resetSequence = async (tableName: string, sequenceName: string) => {
             try {
-                await connection.rawConnection.query(`ALTER SEQUENCE ${sequenceName} RESTART WITH 1`);
-                console.log(`✅ Reset sequence for ${tableName}`);
+                // Get the max id in the table
+                const result = await connection.rawConnection.query(`SELECT MAX(id) as max_id FROM ${tableName}`);
+                const maxId = (result[0]?.max_id || 0);
+                // Set the sequence to max_id + 1
+                await connection.rawConnection.query(`ALTER SEQUENCE ${sequenceName} RESTART WITH ${maxId + 1}`);
+                console.log(`✅ Reset sequence for ${tableName} to ${maxId + 1}`);
             } catch (error) {
                 console.log(`⚠️  Could not reset sequence for ${tableName}`);
             }
@@ -905,7 +913,8 @@ async function seedJewelryData() {
                             assetService, 
                             ctx, 
                             imagePath, 
-                            `${productData.slug}.jpg`
+                            `${productData.slug}.jpg`,
+                            connection
                         );
                         
                         if (asset) {
@@ -1044,7 +1053,8 @@ async function createAssetFromFile(
     assetService: AssetService, 
     ctx: RequestContext, 
     filePath: string, 
-    filename: string
+    filename: string,
+    connection: TransactionalConnection
 ): Promise<any | null> {
     try {
         if (!fs.existsSync(filePath)) {
@@ -1054,22 +1064,72 @@ async function createAssetFromFile(
 
         const fileBuffer = fs.readFileSync(filePath);
         const mimeType = filename.endsWith('.jpg') || filename.endsWith('.jpeg') ? 'image/jpeg' : 'image/png';
-        
-        const result = await assetService.create(ctx, {
-            file: {
-                filename,
-                mimetype: mimeType,
-                createReadStream: () => {
-                    const { Readable } = require('stream');
-                    const stream = new Readable();
-                    stream.push(fileBuffer);
-                    stream.push(null);
-                    return stream;
+        let cloudinaryUrl = null;
+        let previewUrl = null;
+        // Upload to Cloudinary directly
+        const cloudinaryUpload = await new Promise<string>((resolve, reject) => {
+            const uploadStream = require('cloudinary').v2.uploader.upload_stream(
+                { public_id: `vendure-assets/${filename.replace(/\s+/g, '-')}`, resource_type: 'auto' },
+                (error: any, result: any) => {
+                    if (error) return reject(error);
+                    if (!result || !result.secure_url) return reject(new Error('No Cloudinary URL returned'));
+                    resolve(result.secure_url as string);
                 }
-            } as any
+            );
+            const { Readable } = require('stream');
+            const stream = new Readable();
+            stream.push(fileBuffer);
+            stream.push(null);
+            stream.pipe(uploadStream);
         });
-        
-        return result;
+        cloudinaryUrl = cloudinaryUpload as string;
+        previewUrl = CloudinaryAssetStorageStrategy.getPreviewUrl(cloudinaryUrl);
+
+        // Try assetService.create, but if it fails, insert manually
+        let result = null;
+        try {
+            result = await assetService.create(ctx, {
+                file: {
+                    filename,
+                    mimetype: mimeType,
+                    createReadStream: () => {
+                        const { Readable } = require('stream');
+                        const stream = new Readable();
+                        stream.push(fileBuffer);
+                        stream.push(null);
+                        return stream;
+                    }
+                } as any
+            });
+        } catch (e) {
+            console.error('assetService.create failed, inserting asset manually:', e);
+        }
+        // Patch or insert asset record
+        if (result && typeof result === 'object' && 'id' in result) {
+            try {
+                await connection.rawConnection.query(
+                    'UPDATE asset SET source = $1, preview = $2 WHERE id = $3',
+                    [cloudinaryUrl, previewUrl, result.id]
+                );
+                (result as any).source = cloudinaryUrl;
+                (result as any).preview = previewUrl;
+            } catch (e) {
+                console.error('Failed to update source/preview fields for Cloudinary asset:', e);
+            }
+            return result;
+        } else {
+            // Insert asset manually if needed
+            try {
+                const insertResult = await connection.rawConnection.query(
+                    `INSERT INTO asset (name, type, mimetype, source, preview) VALUES ($1, $2, $3, $4, $5) RETURNING *`,
+                    [filename, 'IMAGE', mimeType, cloudinaryUrl, previewUrl]
+                );
+                return insertResult.rows[0];
+            } catch (e) {
+                console.error('Failed to insert asset manually:', e);
+                return null;
+            }
+        }
     } catch (error) {
         console.error(`Failed to create asset from ${filePath}:`, error);
         return null;

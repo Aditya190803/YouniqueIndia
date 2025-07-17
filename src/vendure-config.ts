@@ -129,7 +129,6 @@ export const config: VendureConfig = {
         AssetServerPlugin.init({
             route: 'assets',
             assetUploadDir: path.join(__dirname, '../static/assets'), // still required but unused
-            assetUrlPrefix: IS_DEV ? undefined : process.env.ASSET_URL_PREFIX || `http://localhost:${serverPort}/assets/`,
             storageStrategyFactory: () => new CloudinaryAssetStorageStrategy(),
         }),
         DefaultSchedulerPlugin.init(),

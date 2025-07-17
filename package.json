@@ -29,7 +29,8 @@
     "google-auth-library": "^10.1.0",
     "graphql-tag": "^2.12.6",
     "nodemailer": "^7.0.5",
-    "pg": "8.16.2"
+    "pg": "8.16.2",
+    "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
     "@types/pg": "^8.15.4",

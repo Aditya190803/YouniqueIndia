@@ -15,6 +15,14 @@ export class CloudinaryAssetStorageStrategy implements AssetStorageStrategy {
         return fileName.replace(/^.*[\\\/]/, '').replace(/\s+/g, '-');
     }
 
+    /**
+     * Helper to generate a Cloudinary preview URL (with transformation for thumbnail)
+     */
+    public static getPreviewUrl(secureUrl: string): string {
+        if (!secureUrl.includes('cloudinary.com')) return secureUrl;
+        return secureUrl.replace('/upload/', '/upload/c_thumb,w_200,h_200/');
+    }
+
     async writeFileFromStream(fileName: string, stream: ReadStream): Promise<string> {
         const cleanFileName = this.sanitizeFileName(fileName);
         return new Promise((resolve, reject) => {
@@ -44,20 +52,13 @@ export class CloudinaryAssetStorageStrategy implements AssetStorageStrategy {
         });
     }
 
+    // Prevent Vendure from trying to serve Cloudinary assets via /assets/
     async readFileToStream(identifier: string): Promise<ReadStream> {
-        throw new Error('Direct file streaming from Cloudinary is not supported. Use the URL instead.');
+        throw new Error('Direct file streaming from Cloudinary is not supported. Use the Cloudinary URL directly.');
     }
 
     async readFileToBuffer(identifier: string): Promise<Buffer> {
-        // Fetch the file from the Cloudinary URL and return as Buffer
-        return new Promise((resolve, reject) => {
-            https.get(identifier, (res) => {
-                const data: Buffer[] = [];
-                res.on('data', (chunk) => data.push(chunk));
-                res.on('end', () => resolve(Buffer.concat(data)));
-                res.on('error', reject);
-            }).on('error', reject);
-        });
+        throw new Error('Direct file buffer access from Cloudinary is not supported. Use the Cloudinary URL directly.');
     }
 
     async deleteFile(identifier: string): Promise<void> {
@@ -78,8 +79,8 @@ export class CloudinaryAssetStorageStrategy implements AssetStorageStrategy {
         }
     }
 
+    // Always return the direct Cloudinary URL for the asset
     toAbsoluteUrl(identifier: string): string {
-        // identifier is the Cloudinary URL
         return identifier;
     }
 } 
