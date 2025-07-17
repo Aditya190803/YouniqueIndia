@@ -18,6 +18,9 @@ declare global {
             DB_SCHEMA: string;
             DB_SSL: string;
             ASSET_URL_PREFIX?: string;
+            CLOUDINARY_CLOUD_NAME?: string;
+            CLOUDINARY_API_KEY?: string;
+            CLOUDINARY_API_SECRET?: string;
         }
     }
 }

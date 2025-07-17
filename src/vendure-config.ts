@@ -16,6 +16,7 @@ import { WhatsAppPaymentPlugin } from './plugins/whatsapp-payment/whatsapp-payme
 import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
 import 'dotenv/config';
 import path from 'path';
+import { CloudinaryAssetStorageStrategy } from './plugins/cloudinary-asset-storage-strategy';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
@@ -127,11 +128,9 @@ export const config: VendureConfig = {
         GraphiqlPlugin.init(),
         AssetServerPlugin.init({
             route: 'assets',
-            assetUploadDir: path.join(__dirname, '../static/assets'),
-            // For local dev, the correct value for assetUrlPrefix should
-            // be guessed correctly, but for production it will usually need
-            // to be set manually to match your production url.
+            assetUploadDir: path.join(__dirname, '../static/assets'), // still required but unused
             assetUrlPrefix: IS_DEV ? undefined : process.env.ASSET_URL_PREFIX || `http://localhost:${serverPort}/assets/`,
+            storageStrategyFactory: () => new CloudinaryAssetStorageStrategy(),
         }),
         DefaultSchedulerPlugin.init(),
         DefaultJobQueuePlugin.init({ useDatabaseForBuffer: true }),

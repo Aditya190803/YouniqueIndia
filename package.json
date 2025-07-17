@@ -9,7 +9,10 @@
     "build": "tsc",
     "start:server": "node ./dist/index.js",
     "start:worker": "node ./dist/index-worker.js",
-    "start": "concurrently npm:start:*"
+    "start": "concurrently npm:start:*",
+    "reset-db": "node reset-and-seed.js",
+    "clean-db": "ts-node ./src/scripts/clean-database.ts",
+    "seed-db": "ts-node ./src/scripts/seed-jewelry-final.ts"
   },
   "dependencies": {
     "@callit-today/vendure-plugin-back-in-stock": "^2.0.2",
@@ -20,6 +23,7 @@
     "@vendure/email-plugin": "3.3.4",
     "@vendure/graphiql-plugin": "3.3.4",
     "apollo-server-core": "^3.13.0",
+    "cloudinary": "^2.7.0",
     "concurrently": "9.1.2",
     "dotenv": "16.5.0",
     "google-auth-library": "^10.1.0",

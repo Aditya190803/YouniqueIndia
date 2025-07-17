@@ -129,6 +129,71 @@ async function cleanDatabase() {
         await resetSequenceThorough('collection', 'collection_id_seq');
         await resetSequenceThorough('asset', 'asset_id_seq');
 
+        // --- FORCE TRUNCATE AND SEQUENCE RESET FOR PRODUCT TABLE ---
+        try {
+            await connection.rawConnection.query('TRUNCATE TABLE product CASCADE');
+            await connection.rawConnection.query('ALTER SEQUENCE product_id_seq RESTART WITH 1');
+            console.log('✅ Force-truncated product table and reset sequence');
+        } catch (error) {
+            console.log('⚠️  Could not force-truncate product table:', error);
+        }
+
+        // --- AGGRESSIVE TRUNCATE OF ALL PRODUCT-RELATED TABLES ---
+        const tables = [
+            'product_variant_facet_values_facet_value',
+            'product_facet_values_facet_value',
+            'product_variant_facet_value',
+            'product_facet_value',
+            'collection_product',
+            'collection_asset',
+            'product_asset',
+            'product_variant_asset',
+            'product_variant_option',
+            'product_option_group_option',
+            'stock_movement',
+            'product_variant',
+            'product_option',
+            'product_option_group',
+            'product',
+            'collection',
+            'asset',
+            'facet_value',
+            'facet',
+            'product_variant_price',
+            'product_variant_translation',
+            'product_translation',
+            'collection_translation',
+            'facet_translation',
+            'facet_value_translation'
+        ];
+        for (const table of tables) {
+            try {
+                await connection.rawConnection.query(`TRUNCATE TABLE ${table} CASCADE`);
+                console.log(`✅ Aggressively truncated ${table}`);
+            } catch (error) {
+                console.log(`⚠️  Could not truncate ${table}:`, (error as any).message || error);
+            }
+        }
+        // Reset all sequences
+        const sequences = [
+            'facet_id_seq',
+            'facet_value_id_seq',
+            'product_id_seq',
+            'product_variant_id_seq',
+            'product_option_id_seq',
+            'product_option_group_id_seq',
+            'collection_id_seq',
+            'asset_id_seq'
+        ];
+        for (const seq of sequences) {
+            try {
+                await connection.rawConnection.query(`ALTER SEQUENCE ${seq} RESTART WITH 1`);
+                console.log(`✅ Aggressively reset sequence ${seq}`);
+            } catch (error) {
+                console.log(`⚠️  Could not reset sequence ${seq}:`, (error as any).message || error);
+            }
+        }
+
         console.log('✅ Database cleanup completed successfully!');
         console.log('💡 You can now run the seeding script to populate fresh data');
         
