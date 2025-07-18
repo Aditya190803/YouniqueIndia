@@ -25,7 +25,6 @@ import { config } from '../vendure-config';
 import * as https from 'https';
 import * as fs from 'fs';
 import * as path from 'path';
-import { CloudinaryAssetStorageStrategy } from '../plugins/cloudinary-asset-storage-strategy';
 
 /**
  * Seeds the database with jewelry products, collections, and facets
@@ -1064,28 +1063,6 @@ async function createAssetFromFile(
 
         const fileBuffer = fs.readFileSync(filePath);
         const mimeType = filename.endsWith('.jpg') || filename.endsWith('.jpeg') ? 'image/jpeg' : 'image/png';
-        let cloudinaryUrl = null;
-        let previewUrl = null;
-        // Upload to Cloudinary directly
-        const cloudinaryUpload = await new Promise<string>((resolve, reject) => {
-            const uploadStream = require('cloudinary').v2.uploader.upload_stream(
-                { public_id: `vendure-assets/${filename.replace(/\s+/g, '-')}`, resource_type: 'auto' },
-                (error: any, result: any) => {
-                    if (error) return reject(error);
-                    if (!result || !result.secure_url) return reject(new Error('No Cloudinary URL returned'));
-                    resolve(result.secure_url as string);
-                }
-            );
-            const { Readable } = require('stream');
-            const stream = new Readable();
-            stream.push(fileBuffer);
-            stream.push(null);
-            stream.pipe(uploadStream);
-        });
-        cloudinaryUrl = cloudinaryUpload as string;
-        previewUrl = CloudinaryAssetStorageStrategy.getPreviewUrl(cloudinaryUrl);
-
-        // Try assetService.create, but if it fails, insert manually
         let result = null;
         try {
             result = await assetService.create(ctx, {
@@ -1102,34 +1079,10 @@ async function createAssetFromFile(
                 } as any
             });
         } catch (e) {
-            console.error('assetService.create failed, inserting asset manually:', e);
+            console.error('assetService.create failed:', e);
+            return null;
         }
-        // Patch or insert asset record
-        if (result && typeof result === 'object' && 'id' in result) {
-            try {
-                await connection.rawConnection.query(
-                    'UPDATE asset SET source = $1, preview = $2 WHERE id = $3',
-                    [cloudinaryUrl, previewUrl, result.id]
-                );
-                (result as any).source = cloudinaryUrl;
-                (result as any).preview = previewUrl;
-            } catch (e) {
-                console.error('Failed to update source/preview fields for Cloudinary asset:', e);
-            }
-            return result;
-        } else {
-            // Insert asset manually if needed
-            try {
-                const insertResult = await connection.rawConnection.query(
-                    `INSERT INTO asset (name, type, mimetype, source, preview) VALUES ($1, $2, $3, $4, $5) RETURNING *`,
-                    [filename, 'IMAGE', mimeType, cloudinaryUrl, previewUrl]
-                );
-                return insertResult.rows[0];
-            } catch (e) {
-                console.error('Failed to insert asset manually:', e);
-                return null;
-            }
-        }
+        return result;
     } catch (error) {
         console.error(`Failed to create asset from ${filePath}:`, error);
         return null;

@@ -16,7 +16,8 @@ import { WhatsAppPaymentPlugin } from './plugins/whatsapp-payment/whatsapp-payme
 import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
 import 'dotenv/config';
 import path from 'path';
-import { CloudinaryAssetStorageStrategy } from './plugins/cloudinary-asset-storage-strategy';
+import { configureS3AssetStorage } from '@vendure/asset-server-plugin';
+import { fromEnv } from '@aws-sdk/credential-providers';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
@@ -129,7 +130,13 @@ export const config: VendureConfig = {
         AssetServerPlugin.init({
             route: 'assets',
             assetUploadDir: path.join(__dirname, '../static/assets'), // still required but unused
-            storageStrategyFactory: () => new CloudinaryAssetStorageStrategy(),
+            storageStrategyFactory: configureS3AssetStorage({
+                bucket: process.env.AWS_S3_BUCKET!,
+                credentials: fromEnv(),
+                nativeS3Configuration: {
+                    region: process.env.AWS_REGION,
+                },
+            }),
         }),
         DefaultSchedulerPlugin.init(),
         DefaultJobQueuePlugin.init({ useDatabaseForBuffer: true }),
