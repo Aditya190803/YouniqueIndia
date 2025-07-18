@@ -6,9 +6,10 @@ import {
     VendureConfig,
     NativeAuthenticationStrategy,
     LanguageCode,
+    DefaultAssetNamingStrategy,
 } from '@vendure/core';
 import { defaultEmailHandlers, EmailPlugin, FileBasedTemplateLoader } from '@vendure/email-plugin';
-import { AssetServerPlugin } from '@vendure/asset-server-plugin';
+import { AssetServerPlugin, configureS3AssetStorage } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
@@ -16,7 +17,6 @@ import { WhatsAppPaymentPlugin } from './plugins/whatsapp-payment/whatsapp-payme
 import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
 import 'dotenv/config';
 import path from 'path';
-import { configureS3AssetStorage } from '@vendure/asset-server-plugin';
 import { fromEnv } from '@aws-sdk/credential-providers';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
@@ -129,7 +129,9 @@ export const config: VendureConfig = {
         GraphiqlPlugin.init(),
         AssetServerPlugin.init({
             route: 'assets',
-            assetUploadDir: path.join(__dirname, '../static/assets'), // still required but unused
+            // assetUploadDir is required by Vendure but unused because S3 is used exclusively
+            assetUploadDir: '/dev/null',
+            namingStrategy: new DefaultAssetNamingStrategy(),
             storageStrategyFactory: configureS3AssetStorage({
                 bucket: process.env.AWS_S3_BUCKET!,
                 credentials: fromEnv(),
