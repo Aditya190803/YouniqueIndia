@@ -13,7 +13,6 @@
     "reset-db": "node reset-and-seed.js",
     "clean-db": "ts-node ./src/scripts/clean-database.ts",
     "seed-db": "ts-node ./src/scripts/seed-jewelry-final.ts",
-    "test:google-auth": "ts-node ./src/scripts/test-google-auth.ts",
     "test:firebase-auth": "ts-node ./src/scripts/test-firebase-auth.ts",
     "test:firebase-auth-flow": "ts-node ./src/scripts/test-firebase-auth-flow.ts",
     "test:firebase-graphql": "ts-node ./src/scripts/test-firebase-graphql.ts",
