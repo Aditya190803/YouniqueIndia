@@ -15,6 +15,7 @@ import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
 import { WhatsAppPaymentPlugin } from './plugins/whatsapp-payment/whatsapp-payment.plugin';
 import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
+import { CustomerRegistrationPlugin } from './plugins/customer-registration/customer-registration.plugin';
 import 'dotenv/config';
 import path from 'path';
 import { fromEnv } from '@aws-sdk/credential-providers';
@@ -112,17 +113,6 @@ export const config: VendureConfig = {
                     },
                 ],
             },
-            {
-                name: 'avatar',
-                type: 'string',
-                nullable: true,
-                label: [
-                    {
-                        languageCode: LanguageCode.en,
-                        value: 'Avatar URL',
-                    },
-                ],
-            },
         ],
     },
     plugins: [
@@ -176,6 +166,8 @@ export const config: VendureConfig = {
         }),
         // WhatsApp Payment Plugin
         WhatsAppPaymentPlugin,
+        // Customer Registration Plugin
+        CustomerRegistrationPlugin,
         // Note: INR currency is set via migration, no plugin needed
     ],
 };

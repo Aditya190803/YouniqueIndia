@@ -38,31 +38,35 @@ export class GoogleAuthenticationStrategy implements AuthenticationStrategy<Goog
 
             const payload = ticket.getPayload();
             if (!payload) {
+                console.error('Google authentication: No payload received');
                 return false;
             }
 
-            const { email, name, picture } = payload;
+            const { email, name, sub: googleId, email_verified } = payload;
 
             if (!email) {
+                console.error('Google authentication: No email in payload');
                 return false;
             }
 
             // Check if user exists, if not create one
-            const user = await this.externalAuthenticationService.findCustomerUser(ctx, this.name, payload.sub);
+            const user = await this.externalAuthenticationService.findCustomerUser(ctx, this.name, googleId);
             if (user) {
+                console.log(`Google authentication: User ${email} already exists`);
                 return user;
             }
 
-            // Create new user
+            // Create new user with Google data
             const newUser = await this.externalAuthenticationService.createCustomerAndUser(ctx, {
                 strategy: this.name,
-                externalIdentifier: payload.sub,
-                verified: payload.email_verified || false,
+                externalIdentifier: googleId,
+                verified: email_verified || false,
                 emailAddress: email,
                 firstName: name?.split(' ')[0] || '',
                 lastName: name?.split(' ').slice(1).join(' ') || '',
             });
 
+            console.log(`Google authentication: Created new user ${email} with Google ID ${googleId}`);
             return newUser;
         } catch (error) {
             console.error('Google authentication error:', error);
