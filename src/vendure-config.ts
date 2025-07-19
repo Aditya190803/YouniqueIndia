@@ -13,9 +13,9 @@ import { AssetServerPlugin, configureS3AssetStorage } from '@vendure/asset-serve
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
-import { WhatsAppPaymentPlugin } from './plugins/whatsapp-payment/whatsapp-payment.plugin';
-import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
+import { FirebaseAuthenticationStrategy } from './plugins/authentication/firebase-authentication-strategy';
 import { CustomerRegistrationPlugin } from './plugins/customer-registration/customer-registration.plugin';
+import { WhatsAppPaymentPlugin } from './plugins/whatsapp-payment/whatsapp-payment.plugin';
 import 'dotenv/config';
 import path from 'path';
 import { fromEnv } from '@aws-sdk/credential-providers';
@@ -66,7 +66,7 @@ export const config: VendureConfig = {
         // Shop API authentication strategies (for customers)
         shopAuthenticationStrategy: [
             new NativeAuthenticationStrategy(),
-            new GoogleAuthenticationStrategy(),
+            new FirebaseAuthenticationStrategy(),
         ],
         // Require verification for new customer accounts
         requireVerification: false,
@@ -100,17 +100,18 @@ export const config: VendureConfig = {
         paymentMethodHandlers: [dummyPaymentHandler],
     },
 
-    // Custom fields for Google authentication
+    // Custom fields for Firebase authentication
     customFields: {
         Customer: [
             {
-                name: 'googleId',
+                name: 'firebaseId',
                 type: 'string',
                 nullable: true,
+                public: true,
                 label: [
                     {
                         languageCode: LanguageCode.en,
-                        value: 'Google ID',
+                        value: 'Firebase ID',
                     },
                 ],
             },
@@ -165,6 +166,7 @@ export const config: VendureConfig = {
             enableEmail: true,
             limitEmailToStock: true,
         }),
+        // Firebase Authentication Strategy (custom implementation)
         // WhatsApp Payment Plugin
         WhatsAppPaymentPlugin,
         // Customer Registration Plugin

@@ -14,6 +14,12 @@
     "clean-db": "ts-node ./src/scripts/clean-database.ts",
     "seed-db": "ts-node ./src/scripts/seed-jewelry-final.ts",
     "test:google-auth": "ts-node ./src/scripts/test-google-auth.ts",
+    "test:firebase-auth": "ts-node ./src/scripts/test-firebase-auth.ts",
+    "test:firebase-auth-flow": "ts-node ./src/scripts/test-firebase-auth-flow.ts",
+    "test:firebase-graphql": "ts-node ./src/scripts/test-firebase-graphql.ts",
+    "test:firebase-mutation": "ts-node ./src/scripts/test-firebase-mutation.ts",
+    "test:correct-mutation": "ts-node ./src/scripts/test-correct-mutation.ts",
+    "test:firebase-plugin": "ts-node ./src/scripts/test-firebase-plugin.ts",
     "test:customer-registration": "ts-node ./src/scripts/test-customer-registration.ts"
   },
   "dependencies": {
@@ -30,11 +36,11 @@
     "apollo-server-core": "^3.13.0",
     "concurrently": "9.1.2",
     "dotenv": "16.5.0",
-    "google-auth-library": "^10.1.0",
     "graphql-tag": "^2.12.6",
     "nodemailer": "^7.0.5",
     "pg": "8.16.2",
-    "prompt-sync": "^4.2.0"
+    "prompt-sync": "^4.2.0",
+    "vendure-plugin-firebase-auth": "^0.3.3"
   },
   "devDependencies": {
     "@types/pg": "^8.15.4",
