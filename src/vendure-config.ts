@@ -36,6 +36,7 @@ export const config: VendureConfig = {
                 'http://localhost:3000',
                 'https://younique-storefront.vercel.app',
                 'https://youniqueindia.onrender.com',
+                'https://youniqueindia.onrender.com:443',
             ],
             credentials: true,
         },
@@ -119,8 +120,8 @@ export const config: VendureConfig = {
         GraphiqlPlugin.init(),
         AssetServerPlugin.init({
             route: 'assets',
-            // assetUploadDir is required by Vendure but unused because S3 is used exclusively
-            assetUploadDir: '/dev/null',
+            // Use a proper temporary directory for asset uploads (S3 handles actual storage)
+            assetUploadDir: '/tmp/assets',
             namingStrategy: new DefaultAssetNamingStrategy(),
             storageStrategyFactory: configureS3AssetStorage({
                 bucket: process.env.AWS_S3_BUCKET!,

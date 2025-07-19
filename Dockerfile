@@ -26,9 +26,10 @@ RUN npm ci && npm run build && npm prune --production
 # Make node_modules writable for vendure user (needed for AdminUI config file)
 RUN chown -R vendure:nodejs /usr/src/app/node_modules
 
-# Create directories for static files with proper permissions
-RUN mkdir -p static/assets static/email/test-emails && \
-    chown -R vendure:nodejs static/
+# Create directories for static files and asset uploads with proper permissions
+RUN mkdir -p static/assets static/email/test-emails /tmp/assets && \
+    chown -R vendure:nodejs static/ && \
+    chown -R vendure:nodejs /tmp/assets
 
 # Switch to non-root user
 USER vendure
