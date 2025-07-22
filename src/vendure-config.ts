@@ -13,12 +13,11 @@ import { AssetServerPlugin, configureS3AssetStorage } from '@vendure/asset-serve
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
-import { FirebaseAuthenticationStrategy } from './plugins/authentication/firebase-authentication-strategy';
-import { CustomerRegistrationPlugin } from './plugins/customer-registration/customer-registration.plugin';
-import { WhatsAppPaymentPlugin } from './plugins/whatsapp-payment/whatsapp-payment.plugin';
+import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
 import 'dotenv/config';
 import path from 'path';
 import { fromEnv } from '@aws-sdk/credential-providers';
+import { MultiServerDbSessionCachePlugin } from '@pinelab/vendure-plugin-multiserver-db-sessioncache';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
@@ -66,7 +65,7 @@ export const config: VendureConfig = {
         // Shop API authentication strategies (for customers)
         shopAuthenticationStrategy: [
             new NativeAuthenticationStrategy(),
-            new FirebaseAuthenticationStrategy(),
+            new GoogleAuthenticationStrategy(),
         ],
         // Require verification for new customer accounts
         requireVerification: false,
@@ -86,15 +85,19 @@ export const config: VendureConfig = {
             acquireTimeout: 60000,
             timeout: 60000,
         },
-        // Use DATABASE_URL if available, otherwise use individual connection params
-        url: process.env.DATABASE_URL,
-        database: process.env.DB_NAME,
-        schema: process.env.DB_SCHEMA || 'public',
-        host: process.env.DB_HOST,
-        port: +process.env.DB_PORT || 5432,
-        username: process.env.DB_USERNAME,
-        password: process.env.DB_PASSWORD,
-        ssl: process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : false,
+        // Prefer DATABASE_URL if set, otherwise fall back to individual params
+        ...(process.env.DATABASE_URL
+            ? { url: process.env.DATABASE_URL }
+            : {
+                database: process.env.DB_NAME,
+                schema: process.env.DB_SCHEMA || 'public',
+                host: process.env.DB_HOST,
+                port: +process.env.DB_PORT || 5432,
+                username: process.env.DB_USERNAME,
+                password: process.env.DB_PASSWORD,
+                ssl: process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : false,
+            }
+        ),
     },
     paymentOptions: {
         paymentMethodHandlers: [dummyPaymentHandler],
@@ -103,18 +106,7 @@ export const config: VendureConfig = {
     // Custom fields for Firebase authentication
     customFields: {
         Customer: [
-            {
-                name: 'firebaseId',
-                type: 'string',
-                nullable: true,
-                public: true,
-                label: [
-                    {
-                        languageCode: LanguageCode.en,
-                        value: 'Firebase ID',
-                    },
-                ],
-            },
+            // Removed firebaseId field
         ],
     },
     plugins: [
@@ -144,9 +136,18 @@ export const config: VendureConfig = {
             globalTemplateVars: {
                 // The following variables will change depending on your storefront implementation.
                 fromAddress: '"YouniqueIndia" <noreply@youniqueindia.com>',
-                verifyEmailAddressUrl: IS_PRODUCTION ? 'https://younique-storefront.vercel.app/verify' : 'http://localhost:8080/verify',
-                passwordResetUrl: IS_PRODUCTION ? 'https://younique-storefront.vercel.app/password-reset' : 'http://localhost:8080/password-reset',
-                changeEmailAddressUrl: IS_PRODUCTION ? 'https://younique-storefront.vercel.app/verify-email-address-change' : 'http://localhost:8080/verify-email-address-change'
+                verifyEmailAddressUrl: process.env.VERIFY_EMAIL_URL || 'http://localhost:8080/verify',
+                passwordResetUrl: process.env.PASSWORD_RESET_URL || 'http://localhost:8080/password-reset',
+                changeEmailAddressUrl: process.env.CHANGE_EMAIL_URL || 'http://localhost:8080/verify-email-address-change'
+            },
+            transport: {
+                type: 'smtp',
+                host: process.env.SMTP_HOST,
+                port: Number(process.env.SMTP_PORT),
+                auth: {
+                    user: process.env.SMTP_USER,
+                    pass: process.env.SMTP_PASS,
+                },
             },
         }),
         AdminUiPlugin.init({
@@ -166,11 +167,11 @@ export const config: VendureConfig = {
             enableEmail: true,
             limitEmailToStock: true,
         }),
+        MultiServerDbSessionCachePlugin,
         // Firebase Authentication Strategy (custom implementation)
         // WhatsApp Payment Plugin
-        WhatsAppPaymentPlugin,
+        // Removed Firebase Authentication Strategy
         // Customer Registration Plugin
-        CustomerRegistrationPlugin,
         // Note: INR currency is set via migration, no plugin needed
     ],
 };

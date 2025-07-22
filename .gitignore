@@ -3,5 +3,12 @@ dist
 admin-ui
 static/assets
 static/email/test-emails
-.env
 .env.production
+
+.env
+.env.local
+.env.production
+
+firebase-service-account.json
+
+.gitignore
