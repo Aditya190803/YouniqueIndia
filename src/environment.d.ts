@@ -22,6 +22,13 @@ declare global {
             AWS_SECRET_ACCESS_KEY?: string;
             AWS_REGION?: string;
             AWS_S3_BUCKET?: string;
+            SMTP_HOST?: string;
+            SMTP_PORT?: string;
+            SMTP_USER?: string;
+            SMTP_PASS?: string;
+            VERIFY_EMAIL_URL?: string;
+            PASSWORD_RESET_URL?: string;
+            CHANGE_EMAIL_URL?: string;
         }
     }
 }

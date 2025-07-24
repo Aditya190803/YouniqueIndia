@@ -36,6 +36,10 @@ export const config: VendureConfig = {
                 'https://younique-storefront.vercel.app',
                 'https://youniqueindia.onrender.com',
                 'https://youniqueindia.onrender.com:443',
+                'https://younique.co.in',
+                'https://www.younique.co.in',
+                'http://younique.co.in',
+                'http://www.younique.co.in',
             ],
             credentials: true,
         },
@@ -108,6 +112,14 @@ export const config: VendureConfig = {
         Customer: [
             // Removed firebaseId field
         ],
+        Facet: [
+            {
+                name: 'showOnProductDetail',
+                type: 'boolean',
+                label: [{ languageCode: LanguageCode.en, value: 'Show on product detail?' }],
+                defaultValue: false,
+            },
+        ],
     },
     plugins: [
         GraphiqlPlugin.init(),
@@ -167,11 +179,5 @@ export const config: VendureConfig = {
             enableEmail: true,
             limitEmailToStock: true,
         }),
-        MultiServerDbSessionCachePlugin,
-        // Firebase Authentication Strategy (custom implementation)
-        // WhatsApp Payment Plugin
-        // Removed Firebase Authentication Strategy
-        // Customer Registration Plugin
-        // Note: INR currency is set via migration, no plugin needed
     ],
 };
