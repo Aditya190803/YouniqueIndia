@@ -91,7 +91,10 @@ export const config: VendureConfig = {
         },
         // Prefer DATABASE_URL if set, otherwise fall back to individual params
         ...(process.env.DATABASE_URL
-            ? { url: process.env.DATABASE_URL }
+            ? { 
+                url: process.env.DATABASE_URL,
+                ssl: process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : false,
+            }
             : {
                 database: process.env.DB_NAME,
                 schema: process.env.DB_SCHEMA || 'public',
@@ -181,3 +184,5 @@ export const config: VendureConfig = {
         }),
     ],
 };
+
+export { config as vendureConfig };
