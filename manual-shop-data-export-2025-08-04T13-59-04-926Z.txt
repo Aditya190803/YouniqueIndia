@@ -1,0 +1,1653 @@
+=================================================
+🛍️ MANUAL SHOP DATA EXPORT - ALL AVAILABLE DATA
+=================================================
+Timestamp: 2025-08-04T13:59:04.926Z
+URL: http://localhost:8080/shop
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0
+
+📦 Current Products State:
+products: [
+  {
+    "id": "27",
+    "title": "Hexa Heart Necklace ",
+    "description": "Beautiful hexa heart necklace ",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/e8d341b7daf94c344dd8ac5191039f82__03__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/e8d341b7daf94c344dd8ac5191039f82__03__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "hexa-heart-necklace-",
+    "variants": [
+      {
+        "id": "27",
+        "name": "Hexa Heart Necklace ",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "HN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "title": "Tangled Heart Necklace",
+    "description": "Beautiful tangled heart necklace",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/401baa08de533947705e2ab79794b136__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/401baa08de533947705e2ab79794b136__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "tangled-heart-necklace",
+    "variants": [
+      {
+        "id": "28",
+        "name": "Tangled Heart necklace",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "title": "Baby Bow Necklace",
+    "description": "Beautiful baby bow necklace",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/whatsapp-image-2025-07-24-at-00.45.54_7a66e79e__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/whatsapp-image-2025-07-24-at-00.45.54_7a66e79e__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 0,
+    "brand": "Younique India",
+    "slug": "baby-bow-necklace",
+    "variants": [
+      {
+        "id": "30",
+        "name": "Baby bow necklace",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "BBN",
+        "stockLevel": "OUT_OF_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "title": "Reversible Clover Necklace ",
+    "description": "Beautiful reversible clover necklace ",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/184507e188684c03edb8446b8dcab453__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/184507e188684c03edb8446b8dcab453__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "reversible-clover-necklace-",
+    "variants": [
+      {
+        "id": "31",
+        "name": "Reversible Clover Necklace ",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "RCN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "title": "Spiral Hoops",
+    "description": "Beautiful spiral hoops",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/51825289d0abf7c27b55b5c9b62e0093__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/51825289d0abf7c27b55b5c9b62e0093__preview.jpg"
+    ],
+    "category": "Uncategorized",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "spiral-hoops",
+    "variants": [
+      {
+        "id": "32",
+        "name": "Spiral Hoops",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "title": "Mini Bow Necklace",
+    "description": "Beautiful mini bow necklace",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/156a0330-0184-4eda-969e-f42f511f1687__preview.png",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/156a0330-0184-4eda-969e-f42f511f1687__preview.png"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "mini-bow-necklace",
+    "variants": [
+      {
+        "id": "33",
+        "name": "Mini Bow Necklace",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "MBN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "title": "Bamboo Bracelet",
+    "description": "Beautiful bamboo bracelet",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/b718c49545eb3a0066dadfbb52215db2__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/b718c49545eb3a0066dadfbb52215db2__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "bamboo-bracelet",
+    "variants": [
+      {
+        "id": "34",
+        "name": "Bamboo Bracelet",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "BB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "title": "Knot Cuff Bracelet",
+    "description": "Beautiful knot cuff bracelet",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/59d3f19a6424a6785de21a9c5e73a974-1__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/59d3f19a6424a6785de21a9c5e73a974-1__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "knot-cuff-bracelet",
+    "variants": [
+      {
+        "id": "35",
+        "name": "Knot Cuff Bracelet",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "KCB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "title": "Rozel Necklace",
+    "description": "Beautiful rozel necklace",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/e19a0986ae5c8764a7e5a50e9e105f4b__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/e19a0986ae5c8764a7e5a50e9e105f4b__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "rozel-necklace",
+    "variants": [
+      {
+        "id": "36",
+        "name": "Rozel Necklace",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "RN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "title": "Rozel Gold",
+    "description": "Beautiful rozel gold",
+    "price": 329,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/865c75162061c3a783b58ab887b83e76__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/865c75162061c3a783b58ab887b83e76__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "rozel-gold",
+    "variants": [
+      {
+        "id": "37",
+        "name": "Rozel Gold",
+        "price": 329,
+        "priceWithTax": 329,
+        "sku": "RGN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "title": "Spiral Earrings",
+    "description": "Beautiful spiral earrings",
+    "price": 279,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/file_000000000be461f8bd1573918feee48e__preview.png",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/file_000000000be461f8bd1573918feee48e__preview.png"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "spiral-earrings",
+    "variants": [
+      {
+        "id": "38",
+        "name": "Spiral Earrings",
+        "price": 279,
+        "priceWithTax": 279,
+        "sku": "SE",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "title": "Puffy Hearts",
+    "description": "Beautiful puffy hearts",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/33024bf2e81e26ed8c0f8ecb50ddae9e__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/33024bf2e81e26ed8c0f8ecb50ddae9e__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "puffy-hearts",
+    "variants": [
+      {
+        "id": "40",
+        "name": "Puffy Hearts",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "PHE",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "title": "Reversible Baby Heart Necklace",
+    "description": "Beautiful reversible baby heart necklace",
+    "price": 329,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_105911__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_105911__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "reversible-baby-heart-necklace",
+    "variants": [
+      {
+        "id": "41",
+        "name": "Reversible Baby heart Necklace",
+        "price": 329,
+        "priceWithTax": 329,
+        "sku": "RBHN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "title": "Sunny Necklace",
+    "description": "Beautiful sunny necklace",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_105921__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_105921__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "sunny-necklace",
+    "variants": [
+      {
+        "id": "42",
+        "name": "Sunny Necklace",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "SN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "title": "Diamor Necklace",
+    "description": "Beautiful diamor necklace",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_105859__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_105859__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "diamor-necklace",
+    "variants": [
+      {
+        "id": "43",
+        "name": "Diamor Necklace",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "DN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "title": "Bangle Bracelet",
+    "description": "Beautiful bangle bracelet",
+    "price": 399,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250724-wa0126__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250724-wa0126__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "bangle-bracelet",
+    "variants": [
+      {
+        "id": "44",
+        "name": "Bangle Bracelet",
+        "price": 399,
+        "priceWithTax": 399,
+        "sku": "BB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "title": "Wavy Bracelet",
+    "description": "Beautiful wavy bracelet",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250724-wa0127__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250724-wa0127__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "wavy-bracelet",
+    "variants": [
+      {
+        "id": "45",
+        "name": "Wavy Bracelet",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "WB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "title": "Aurelia Link Bracelet",
+    "description": "Beautiful aurelia link bracelet",
+    "price": 365,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250724-wa0128__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250724-wa0128__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "aurelia-link-bracelet",
+    "variants": [
+      {
+        "id": "48",
+        "name": "Aurelia Link Bracelet",
+        "price": 365,
+        "priceWithTax": 365,
+        "sku": "ALB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "title": "Daisy Necklace",
+    "description": "Beautiful daisy necklace",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250723-wa0444__02__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250723-wa0444__02__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "daisy-necklace",
+    "variants": [
+      {
+        "id": "49",
+        "name": "Daisy Necklace",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "DN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "title": "Hexa Heart Studs",
+    "description": "Beautiful hexa heart studs",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/f84375d3a4877b263ad6c130c7aa9e0d__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/f84375d3a4877b263ad6c130c7aa9e0d__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "hexa-heart-studs",
+    "variants": [
+      {
+        "id": "50",
+        "name": "Hexa Heart studs",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "HHS",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "title": "Textured Square Earring",
+    "description": "Beautiful textured square earring",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/e6a6d45a853a66d1e42ea7e5affe1ba5__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/e6a6d45a853a66d1e42ea7e5affe1ba5__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "textured-square-earring",
+    "variants": [
+      {
+        "id": "58",
+        "name": "Textured Square Earring",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "TSE",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "title": "Sunlette Studded Necklace",
+    "description": "Beautiful sunlette studded necklace",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_121151__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_121151__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "sunlette-studded-necklace",
+    "variants": [
+      {
+        "id": "64",
+        "name": "Sunlette studded Necklace",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "SSN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "title": "2in1 Magnetic Heart Necklace",
+    "description": "Beautiful 2in1 magnetic heart necklace",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_122600__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_122600__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "2in1-magnetic-heart-necklace",
+    "variants": [
+      {
+        "id": "70",
+        "name": "2in1 Magnetic Heart Necklace",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "MHN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "title": "Bow Tiful Earrings",
+    "description": "Beautiful bow tiful earrings",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/07f49b7b6c020f37bc2191e8471a4c43__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/07f49b7b6c020f37bc2191e8471a4c43__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "bow-tiful-earrings",
+    "variants": [
+      {
+        "id": "59",
+        "name": "Bow-tiful Earrings",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "BHE",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "title": "Hearty Hoops",
+    "description": "Beautiful hearty hoops",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/a55147420e807de6d3c5ee97267d6e26__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/a55147420e807de6d3c5ee97267d6e26__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "hearty-hoops",
+    "variants": [
+      {
+        "id": "57",
+        "name": "Hearty Hoops",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "HH",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "title": "Flora Mini Studs",
+    "description": "Beautiful flora mini studs",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/254cd98eecc9204e43e7fc0cb166f652__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/254cd98eecc9204e43e7fc0cb166f652__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "flora-mini-studs",
+    "variants": [
+      {
+        "id": "62",
+        "name": "Flora mini studs",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "FMS",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "title": "Moonmist",
+    "description": "Beautiful moonmist",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_121435__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_121435__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "moonmist",
+    "variants": [
+      {
+        "id": "65",
+        "name": "Moonmist",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "MMN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "title": "Ribbon Bow Necklace",
+    "description": "Beautiful ribbon bow necklace",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_121454__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_121454__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "ribbon-bow-necklace",
+    "variants": [
+      {
+        "id": "66",
+        "name": "Ribbon Bow Necklace",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "RBN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "title": "Grace Flower Necklace",
+    "description": "Beautiful grace flower necklace",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_121902__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_121902__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "grace-flower-necklace",
+    "variants": [
+      {
+        "id": "69",
+        "name": "Grace Flower Necklace",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "GFN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "title": "Golden Squeeze",
+    "description": "Beautiful golden squeeze",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_122534__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_122534__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "golden-squeeze",
+    "variants": [
+      {
+        "id": "71",
+        "name": "Golden Squeeze",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "THN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "title": "1111 Manifest Necklace",
+    "description": "Beautiful 1111 manifest necklace",
+    "price": 329,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/e90c00d06df21be899ad0c9098629181__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/e90c00d06df21be899ad0c9098629181__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "1111-manifest-necklace",
+    "variants": [
+      {
+        "id": "51",
+        "name": "11:11 Manifest Necklace",
+        "price": 329,
+        "priceWithTax": 329,
+        "sku": "MN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "title": "1111 Heart Manifest Necklace",
+    "description": "Beautiful 1111 heart manifest necklace",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/a41195a631a69958d4590d3cc1c376ca__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/a41195a631a69958d4590d3cc1c376ca__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "1111-heart-manifest-necklace",
+    "variants": [
+      {
+        "id": "52",
+        "name": "11:11 Heart Manifest Necklace",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "MHNz",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "title": "Rosy Necklace",
+    "description": "Beautiful rosy necklace",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/fa100ff55f3475cd31c982f7dd858d53__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/fa100ff55f3475cd31c982f7dd858d53__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "rosy-necklace",
+    "variants": [
+      {
+        "id": "60",
+        "name": "Rosy Necklace",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "R",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "53",
+    "title": "Hearty Necklace",
+    "description": "Beautiful hearty necklace",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250627-wa0128__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250627-wa0128__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "hearty-necklace",
+    "variants": [
+      {
+        "id": "53",
+        "name": "Hearty Necklace",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "HN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "title": "Tennis Bracelet",
+    "description": "Beautiful tennis bracelet",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/9538606e00c41959f1e44b014ec37649__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/9538606e00c41959f1e44b014ec37649__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "tennis-bracelet",
+    "variants": [
+      {
+        "id": "54",
+        "name": "Tennis Bracelet",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "TB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "title": "Autumn Necklace",
+    "description": "Beautiful autumn necklace",
+    "price": 279,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_120230__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_120230__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "autumn-necklace",
+    "variants": [
+      {
+        "id": "63",
+        "name": "Autumn Necklace",
+        "price": 279,
+        "priceWithTax": 279,
+        "sku": "AN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "title": "Gold Clover Bracelet",
+    "description": "Beautiful gold clover bracelet",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/9cf9efc13116063a95a5f97fa86dca85__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/9cf9efc13116063a95a5f97fa86dca85__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "gold-clover-bracelet",
+    "variants": [
+      {
+        "id": "55",
+        "name": "Gold clover Bracelet",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "GCB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "title": "Reversible Clover Bracelet",
+    "description": "Beautiful reversible clover bracelet",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/c651be6b91279b90adb303da4180b40e__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/c651be6b91279b90adb303da4180b40e__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "reversible-clover-bracelet",
+    "variants": [
+      {
+        "id": "56",
+        "name": "Reversible Clover Bracelet",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "RCB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "title": "Teddy Bow Necklace",
+    "description": "Beautiful teddy bow necklace",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_121736__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_121736__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "teddy-bow-necklace",
+    "variants": [
+      {
+        "id": "67",
+        "name": "Teddy bow Necklace",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "TBN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "title": "Studded Teddy Necklace",
+    "description": "Beautiful studded teddy necklace",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_121841__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_121841__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "studded-teddy-necklace",
+    "variants": [
+      {
+        "id": "68",
+        "name": "Studded Teddy Necklace",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "STN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "title": "Green Stone Necklace",
+    "description": "Beautiful green stone necklace",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250724-wa0165__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250724-wa0165__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "green-stone-necklace",
+    "variants": [
+      {
+        "id": "74",
+        "name": "Green stone necklace",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "GSN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "title": "Silver Bracelet",
+    "description": "Beautiful silver bracelet",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250724-wa0161__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250724-wa0161__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "silver-bracelet",
+    "variants": [
+      {
+        "id": "79",
+        "name": "Silver Bracelet",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "SK",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "title": "Cherry Necklace",
+    "description": "Beautiful cherry necklace",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250723-wa0403__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250723-wa0403__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "cherry-necklace",
+    "variants": [
+      {
+        "id": "81",
+        "name": "Cherry necklace",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "CN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "title": "Hampered Hoops",
+    "description": "Beautiful hampered hoops",
+    "price": 199,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_131411__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_131411__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "hampered-hoops",
+    "variants": [
+      {
+        "id": "90",
+        "name": "Hampered Hoops",
+        "price": 199,
+        "priceWithTax": 199,
+        "sku": "HH",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "title": "Adore Mini Necklace",
+    "description": "Beautiful adore mini necklace",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250724-wa0159__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250724-wa0159__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "adore-mini-necklace",
+    "variants": [
+      {
+        "id": "73",
+        "name": "Adore mini Necklace",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "AMN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "title": "Star Kada Bracelet",
+    "description": "Beautiful star kada bracelet",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250724-wa0160__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250724-wa0160__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "star-kada-bracelet",
+    "variants": [
+      {
+        "id": "76",
+        "name": "Star kada Bracelet",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "SKB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "title": "Roman Bracelet",
+    "description": "Beautiful roman bracelet",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250724-wa0162__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250724-wa0162__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "roman-bracelet",
+    "variants": [
+      {
+        "id": "77",
+        "name": "Roman Bracelet",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "RB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "title": "Droplet Necklace",
+    "description": "Beautiful droplet necklace",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250723-wa0461__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250723-wa0461__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "droplet-necklace",
+    "variants": [
+      {
+        "id": "82",
+        "name": "Droplet Necklace",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "DLN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "title": "Moon Star Ring",
+    "description": "Beautiful moon star ring",
+    "price": 229,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250723-wa0395__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250723-wa0395__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "moon-star-ring",
+    "variants": [
+      {
+        "id": "83",
+        "name": "Moon Star ring",
+        "price": 229,
+        "priceWithTax": 229,
+        "sku": "MSR",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "title": "Bang Ring Rose Gold Size 7 ",
+    "description": "Beautiful bang ring rose gold size 7 ",
+    "price": 199,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250723-wa0388__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250723-wa0388__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "bang-ring-rose-gold-size-7-",
+    "variants": [
+      {
+        "id": "84",
+        "name": "Bang Ring - Rose Gold size 7 ",
+        "price": 199,
+        "priceWithTax": 199,
+        "sku": "RGR",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "title": "Aura Bracelet",
+    "description": "Beautiful aura bracelet",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250723-wa0405__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250723-wa0405__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "aura-bracelet",
+    "variants": [
+      {
+        "id": "85",
+        "name": "Aura Bracelet",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "AK",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "title": "Bamboo Earrings",
+    "description": "Beautiful bamboo earrings",
+    "price": 199,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_130556__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_130556__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "bamboo-earrings",
+    "variants": [
+      {
+        "id": "86",
+        "name": "Bamboo Earrings",
+        "price": 199,
+        "priceWithTax": 199,
+        "sku": "BH",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "title": "Round Hoops",
+    "description": "Beautiful round hoops",
+    "price": 199,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_130620__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_130620__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "round-hoops",
+    "variants": [
+      {
+        "id": "87",
+        "name": "Round hoops",
+        "price": 199,
+        "priceWithTax": 199,
+        "sku": "RH",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "title": "White Gold Clover Bracelet",
+    "description": "Beautiful white gold clover bracelet",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_131021__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_131021__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "white-gold-clover-bracelet",
+    "variants": [
+      {
+        "id": "88",
+        "name": "White Gold Clover Bracelet",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "WCB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "title": "Italian Bracelet Vintage Gold",
+    "description": "Beautiful italian bracelet vintage gold",
+    "price": 379,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250723-wa0387__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250723-wa0387__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "italian-bracelet-vintage-gold",
+    "variants": [
+      {
+        "id": "92",
+        "name": "Italian Bracelet - Vintage Gold",
+        "price": 379,
+        "priceWithTax": 379,
+        "sku": "IB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "title": "Tangled Star Necklace",
+    "description": "Beautiful tangled star necklace",
+    "price": 319,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250723-wa0352__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250723-wa0352__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "tangled-star-necklace",
+    "variants": [
+      {
+        "id": "72",
+        "name": "Tangled Star Necklace",
+        "price": 319,
+        "priceWithTax": 319,
+        "sku": "TS",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "title": "Love Band Bracelet",
+    "description": "Beautiful love band bracelet",
+    "price": 299,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250724-wa0163__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250724-wa0163__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "love-band-bracelet",
+    "variants": [
+      {
+        "id": "78",
+        "name": "Love Band Bracelet",
+        "price": 299,
+        "priceWithTax": 299,
+        "sku": "LBB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "title": "Crescent Moon Stone Necklace",
+    "description": "Beautiful crescent moon stone necklace",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img-20250723-wa0417__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img-20250723-wa0417__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "crescent-moon-stone-necklace",
+    "variants": [
+      {
+        "id": "80",
+        "name": "Crescent Moon Stone Necklace",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "CMN",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "title": "Spiral Hoops 2",
+    "description": "Beautiful spiral hoops 2",
+    "price": 199,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/img_20250724_131319__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/img_20250724_131319__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "spiral-hoops-2",
+    "variants": [
+      {
+        "id": "89",
+        "name": "Spiral Hoops",
+        "price": 199,
+        "priceWithTax": 199,
+        "sku": "SH",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "title": "Evil Eye Bracelet",
+    "description": "Beautiful evil eye bracelet",
+    "price": 349,
+    "thumbnail": "https://youniqueindia.onrender.com/assets/dff6d583d1ae7228d26f7a96cc33fe5c__preview.jpg",
+    "images": [
+      "https://youniqueindia.onrender.com/assets/dff6d583d1ae7228d26f7a96cc33fe5c__preview.jpg"
+    ],
+    "category": "Category",
+    "rating": 4.5,
+    "stock": 10,
+    "brand": "Younique India",
+    "slug": "evil-eye-bracelet",
+    "variants": [
+      {
+        "id": "93",
+        "name": "Evil eye bracelet",
+        "price": 349,
+        "priceWithTax": 349,
+        "sku": "EEB",
+        "stockLevel": "LOW_STOCK"
+      }
+    ]
+  }
+]
+
+📂 Current Collections State:
+collections: [
+  {
+    "id": "2",
+    "name": "Necklaces",
+    "slug": "necklaces",
+    "description": "Browse our necklaces collection",
+    "featuredAsset": null,
+    "productVariants": {
+      "totalItems": 31
+    }
+  },
+  {
+    "id": "3",
+    "name": "Bracelets",
+    "slug": "bracelets",
+    "description": "Browse our bracelets collection",
+    "featuredAsset": null,
+    "productVariants": {
+      "totalItems": 25
+    }
+  },
+  {
+    "id": "4",
+    "name": "Earrings",
+    "slug": "earrings",
+    "description": "Browse our earrings collection",
+    "featuredAsset": null,
+    "productVariants": {
+      "totalItems": 13
+    }
+  },
+  {
+    "id": "5",
+    "name": "Rings",
+    "slug": "rings",
+    "description": "Browse our rings collection",
+    "featuredAsset": null,
+    "productVariants": {
+      "totalItems": 2
+    }
+  },
+  {
+    "id": "6",
+    "name": "Anklets",
+    "slug": "anklets",
+    "description": "Browse our anklets collection",
+    "featuredAsset": null,
+    "productVariants": {
+      "totalItems": 0
+    }
+  },
+  {
+    "id": "7",
+    "name": "Hair Accessories",
+    "slug": "hair-accessories",
+    "description": "Browse our hair accessories collection",
+    "featuredAsset": null,
+    "productVariants": {
+      "totalItems": 0
+    }
+  },
+  {
+    "id": "8",
+    "name": "Mens Jewellery",
+    "slug": "mens-jewellery",
+    "description": "Browse our mens jewellery collection",
+    "featuredAsset": null,
+    "productVariants": {
+      "totalItems": 1
+    }
+  },
+  {
+    "id": "9",
+    "name": "Gifts",
+    "slug": "gifts",
+    "description": "Browse our gifts collection",
+    "featuredAsset": null,
+    "productVariants": {
+      "totalItems": 0
+    }
+  }
+]
+
+🔌 API Data:
+apiProducts: []
+apiCollections: []
+loading: false
+error: null
+
+💾 Complete LocalStorage Dump:
+CONTENTFUL_MANAGEMENT_TOKEN: CFPAT-Eb2rK1Bvr8Q2QBuvBgMcIZj9NXiEjqW1YncGq2c7_zM
+mock_user: {"uid":"mock_1752940858322","email":"Adityamer.work@gmail.com","firstName":"Adityamer.work","lastName":"","createdAt":"2025-07-19T16:00:58.322Z","lastLoginAt":"2025-07-19T16:11:27.281Z"}
+CONTENTFUL_SPACE_ID: bmenxbsdeje1
+vendure_session: {"userId":"3","identifier":"adityamer.work@gmail.com","expiresAt":"2026-07-18T11:51:44.723Z","rememberMe":true}
+userEmail: aditya.mer@somaiya.edu
+cached_products: [{"id":"27","title":"Hexa Heart Necklace ","description":"Beautiful hexa heart necklace ","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/e8d341b7daf94c344dd8ac5191039f82__03__preview.jpg","images":["https://youniqueindia.onrender.com/assets/e8d341b7daf94c344dd8ac5191039f82__03__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"hexa-heart-necklace-","variants":[{"id":"27","name":"Hexa Heart Necklace ","price":349,"priceWithTax":349,"sku":"HN","stockLevel":"LOW_STOCK"}]},{"id":"28","title":"Tangled Heart Necklace","description":"Beautiful tangled heart necklace","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/401baa08de533947705e2ab79794b136__preview.jpg","images":["https://youniqueindia.onrender.com/assets/401baa08de533947705e2ab79794b136__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"tangled-heart-necklace","variants":[{"id":"28","name":"Tangled Heart necklace","price":349,"priceWithTax":349,"sku":"","stockLevel":"LOW_STOCK"}]},{"id":"30","title":"Baby Bow Necklace","description":"Beautiful baby bow necklace","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/whatsapp-image-2025-07-24-at-00.45.54_7a66e79e__preview.jpg","images":["https://youniqueindia.onrender.com/assets/whatsapp-image-2025-07-24-at-00.45.54_7a66e79e__preview.jpg"],"category":"Category","rating":4.5,"stock":0,"brand":"Younique India","slug":"baby-bow-necklace","variants":[{"id":"30","name":"Baby bow necklace","price":349,"priceWithTax":349,"sku":"BBN","stockLevel":"OUT_OF_STOCK"}]},{"id":"31","title":"Reversible Clover Necklace ","description":"Beautiful reversible clover necklace ","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/184507e188684c03edb8446b8dcab453__preview.jpg","images":["https://youniqueindia.onrender.com/assets/184507e188684c03edb8446b8dcab453__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"reversible-clover-necklace-","variants":[{"id":"31","name":"Reversible Clover Necklace ","price":349,"priceWithTax":349,"sku":"RCN","stockLevel":"LOW_STOCK"}]},{"id":"32","title":"Spiral Hoops","description":"Beautiful spiral hoops","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/51825289d0abf7c27b55b5c9b62e0093__preview.jpg","images":["https://youniqueindia.onrender.com/assets/51825289d0abf7c27b55b5c9b62e0093__preview.jpg"],"category":"Uncategorized","rating":4.5,"stock":10,"brand":"Younique India","slug":"spiral-hoops","variants":[{"id":"32","name":"Spiral Hoops","price":299,"priceWithTax":299,"sku":"","stockLevel":"LOW_STOCK"}]},{"id":"33","title":"Mini Bow Necklace","description":"Beautiful mini bow necklace","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/156a0330-0184-4eda-969e-f42f511f1687__preview.png","images":["https://youniqueindia.onrender.com/assets/156a0330-0184-4eda-969e-f42f511f1687__preview.png"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"mini-bow-necklace","variants":[{"id":"33","name":"Mini Bow Necklace","price":299,"priceWithTax":299,"sku":"MBN","stockLevel":"LOW_STOCK"}]},{"id":"34","title":"Bamboo Bracelet","description":"Beautiful bamboo bracelet","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/b718c49545eb3a0066dadfbb52215db2__preview.jpg","images":["https://youniqueindia.onrender.com/assets/b718c49545eb3a0066dadfbb52215db2__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"bamboo-bracelet","variants":[{"id":"34","name":"Bamboo Bracelet","price":349,"priceWithTax":349,"sku":"BB","stockLevel":"LOW_STOCK"}]},{"id":"35","title":"Knot Cuff Bracelet","description":"Beautiful knot cuff bracelet","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/59d3f19a6424a6785de21a9c5e73a974-1__preview.jpg","images":["https://youniqueindia.onrender.com/assets/59d3f19a6424a6785de21a9c5e73a974-1__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"knot-cuff-bracelet","variants":[{"id":"35","name":"Knot Cuff Bracelet","price":349,"priceWithTax":349,"sku":"KCB","stockLevel":"LOW_STOCK"}]},{"id":"36","title":"Rozel Necklace","description":"Beautiful rozel necklace","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/e19a0986ae5c8764a7e5a50e9e105f4b__preview.jpg","images":["https://youniqueindia.onrender.com/assets/e19a0986ae5c8764a7e5a50e9e105f4b__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"rozel-necklace","variants":[{"id":"36","name":"Rozel Necklace","price":349,"priceWithTax":349,"sku":"RN","stockLevel":"LOW_STOCK"}]},{"id":"37","title":"Rozel Gold","description":"Beautiful rozel gold","price":329,"thumbnail":"https://youniqueindia.onrender.com/assets/865c75162061c3a783b58ab887b83e76__preview.jpg","images":["https://youniqueindia.onrender.com/assets/865c75162061c3a783b58ab887b83e76__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"rozel-gold","variants":[{"id":"37","name":"Rozel Gold","price":329,"priceWithTax":329,"sku":"RGN","stockLevel":"LOW_STOCK"}]},{"id":"38","title":"Spiral Earrings","description":"Beautiful spiral earrings","price":279,"thumbnail":"https://youniqueindia.onrender.com/assets/file_000000000be461f8bd1573918feee48e__preview.png","images":["https://youniqueindia.onrender.com/assets/file_000000000be461f8bd1573918feee48e__preview.png"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"spiral-earrings","variants":[{"id":"38","name":"Spiral Earrings","price":279,"priceWithTax":279,"sku":"SE","stockLevel":"LOW_STOCK"}]},{"id":"40","title":"Puffy Hearts","description":"Beautiful puffy hearts","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/33024bf2e81e26ed8c0f8ecb50ddae9e__preview.jpg","images":["https://youniqueindia.onrender.com/assets/33024bf2e81e26ed8c0f8ecb50ddae9e__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"puffy-hearts","variants":[{"id":"40","name":"Puffy Hearts","price":319,"priceWithTax":319,"sku":"PHE","stockLevel":"LOW_STOCK"}]},{"id":"41","title":"Reversible Baby Heart Necklace","description":"Beautiful reversible baby heart necklace","price":329,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_105911__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_105911__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"reversible-baby-heart-necklace","variants":[{"id":"41","name":"Reversible Baby heart Necklace","price":329,"priceWithTax":329,"sku":"RBHN","stockLevel":"LOW_STOCK"}]},{"id":"42","title":"Sunny Necklace","description":"Beautiful sunny necklace","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_105921__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_105921__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"sunny-necklace","variants":[{"id":"42","name":"Sunny Necklace","price":349,"priceWithTax":349,"sku":"SN","stockLevel":"LOW_STOCK"}]},{"id":"43","title":"Diamor Necklace","description":"Beautiful diamor necklace","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_105859__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_105859__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"diamor-necklace","variants":[{"id":"43","name":"Diamor Necklace","price":319,"priceWithTax":319,"sku":"DN","stockLevel":"LOW_STOCK"}]},{"id":"44","title":"Bangle Bracelet","description":"Beautiful bangle bracelet","price":399,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250724-wa0126__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250724-wa0126__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"bangle-bracelet","variants":[{"id":"44","name":"Bangle Bracelet","price":399,"priceWithTax":399,"sku":"BB","stockLevel":"LOW_STOCK"}]},{"id":"45","title":"Wavy Bracelet","description":"Beautiful wavy bracelet","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250724-wa0127__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250724-wa0127__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"wavy-bracelet","variants":[{"id":"45","name":"Wavy Bracelet","price":349,"priceWithTax":349,"sku":"WB","stockLevel":"LOW_STOCK"}]},{"id":"48","title":"Aurelia Link Bracelet","description":"Beautiful aurelia link bracelet","price":365,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250724-wa0128__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250724-wa0128__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"aurelia-link-bracelet","variants":[{"id":"48","name":"Aurelia Link Bracelet","price":365,"priceWithTax":365,"sku":"ALB","stockLevel":"LOW_STOCK"}]},{"id":"49","title":"Daisy Necklace","description":"Beautiful daisy necklace","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250723-wa0444__02__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250723-wa0444__02__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"daisy-necklace","variants":[{"id":"49","name":"Daisy Necklace","price":319,"priceWithTax":319,"sku":"DN","stockLevel":"LOW_STOCK"}]},{"id":"50","title":"Hexa Heart Studs","description":"Beautiful hexa heart studs","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/f84375d3a4877b263ad6c130c7aa9e0d__preview.jpg","images":["https://youniqueindia.onrender.com/assets/f84375d3a4877b263ad6c130c7aa9e0d__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"hexa-heart-studs","variants":[{"id":"50","name":"Hexa Heart studs","price":299,"priceWithTax":299,"sku":"HHS","stockLevel":"LOW_STOCK"}]},{"id":"58","title":"Textured Square Earring","description":"Beautiful textured square earring","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/e6a6d45a853a66d1e42ea7e5affe1ba5__preview.jpg","images":["https://youniqueindia.onrender.com/assets/e6a6d45a853a66d1e42ea7e5affe1ba5__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"textured-square-earring","variants":[{"id":"58","name":"Textured Square Earring","price":319,"priceWithTax":319,"sku":"TSE","stockLevel":"LOW_STOCK"}]},{"id":"64","title":"Sunlette Studded Necklace","description":"Beautiful sunlette studded necklace","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_121151__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_121151__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"sunlette-studded-necklace","variants":[{"id":"64","name":"Sunlette studded Necklace","price":299,"priceWithTax":299,"sku":"SSN","stockLevel":"LOW_STOCK"}]},{"id":"70","title":"2in1 Magnetic Heart Necklace","description":"Beautiful 2in1 magnetic heart necklace","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_122600__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_122600__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"2in1-magnetic-heart-necklace","variants":[{"id":"70","name":"2in1 Magnetic Heart Necklace","price":349,"priceWithTax":349,"sku":"MHN","stockLevel":"LOW_STOCK"}]},{"id":"59","title":"Bow Tiful Earrings","description":"Beautiful bow tiful earrings","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/07f49b7b6c020f37bc2191e8471a4c43__preview.jpg","images":["https://youniqueindia.onrender.com/assets/07f49b7b6c020f37bc2191e8471a4c43__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"bow-tiful-earrings","variants":[{"id":"59","name":"Bow-tiful Earrings","price":319,"priceWithTax":319,"sku":"BHE","stockLevel":"LOW_STOCK"}]},{"id":"57","title":"Hearty Hoops","description":"Beautiful hearty hoops","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/a55147420e807de6d3c5ee97267d6e26__preview.jpg","images":["https://youniqueindia.onrender.com/assets/a55147420e807de6d3c5ee97267d6e26__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"hearty-hoops","variants":[{"id":"57","name":"Hearty Hoops","price":319,"priceWithTax":319,"sku":"HH","stockLevel":"LOW_STOCK"}]},{"id":"62","title":"Flora Mini Studs","description":"Beautiful flora mini studs","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/254cd98eecc9204e43e7fc0cb166f652__preview.jpg","images":["https://youniqueindia.onrender.com/assets/254cd98eecc9204e43e7fc0cb166f652__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"flora-mini-studs","variants":[{"id":"62","name":"Flora mini studs","price":299,"priceWithTax":299,"sku":"FMS","stockLevel":"LOW_STOCK"}]},{"id":"65","title":"Moonmist","description":"Beautiful moonmist","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_121435__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_121435__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"moonmist","variants":[{"id":"65","name":"Moonmist","price":299,"priceWithTax":299,"sku":"MMN","stockLevel":"LOW_STOCK"}]},{"id":"66","title":"Ribbon Bow Necklace","description":"Beautiful ribbon bow necklace","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_121454__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_121454__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"ribbon-bow-necklace","variants":[{"id":"66","name":"Ribbon Bow Necklace","price":319,"priceWithTax":319,"sku":"RBN","stockLevel":"LOW_STOCK"}]},{"id":"69","title":"Grace Flower Necklace","description":"Beautiful grace flower necklace","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_121902__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_121902__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"grace-flower-necklace","variants":[{"id":"69","name":"Grace Flower Necklace","price":299,"priceWithTax":299,"sku":"GFN","stockLevel":"LOW_STOCK"}]},{"id":"71","title":"Golden Squeeze","description":"Beautiful golden squeeze","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_122534__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_122534__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"golden-squeeze","variants":[{"id":"71","name":"Golden Squeeze","price":299,"priceWithTax":299,"sku":"THN","stockLevel":"LOW_STOCK"}]},{"id":"51","title":"1111 Manifest Necklace","description":"Beautiful 1111 manifest necklace","price":329,"thumbnail":"https://youniqueindia.onrender.com/assets/e90c00d06df21be899ad0c9098629181__preview.jpg","images":["https://youniqueindia.onrender.com/assets/e90c00d06df21be899ad0c9098629181__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"1111-manifest-necklace","variants":[{"id":"51","name":"11:11 Manifest Necklace","price":329,"priceWithTax":329,"sku":"MN","stockLevel":"LOW_STOCK"}]},{"id":"52","title":"1111 Heart Manifest Necklace","description":"Beautiful 1111 heart manifest necklace","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/a41195a631a69958d4590d3cc1c376ca__preview.jpg","images":["https://youniqueindia.onrender.com/assets/a41195a631a69958d4590d3cc1c376ca__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"1111-heart-manifest-necklace","variants":[{"id":"52","name":"11:11 Heart Manifest Necklace","price":319,"priceWithTax":319,"sku":"MHNz","stockLevel":"LOW_STOCK"}]},{"id":"60","title":"Rosy Necklace","description":"Beautiful rosy necklace","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/fa100ff55f3475cd31c982f7dd858d53__preview.jpg","images":["https://youniqueindia.onrender.com/assets/fa100ff55f3475cd31c982f7dd858d53__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"rosy-necklace","variants":[{"id":"60","name":"Rosy Necklace","price":299,"priceWithTax":299,"sku":"R","stockLevel":"LOW_STOCK"}]},{"id":"53","title":"Hearty Necklace","description":"Beautiful hearty necklace","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250627-wa0128__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250627-wa0128__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"hearty-necklace","variants":[{"id":"53","name":"Hearty Necklace","price":299,"priceWithTax":299,"sku":"HN","stockLevel":"LOW_STOCK"}]},{"id":"54","title":"Tennis Bracelet","description":"Beautiful tennis bracelet","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/9538606e00c41959f1e44b014ec37649__preview.jpg","images":["https://youniqueindia.onrender.com/assets/9538606e00c41959f1e44b014ec37649__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"tennis-bracelet","variants":[{"id":"54","name":"Tennis Bracelet","price":349,"priceWithTax":349,"sku":"TB","stockLevel":"LOW_STOCK"}]},{"id":"63","title":"Autumn Necklace","description":"Beautiful autumn necklace","price":279,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_120230__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_120230__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"autumn-necklace","variants":[{"id":"63","name":"Autumn Necklace","price":279,"priceWithTax":279,"sku":"AN","stockLevel":"LOW_STOCK"}]},{"id":"55","title":"Gold Clover Bracelet","description":"Beautiful gold clover bracelet","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/9cf9efc13116063a95a5f97fa86dca85__preview.jpg","images":["https://youniqueindia.onrender.com/assets/9cf9efc13116063a95a5f97fa86dca85__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"gold-clover-bracelet","variants":[{"id":"55","name":"Gold clover Bracelet","price":319,"priceWithTax":319,"sku":"GCB","stockLevel":"LOW_STOCK"}]},{"id":"56","title":"Reversible Clover Bracelet","description":"Beautiful reversible clover bracelet","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/c651be6b91279b90adb303da4180b40e__preview.jpg","images":["https://youniqueindia.onrender.com/assets/c651be6b91279b90adb303da4180b40e__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"reversible-clover-bracelet","variants":[{"id":"56","name":"Reversible Clover Bracelet","price":349,"priceWithTax":349,"sku":"RCB","stockLevel":"LOW_STOCK"}]},{"id":"67","title":"Teddy Bow Necklace","description":"Beautiful teddy bow necklace","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_121736__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_121736__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"teddy-bow-necklace","variants":[{"id":"67","name":"Teddy bow Necklace","price":299,"priceWithTax":299,"sku":"TBN","stockLevel":"LOW_STOCK"}]},{"id":"68","title":"Studded Teddy Necklace","description":"Beautiful studded teddy necklace","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_121841__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_121841__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"studded-teddy-necklace","variants":[{"id":"68","name":"Studded Teddy Necklace","price":299,"priceWithTax":299,"sku":"STN","stockLevel":"LOW_STOCK"}]},{"id":"74","title":"Green Stone Necklace","description":"Beautiful green stone necklace","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250724-wa0165__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250724-wa0165__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"green-stone-necklace","variants":[{"id":"74","name":"Green stone necklace","price":319,"priceWithTax":319,"sku":"GSN","stockLevel":"LOW_STOCK"}]},{"id":"79","title":"Silver Bracelet","description":"Beautiful silver bracelet","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250724-wa0161__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250724-wa0161__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"silver-bracelet","variants":[{"id":"79","name":"Silver Bracelet","price":299,"priceWithTax":299,"sku":"SK","stockLevel":"LOW_STOCK"}]},{"id":"81","title":"Cherry Necklace","description":"Beautiful cherry necklace","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250723-wa0403__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250723-wa0403__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"cherry-necklace","variants":[{"id":"81","name":"Cherry necklace","price":319,"priceWithTax":319,"sku":"CN","stockLevel":"LOW_STOCK"}]},{"id":"90","title":"Hampered Hoops","description":"Beautiful hampered hoops","price":199,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_131411__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_131411__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"hampered-hoops","variants":[{"id":"90","name":"Hampered Hoops","price":199,"priceWithTax":199,"sku":"HH","stockLevel":"LOW_STOCK"}]},{"id":"73","title":"Adore Mini Necklace","description":"Beautiful adore mini necklace","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250724-wa0159__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250724-wa0159__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"adore-mini-necklace","variants":[{"id":"73","name":"Adore mini Necklace","price":299,"priceWithTax":299,"sku":"AMN","stockLevel":"LOW_STOCK"}]},{"id":"76","title":"Star Kada Bracelet","description":"Beautiful star kada bracelet","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250724-wa0160__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250724-wa0160__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"star-kada-bracelet","variants":[{"id":"76","name":"Star kada Bracelet","price":299,"priceWithTax":299,"sku":"SKB","stockLevel":"LOW_STOCK"}]},{"id":"77","title":"Roman Bracelet","description":"Beautiful roman bracelet","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250724-wa0162__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250724-wa0162__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"roman-bracelet","variants":[{"id":"77","name":"Roman Bracelet","price":299,"priceWithTax":299,"sku":"RB","stockLevel":"LOW_STOCK"}]},{"id":"82","title":"Droplet Necklace","description":"Beautiful droplet necklace","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250723-wa0461__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250723-wa0461__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"droplet-necklace","variants":[{"id":"82","name":"Droplet Necklace","price":299,"priceWithTax":299,"sku":"DLN","stockLevel":"LOW_STOCK"}]},{"id":"83","title":"Moon Star Ring","description":"Beautiful moon star ring","price":229,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250723-wa0395__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250723-wa0395__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"moon-star-ring","variants":[{"id":"83","name":"Moon Star ring","price":229,"priceWithTax":229,"sku":"MSR","stockLevel":"LOW_STOCK"}]},{"id":"84","title":"Bang Ring Rose Gold Size 7 ","description":"Beautiful bang ring rose gold size 7 ","price":199,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250723-wa0388__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250723-wa0388__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"bang-ring-rose-gold-size-7-","variants":[{"id":"84","name":"Bang Ring - Rose Gold size 7 ","price":199,"priceWithTax":199,"sku":"RGR","stockLevel":"LOW_STOCK"}]},{"id":"85","title":"Aura Bracelet","description":"Beautiful aura bracelet","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250723-wa0405__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250723-wa0405__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"aura-bracelet","variants":[{"id":"85","name":"Aura Bracelet","price":299,"priceWithTax":299,"sku":"AK","stockLevel":"LOW_STOCK"}]},{"id":"86","title":"Bamboo Earrings","description":"Beautiful bamboo earrings","price":199,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_130556__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_130556__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"bamboo-earrings","variants":[{"id":"86","name":"Bamboo Earrings","price":199,"priceWithTax":199,"sku":"BH","stockLevel":"LOW_STOCK"}]},{"id":"87","title":"Round Hoops","description":"Beautiful round hoops","price":199,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_130620__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_130620__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"round-hoops","variants":[{"id":"87","name":"Round hoops","price":199,"priceWithTax":199,"sku":"RH","stockLevel":"LOW_STOCK"}]},{"id":"88","title":"White Gold Clover Bracelet","description":"Beautiful white gold clover bracelet","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_131021__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_131021__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"white-gold-clover-bracelet","variants":[{"id":"88","name":"White Gold Clover Bracelet","price":319,"priceWithTax":319,"sku":"WCB","stockLevel":"LOW_STOCK"}]},{"id":"92","title":"Italian Bracelet Vintage Gold","description":"Beautiful italian bracelet vintage gold","price":379,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250723-wa0387__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250723-wa0387__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"italian-bracelet-vintage-gold","variants":[{"id":"92","name":"Italian Bracelet - Vintage Gold","price":379,"priceWithTax":379,"sku":"IB","stockLevel":"LOW_STOCK"}]},{"id":"72","title":"Tangled Star Necklace","description":"Beautiful tangled star necklace","price":319,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250723-wa0352__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250723-wa0352__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"tangled-star-necklace","variants":[{"id":"72","name":"Tangled Star Necklace","price":319,"priceWithTax":319,"sku":"TS","stockLevel":"LOW_STOCK"}]},{"id":"78","title":"Love Band Bracelet","description":"Beautiful love band bracelet","price":299,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250724-wa0163__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250724-wa0163__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"love-band-bracelet","variants":[{"id":"78","name":"Love Band Bracelet","price":299,"priceWithTax":299,"sku":"LBB","stockLevel":"LOW_STOCK"}]},{"id":"80","title":"Crescent Moon Stone Necklace","description":"Beautiful crescent moon stone necklace","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/img-20250723-wa0417__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img-20250723-wa0417__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"crescent-moon-stone-necklace","variants":[{"id":"80","name":"Crescent Moon Stone Necklace","price":349,"priceWithTax":349,"sku":"CMN","stockLevel":"LOW_STOCK"}]},{"id":"89","title":"Spiral Hoops 2","description":"Beautiful spiral hoops 2","price":199,"thumbnail":"https://youniqueindia.onrender.com/assets/img_20250724_131319__preview.jpg","images":["https://youniqueindia.onrender.com/assets/img_20250724_131319__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"spiral-hoops-2","variants":[{"id":"89","name":"Spiral Hoops","price":199,"priceWithTax":199,"sku":"SH","stockLevel":"LOW_STOCK"}]},{"id":"93","title":"Evil Eye Bracelet","description":"Beautiful evil eye bracelet","price":349,"thumbnail":"https://youniqueindia.onrender.com/assets/dff6d583d1ae7228d26f7a96cc33fe5c__preview.jpg","images":["https://youniqueindia.onrender.com/assets/dff6d583d1ae7228d26f7a96cc33fe5c__preview.jpg"],"category":"Category","rating":4.5,"stock":10,"brand":"Younique India","slug":"evil-eye-bracelet","variants":[{"id":"93","name":"Evil eye bracelet","price":349,"priceWithTax":349,"sku":"EEB","stockLevel":"LOW_STOCK"}]}]
+homepage_config: {"heroProduct":"","featuredCategories":["5","9","3","2"],"featuredProducts":["2","1","3","5","7","20","22","26"]}
+younique-cache-products: {"data":["2","1","3","5","7","20","22","26"],"timestamp":1753281146351,"expiresAt":1753281746351}
+vendure_collections: {"data":[{"id":"2","name":"Necklaces","slug":"necklaces","description":"Browse our necklaces collection","featuredAsset":{"id":"26","preview":"https://youniqueindia.onrender.com/assets/preview\\48\\birthday-jewelry-box__preview.jpg","source":"https://youniqueindia.onrender.com/assets/source\\e5\\birthday-jewelry-box.jpg"}},{"id":"3","name":"Bracelets","slug":"bracelets","description":"Browse our bracelets collection","featuredAsset":null},{"id":"4","name":"Earrings","slug":"earrings","description":"Browse our earrings collection","featuredAsset":null},{"id":"5","name":"Rings","slug":"rings","description":"Browse our rings collection","featuredAsset":null},{"id":"6","name":"Anklets","slug":"anklets","description":"Browse our anklets collection","featuredAsset":null},{"id":"7","name":"Hair Accessories","slug":"hair-accessories","description":"Browse our hair accessories collection","featuredAsset":null},{"id":"8","name":"Mens Jewellery","slug":"mens-jewellery","description":"Browse our mens jewellery collection","featuredAsset":null},{"id":"9","name":"Gifts","slug":"gifts","description":"Browse our gifts collection","featuredAsset":null},{"id":"10","name":"Gold Jewelry","slug":"gold-jewelry","description":"Browse our gold jewelry collection","featuredAsset":null},{"id":"11","name":"Diamond Jewelry","slug":"diamond-jewelry","description":"Browse our diamond jewelry collection","featuredAsset":null}],"timestamp":1752840996769}
+younique-cache-category-filters: []
+vendure-last-update: 1752840816352
+CONTENTFUL_FALLBACK_CONTENT: {"e4ce9e30-7bdd-4116-b295-aee1a282ec34":{"title":"zfszsfz","description":"ssfzfzf","content":"","category":"blogs","slug":"zfszsfz","date":"2025-05-15","isFeatured":false,"isPinned":false,"id":"e4ce9e30-7bdd-4116-b295-aee1a282ec34"}}
+younique-cache-homepage-products: []
+documentationResult: {"textContent":"# Tailwind CSS and Autoprefixer Configuration Documentation\n\n## Academic Report\n\n### Abstract\n\nThis document provides an academic overview of the configuration file for Tailwind CSS and Autoprefixer, crucial tools in modern web development workflows. The configuration file, typically `postcss.config.js`, defines how these tools process CSS, enabling developers to leverage Tailwind's utility-first CSS framework and ensure cross-browser compatibility via Autoprefixer. This report details the structure of the configuration file, the purpose of each plugin, and the role it plays in creating responsive and maintainable user interfaces.  The document includes a basic architectural overview and highlights best practices for maintaining a well-configured development environment.\n\n### Introduction\n\nIn contemporary web development, frameworks like Tailwind CSS have gained significant traction by providing a utility-first approach to CSS styling. Coupled with Autoprefixer, which automatically adds vendor prefixes to CSS rules, developers can write cleaner and more cross-browser compatible code. The configuration file, specifically `postcss.config.js`, acts as the central control point for these tools. Its proper setup and understanding are essential for efficient web development workflows. This report outlines the structure and function of this configuration file.\n\nTailwind CSS allows developers to rapidly prototype and build user interfaces by composing pre-defined utility classes. Autoprefixer ensures that these styles work consistently across different browsers by automatically adding necessary vendor prefixes. Together, these tools streamline the development process and contribute to a better user experience.\n\n### Methodology\n\nThis report's methodology involves a close examination of the `postcss.config.js` file used to configure Tailwind CSS and Autoprefixer. The configuration file's structure is analyzed to identify the plugins used and their respective roles. The analysis includes:\n\n1.  **Code Examination:** Detailed review of the provided `postcss.config.js` file.\n2.  **Conceptual Understanding:** Research and definition of Tailwind CSS and Autoprefixer's functions and benefits.\n3.  **Workflow Analysis:** Understanding how Tailwind CSS and Autoprefixer integrate within a modern web development pipeline.\n4.  **Visual Representation:** Creating a visual representation of the relationship between the config file and the relevant tools.\n5.  **Best Practices Review:** Briefly outlining best practices for configuration file management.\n\nThe methodology is based on analyzing a representative configuration file. This approach is supplemented with documentation and practical knowledge of using these tools in web development projects.\n## Code Structure Diagram (Mermaid.js)\n\n```mermaid\ngraph TD\n    A[postcss.config.js] --> B(plugins);\n    B --> C{tailwindcss};\n    B --> D{autoprefixer};\n    C --> E[Utility-First CSS];\n    D --> F[Cross-Browser Compatibility];\n    E --> G(HTML/JSX/etc.);\n    F --> G;\n    G --> H[Rendered Webpage];\n```\n\n**Explanation:**\n\nThis diagram illustrates the flow of CSS processing using `postcss.config.js`.\n\n1.  `postcss.config.js`: The central configuration file.\n2.  `plugins`:  The key containing the plugins array.\n3.  `tailwindcss`:  The Tailwind CSS plugin that handles the conversion of utility classes into CSS.\n4.  `autoprefixer`: The Autoprefixer plugin that adds vendor prefixes for cross-browser compatibility.\n5.  `Utility-First CSS`: The core concept of Tailwind CSS, using pre-defined utility classes.\n6.  `Cross-Browser Compatibility`: The objective achieved by Autoprefixer, ensuring consistent rendering across browsers.\n7.  `HTML/JSX/etc.`: The front-end files using Tailwind CSS classes.\n8.  `Rendered Webpage`:  The final output viewed in the browser.\n\n## Configuration File Details\n\nThe `postcss.config.js` file is a standard JavaScript file used to configure PostCSS plugins.  PostCSS is a tool for transforming CSS with JS plugins. Tailwind CSS and Autoprefixer are PostCSS plugins.\n\n**Code Snippet:**\n\n```javascript\nexport default {\n  plugins: {\n    tailwindcss: {},\n    autoprefixer: {},\n  },\n}\n```\n\n**Explanation:**\n\n*   `export default`: This makes the configuration object available for PostCSS to use.\n*   `plugins`:  This object contains the list of PostCSS plugins to be used.\n*   `tailwindcss: {}`: This line includes the Tailwind CSS plugin. The empty object `{}` represents the default configuration for Tailwind CSS.  More complex Tailwind CSS configurations can be specified here.\n*   `autoprefixer: {}`: This line includes the Autoprefixer plugin.  Similarly, the empty object `{}` means Autoprefixer is using its default configuration.  More customized configurations (e.g., target browsers) can be set here.\n\n## Functionality of Tailwind CSS\n\nTailwind CSS is a utility-first CSS framework. It provides a set of pre-defined CSS classes that can be used to style HTML elements directly. This approach promotes rapid development and maintainability.\n\n**Example:**\n\n```html\n<button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">\n  Click me\n</button>\n```\n\nIn this example, the classes `bg-blue-500`, `hover:bg-blue-700`, `text-white`, `font-bold`, `py-2`, `px-4`, and `rounded` are Tailwind CSS utility classes that define the button's background color, hover effect, text color, font weight, padding, and border radius, respectively.\n\n## Functionality of Autoprefixer\n\nAutoprefixer is a PostCSS plugin that automatically adds vendor prefixes to CSS rules based on browser support. Vendor prefixes are used to implement new CSS features in browsers before they are standardized. Autoprefixer ensures that CSS code works correctly across different browsers by adding the necessary prefixes.\n\n**Example:**\n\nWithout Autoprefixer:\n\n```css\ndisplay: flex;\n```\n\nWith Autoprefixer:\n\n```css\ndisplay: -webkit-box;\ndisplay: -webkit-flex;\ndisplay: -ms-flexbox;\ndisplay: flex;\n```\n\nAutoprefixer automatically adds the necessary prefixes (`-webkit-`, `-ms-`) to ensure compatibility with older browsers.\n\n## Configuration Best Practices\n\n*   **Customizing Tailwind CSS:** For more complex projects, it's recommended to create a `tailwind.config.js` file to customize Tailwind CSS, including defining custom themes, colors, and breakpoints.\n*   **Specifying Browser Support:**  Autoprefixer's browser support can be configured using the `browserslist` key in the `package.json` file or a separate `.browserslistrc` file. This allows developers to target specific browser versions and ensure optimal compatibility.\n*   **Keeping Dependencies Updated:** Regularly update Tailwind CSS and Autoprefixer to benefit from the latest features and bug fixes.  Use `npm update` or `yarn upgrade`.\n*   **Using a CSS Linter:**  Integrate a CSS linter, such as Stylelint, to enforce code style and identify potential errors.\n*   **Optimization:** Explore PostCSS optimization plugins for tasks like CSS minification and dead code elimination.\n\n## Conclusion\n\nThe `postcss.config.js` file is a critical component in modern web development workflows that utilize Tailwind CSS and Autoprefixer. Understanding the structure and purpose of this configuration file enables developers to effectively leverage these tools, resulting in cleaner, more maintainable, and cross-browser compatible code. Proper configuration and adherence to best practices contribute to a more efficient and productive development experience.\n","visualContent":""}
+showSearchHistory: false
+younique-cache-stats: {"products":{"hits":0,"misses":1},"collections":{"hits":0,"misses":1},"filters":{"hits":3,"misses":0,"filterCount":0}}
+apiKey_google: AIzaSyA1a_NLDxtXT6f13HqtrsOp70AGJV9XviA
+all_collections_cache: {"data":[{"id":"2","name":"Necklaces","slug":"necklaces","description":"Browse our necklaces collection","featuredAsset":{"id":"26","preview":"https://youniqueindia.onrender.com/assets/preview\\48\\birthday-jewelry-box__preview.jpg","source":"https://youniqueindia.onrender.com/assets/source\\e5\\birthday-jewelry-box.jpg"}},{"id":"3","name":"Bracelets","slug":"bracelets","description":"Browse our bracelets collection","featuredAsset":null},{"id":"4","name":"Earrings","slug":"earrings","description":"Browse our earrings collection","featuredAsset":null},{"id":"5","name":"Rings","slug":"rings","description":"Browse our rings collection","featuredAsset":null},{"id":"6","name":"Anklets","slug":"anklets","description":"Browse our anklets collection","featuredAsset":null},{"id":"7","name":"Hair Accessories","slug":"hair-accessories","description":"Browse our hair accessories collection","featuredAsset":null},{"id":"8","name":"Mens Jewellery","slug":"mens-jewellery","description":"Browse our mens jewellery collection","featuredAsset":null},{"id":"9","name":"Gifts","slug":"gifts","description":"Browse our gifts collection","featuredAsset":null},{"id":"10","name":"Gold Jewelry","slug":"gold-jewelry","description":"Browse our gold jewelry collection","featuredAsset":null},{"id":"11","name":"Diamond Jewelry","slug":"diamond-jewelry","description":"Browse our diamond jewelry collection","featuredAsset":null}],"timestamp":1752845732504}
+homepage-config: {"heroProductId":"30","featuredProductIds":["27","28","29","31","32","33"]}
+vendure-collections: {"data":[{"id":"2","name":"Necklaces","slug":"necklaces","description":"Browse our necklaces collection","featuredAsset":{"id":"26","preview":"https://youniqueindia.onrender.com/assets/preview\\48\\birthday-jewelry-box__preview.jpg","source":"https://youniqueindia.onrender.com/assets/source\\e5\\birthday-jewelry-box.jpg"}},{"id":"3","name":"Bracelets","slug":"bracelets","description":"Browse our bracelets collection","featuredAsset":null},{"id":"4","name":"Earrings","slug":"earrings","description":"Browse our earrings collection","featuredAsset":null},{"id":"5","name":"Rings","slug":"rings","description":"Browse our rings collection","featuredAsset":null},{"id":"6","name":"Anklets","slug":"anklets","description":"Browse our anklets collection","featuredAsset":null},{"id":"7","name":"Hair Accessories","slug":"hair-accessories","description":"Browse our hair accessories collection","featuredAsset":null},{"id":"8","name":"Mens Jewellery","slug":"mens-jewellery","description":"Browse our mens jewellery collection","featuredAsset":null},{"id":"9","name":"Gifts","slug":"gifts","description":"Browse our gifts collection","featuredAsset":null},{"id":"10","name":"Gold Jewelry","slug":"gold-jewelry","description":"Browse our gold jewelry collection","featuredAsset":null},{"id":"11","name":"Diamond Jewelry","slug":"diamond-jewelry","description":"Browse our diamond jewelry collection","featuredAsset":null}],"timestamp":1752840816352}
+local_cart: []
+vite-ui-theme: dark
+younique-cache-collections: {"data":[{"id":"2","name":"Necklaces","slug":"necklaces","description":"Browse our necklaces collection","featuredAsset":null,"productVariants":{"totalItems":4}},{"id":"3","name":"Bracelets","slug":"bracelets","description":"Browse our bracelets collection","featuredAsset":null,"productVariants":{"totalItems":3}},{"id":"4","name":"Earrings","slug":"earrings","description":"Browse our earrings collection","featuredAsset":null,"productVariants":{"totalItems":4}},{"id":"5","name":"Rings","slug":"rings","description":"Browse our rings collection","featuredAsset":null,"productVariants":{"totalItems":3}},{"id":"6","name":"Anklets","slug":"anklets","description":"Browse our anklets collection","featuredAsset":null,"productVariants":{"totalItems":3}},{"id":"7","name":"Hair Accessories","slug":"hair-accessories","description":"Browse our hair accessories collection","featuredAsset":null,"productVariants":{"totalItems":3}},{"id":"8","name":"Mens Jewellery","slug":"mens-jewellery","description":"Browse our mens jewellery collection","featuredAsset":null,"productVariants":{"totalItems":3}},{"id":"9","name":"Gifts","slug":"gifts","description":"Browse our gifts collection","featuredAsset":null,"productVariants":{"totalItems":3}},{"id":"10","name":"Gold Jewelry","slug":"gold-jewelry","description":"Browse our gold jewelry collection","featuredAsset":null,"productVariants":{"totalItems":16}},{"id":"11","name":"Diamond Jewelry","slug":"diamond-jewelry","description":"Browse our diamond jewelry collection","featuredAsset":null,"productVariants":{"totalItems":4}}],"timestamp":1753281151906,"expiresAt":1753281751906}
+vendure_products: {"data":[{"id":"1","title":"Classic Gold Diamond Ring","description":"Beautiful classic gold diamond ring","price":88500,"thumbnail":"https://youniqueindia.onrender.com/assets/classic-gold-diamond-ring__preview.jpg","images":["https://youniqueindia.onrender.com/assets/classic-gold-diamond-ring__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"classic-gold-diamond-ring","variants":[{"id":"1","name":"Classic Gold Diamond Ring","price":75000,"priceWithTax":88500,"sku":"GDR001","stockLevel":"IN_STOCK"}]},{"id":"2","title":"Traditional Gold Wedding Ring Set","description":"Beautiful traditional gold wedding ring set","price":53100,"thumbnail":"https://youniqueindia.onrender.com/assets/traditional-gold-wedding-ring-set__preview.jpg","images":["https://youniqueindia.onrender.com/assets/traditional-gold-wedding-ring-set__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"traditional-gold-wedding-ring-set","variants":[{"id":"2","name":"Traditional Gold Wedding Ring Set","price":45000,"priceWithTax":53100,"sku":"GWR001","stockLevel":"IN_STOCK"}]},{"id":"3","title":"Silver Statement Ring","description":"Beautiful silver statement ring","price":21240,"thumbnail":"https://youniqueindia.onrender.com/assets/silver-statement-ring__preview.jpg","images":["https://youniqueindia.onrender.com/assets/silver-statement-ring__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"silver-statement-ring","variants":[{"id":"3","name":"Silver Statement Ring","price":18000,"priceWithTax":21240,"sku":"SSR001","stockLevel":"IN_STOCK"}]},{"id":"4","title":"Elegant Silver Ruby Necklace","description":"Beautiful elegant silver ruby necklace","price":41300,"thumbnail":"https://youniqueindia.onrender.com/assets/elegant-silver-ruby-necklace__preview.jpg","images":["https://youniqueindia.onrender.com/assets/elegant-silver-ruby-necklace__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"elegant-silver-ruby-necklace","variants":[{"id":"4","name":"Elegant Silver Ruby Necklace","price":35000,"priceWithTax":41300,"sku":"SRN001","stockLevel":"IN_STOCK"}]},{"id":"5","title":"Gold Pendant Necklace","description":"Beautiful gold pendant necklace","price":33040,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-pendant-necklace__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-pendant-necklace__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-pendant-necklace","variants":[{"id":"5","name":"Gold Pendant Necklace","price":28000,"priceWithTax":33040,"sku":"GPN001","stockLevel":"IN_STOCK"}]},{"id":"6","title":"Diamond Tennis Necklace","description":"Beautiful diamond tennis necklace","price":177000,"thumbnail":"https://youniqueindia.onrender.com/assets/diamond-tennis-necklace__preview.jpg","images":["https://youniqueindia.onrender.com/assets/diamond-tennis-necklace__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"diamond-tennis-necklace","variants":[{"id":"6","name":"Diamond Tennis Necklace","price":150000,"priceWithTax":177000,"sku":"DTN001","stockLevel":"IN_STOCK"}]},{"id":"7","title":"Traditional Gold Chain","description":"Beautiful traditional gold chain","price":37760,"thumbnail":"https://youniqueindia.onrender.com/assets/traditional-gold-chain__preview.jpg","images":["https://youniqueindia.onrender.com/assets/traditional-gold-chain__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"traditional-gold-chain","variants":[{"id":"7","name":"Traditional Gold Chain","price":32000,"priceWithTax":37760,"sku":"TGC001","stockLevel":"IN_STOCK"}]},{"id":"8","title":"Platinum Emerald Earrings","description":"Beautiful platinum emerald earrings","price":147500,"thumbnail":"https://youniqueindia.onrender.com/assets/platinum-emerald-earrings__preview.jpg","images":["https://youniqueindia.onrender.com/assets/platinum-emerald-earrings__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"platinum-emerald-earrings","variants":[{"id":"8","name":"Platinum Emerald Earrings","price":125000,"priceWithTax":147500,"sku":"PEE001","stockLevel":"IN_STOCK"}]},{"id":"9","title":"Silver Diamond Stud Earrings","description":"Beautiful silver diamond stud earrings","price":29500,"thumbnail":"https://youniqueindia.onrender.com/assets/silver-diamond-stud-earrings__preview.jpg","images":["https://youniqueindia.onrender.com/assets/silver-diamond-stud-earrings__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"silver-diamond-stud-earrings","variants":[{"id":"9","name":"Silver Diamond Stud Earrings","price":25000,"priceWithTax":29500,"sku":"SDE001","stockLevel":"IN_STOCK"}]},{"id":"10","title":"Gold Hoop Earrings","description":"Beautiful gold hoop earrings","price":17700,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-hoop-earrings__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-hoop-earrings__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-hoop-earrings","variants":[{"id":"10","name":"Gold Hoop Earrings","price":15000,"priceWithTax":17700,"sku":"GHE001","stockLevel":"IN_STOCK"}]},{"id":"11","title":"Traditional Jhumka Earrings","description":"Beautiful traditional jhumka earrings","price":25960,"thumbnail":"https://youniqueindia.onrender.com/assets/traditional-jhumka-earrings__preview.jpg","images":["https://youniqueindia.onrender.com/assets/traditional-jhumka-earrings__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"traditional-jhumka-earrings","variants":[{"id":"11","name":"Traditional Jhumka Earrings","price":22000,"priceWithTax":25960,"sku":"TJE001","stockLevel":"IN_STOCK"}]},{"id":"12","title":"Gold Sapphire Tennis Bracelet","description":"Beautiful gold sapphire tennis bracelet","price":100300,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-sapphire-tennis-bracelet__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-sapphire-tennis-bracelet__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-sapphire-tennis-bracelet","variants":[{"id":"12","name":"Gold Sapphire Tennis Bracelet","price":85000,"priceWithTax":100300,"sku":"GSB001","stockLevel":"IN_STOCK"}]},{"id":"13","title":"Silver Charm Bracelet","description":"Beautiful silver charm bracelet","price":21240,"thumbnail":"https://youniqueindia.onrender.com/assets/silver-charm-bracelet__preview.jpg","images":["https://youniqueindia.onrender.com/assets/silver-charm-bracelet__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"silver-charm-bracelet","variants":[{"id":"13","name":"Silver Charm Bracelet","price":18000,"priceWithTax":21240,"sku":"SCB001","stockLevel":"IN_STOCK"}]},{"id":"14","title":"Gold Kada Bracelet","description":"Beautiful gold kada bracelet","price":53100,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-kada-bracelet__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-kada-bracelet__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-kada-bracelet","variants":[{"id":"14","name":"Gold Kada Bracelet","price":45000,"priceWithTax":53100,"sku":"GKB001","stockLevel":"IN_STOCK"}]},{"id":"15","title":"Silver Anklet Chain","description":"Beautiful silver anklet chain","price":14160,"thumbnail":"https://youniqueindia.onrender.com/assets/silver-anklet-chain__preview.jpg","images":["https://youniqueindia.onrender.com/assets/silver-anklet-chain__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"silver-anklet-chain","variants":[{"id":"15","name":"Silver Anklet Chain","price":12000,"priceWithTax":14160,"sku":"SAC001","stockLevel":"IN_STOCK"}]},{"id":"16","title":"Gold Payal Anklet","description":"Beautiful gold payal anklet","price":33040,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-payal-anklet__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-payal-anklet__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-payal-anklet","variants":[{"id":"16","name":"Gold Payal Anklet","price":28000,"priceWithTax":33040,"sku":"GPA001","stockLevel":"IN_STOCK"}]},{"id":"17","title":"Beaded Anklet","description":"Beautiful beaded anklet","price":9440,"thumbnail":"https://youniqueindia.onrender.com/assets/beaded-anklet__preview.jpg","images":["https://youniqueindia.onrender.com/assets/beaded-anklet__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"beaded-anklet","variants":[{"id":"17","name":"Beaded Anklet","price":8000,"priceWithTax":9440,"sku":"BA001","stockLevel":"IN_STOCK"}]},{"id":"18","title":"Gold Hair Pin Set","description":"Beautiful gold hair pin set","price":17700,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-hair-pin-set__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-hair-pin-set__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-hair-pin-set","variants":[{"id":"18","name":"Gold Hair Pin Set","price":15000,"priceWithTax":17700,"sku":"GHPS001","stockLevel":"IN_STOCK"}]},{"id":"19","title":"Pearl Hair Comb","description":"Beautiful pearl hair comb","price":14160,"thumbnail":"https://youniqueindia.onrender.com/assets/pearl-hair-comb__preview.jpg","images":["https://youniqueindia.onrender.com/assets/pearl-hair-comb__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"pearl-hair-comb","variants":[{"id":"19","name":"Pearl Hair Comb","price":12000,"priceWithTax":14160,"sku":"PHC001","stockLevel":"IN_STOCK"}]},{"id":"20","title":"Traditional Maang Tikka","description":"Beautiful traditional maang tikka","price":41300,"thumbnail":"https://youniqueindia.onrender.com/assets/traditional-maang-tikka__preview.jpg","images":["https://youniqueindia.onrender.com/assets/traditional-maang-tikka__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"traditional-maang-tikka","variants":[{"id":"20","name":"Traditional Maang Tikka","price":35000,"priceWithTax":41300,"sku":"TMT001","stockLevel":"IN_STOCK"}]},{"id":"21","title":"Gold Chain For Men","description":"Beautiful gold chain for men","price":56640,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-chain-for-men__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-chain-for-men__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-chain-for-men","variants":[{"id":"21","name":"Gold Chain for Men","price":48000,"priceWithTax":56640,"sku":"GCM001","stockLevel":"IN_STOCK"}]},{"id":"22","title":"Silver Bracelet For Men","description":"Beautiful silver bracelet for men","price":25960,"thumbnail":"https://youniqueindia.onrender.com/assets/silver-bracelet-for-men__preview.jpg","images":["https://youniqueindia.onrender.com/assets/silver-bracelet-for-men__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"silver-bracelet-for-men","variants":[{"id":"22","name":"Silver Bracelet for Men","price":22000,"priceWithTax":25960,"sku":"SBM001","stockLevel":"IN_STOCK"}]},{"id":"23","title":"Mens Gold Ring","description":"Beautiful mens gold ring","price":44840,"thumbnail":"https://youniqueindia.onrender.com/assets/mens-gold-ring__preview.jpg","images":["https://youniqueindia.onrender.com/assets/mens-gold-ring__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"mens-gold-ring","variants":[{"id":"23","name":"Mens Gold Ring","price":38000,"priceWithTax":44840,"sku":"MGR001","stockLevel":"IN_STOCK"}]},{"id":"24","title":"Gift Set Pearl Earrings Necklace","description":"Beautiful gift set pearl earrings necklace","price":49560,"thumbnail":"https://youniqueindia.onrender.com/assets/gift-set-pearl-earrings-necklace__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gift-set-pearl-earrings-necklace__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gift-set-pearl-earrings-necklace","variants":[{"id":"24","name":"Gift Set - Pearl Earrings & Necklace","price":42000,"priceWithTax":49560,"sku":"GS001","stockLevel":"IN_STOCK"}]},{"id":"25","title":"Anniversary Ring Set","description":"Beautiful anniversary ring set","price":112100,"thumbnail":"https://youniqueindia.onrender.com/assets/anniversary-ring-set__preview.jpg","images":["https://youniqueindia.onrender.com/assets/anniversary-ring-set__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"anniversary-ring-set","variants":[{"id":"25","name":"Anniversary Ring Set","price":95000,"priceWithTax":112100,"sku":"ARS001","stockLevel":"IN_STOCK"}]},{"id":"26","title":"Birthday Jewelry Box","description":"Beautiful birthday jewelry box","price":68440,"thumbnail":"https://youniqueindia.onrender.com/assets/birthday-jewelry-box__preview.jpg","images":["https://youniqueindia.onrender.com/assets/birthday-jewelry-box__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"birthday-jewelry-box","variants":[{"id":"26","name":"Birthday Jewelry Box","price":58000,"priceWithTax":68440,"sku":"BJB001","stockLevel":"IN_STOCK"}]}],"timestamp":1752844216413}
+younique-cart: []
+cookie_consent: true
+all_products_cache: {"data":[{"id":"1","title":"Classic Gold Diamond Ring","description":"Beautiful classic gold diamond ring","price":88500,"thumbnail":"https://youniqueindia.onrender.com/assets/classic-gold-diamond-ring__preview.jpg","images":["https://youniqueindia.onrender.com/assets/classic-gold-diamond-ring__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"classic-gold-diamond-ring","variants":[{"id":"1","name":"Classic Gold Diamond Ring","price":75000,"priceWithTax":88500,"sku":"GDR001","stockLevel":"IN_STOCK"}]},{"id":"2","title":"Traditional Gold Wedding Ring Set","description":"Beautiful traditional gold wedding ring set","price":53100,"thumbnail":"https://youniqueindia.onrender.com/assets/traditional-gold-wedding-ring-set__preview.jpg","images":["https://youniqueindia.onrender.com/assets/traditional-gold-wedding-ring-set__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"traditional-gold-wedding-ring-set","variants":[{"id":"2","name":"Traditional Gold Wedding Ring Set","price":45000,"priceWithTax":53100,"sku":"GWR001","stockLevel":"IN_STOCK"}]},{"id":"3","title":"Silver Statement Ring","description":"Beautiful silver statement ring","price":21240,"thumbnail":"https://youniqueindia.onrender.com/assets/silver-statement-ring__preview.jpg","images":["https://youniqueindia.onrender.com/assets/silver-statement-ring__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"silver-statement-ring","variants":[{"id":"3","name":"Silver Statement Ring","price":18000,"priceWithTax":21240,"sku":"SSR001","stockLevel":"IN_STOCK"}]},{"id":"4","title":"Elegant Silver Ruby Necklace","description":"Beautiful elegant silver ruby necklace","price":41300,"thumbnail":"https://youniqueindia.onrender.com/assets/elegant-silver-ruby-necklace__preview.jpg","images":["https://youniqueindia.onrender.com/assets/elegant-silver-ruby-necklace__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"elegant-silver-ruby-necklace","variants":[{"id":"4","name":"Elegant Silver Ruby Necklace","price":35000,"priceWithTax":41300,"sku":"SRN001","stockLevel":"IN_STOCK"}]},{"id":"5","title":"Gold Pendant Necklace","description":"Beautiful gold pendant necklace","price":33040,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-pendant-necklace__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-pendant-necklace__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-pendant-necklace","variants":[{"id":"5","name":"Gold Pendant Necklace","price":28000,"priceWithTax":33040,"sku":"GPN001","stockLevel":"IN_STOCK"}]},{"id":"6","title":"Diamond Tennis Necklace","description":"Beautiful diamond tennis necklace","price":177000,"thumbnail":"https://youniqueindia.onrender.com/assets/diamond-tennis-necklace__preview.jpg","images":["https://youniqueindia.onrender.com/assets/diamond-tennis-necklace__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"diamond-tennis-necklace","variants":[{"id":"6","name":"Diamond Tennis Necklace","price":150000,"priceWithTax":177000,"sku":"DTN001","stockLevel":"IN_STOCK"}]},{"id":"7","title":"Traditional Gold Chain","description":"Beautiful traditional gold chain","price":37760,"thumbnail":"https://youniqueindia.onrender.com/assets/traditional-gold-chain__preview.jpg","images":["https://youniqueindia.onrender.com/assets/traditional-gold-chain__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"traditional-gold-chain","variants":[{"id":"7","name":"Traditional Gold Chain","price":32000,"priceWithTax":37760,"sku":"TGC001","stockLevel":"IN_STOCK"}]},{"id":"8","title":"Platinum Emerald Earrings","description":"Beautiful platinum emerald earrings","price":147500,"thumbnail":"https://youniqueindia.onrender.com/assets/platinum-emerald-earrings__preview.jpg","images":["https://youniqueindia.onrender.com/assets/platinum-emerald-earrings__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"platinum-emerald-earrings","variants":[{"id":"8","name":"Platinum Emerald Earrings","price":125000,"priceWithTax":147500,"sku":"PEE001","stockLevel":"IN_STOCK"}]},{"id":"9","title":"Silver Diamond Stud Earrings","description":"Beautiful silver diamond stud earrings","price":29500,"thumbnail":"https://youniqueindia.onrender.com/assets/silver-diamond-stud-earrings__preview.jpg","images":["https://youniqueindia.onrender.com/assets/silver-diamond-stud-earrings__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"silver-diamond-stud-earrings","variants":[{"id":"9","name":"Silver Diamond Stud Earrings","price":25000,"priceWithTax":29500,"sku":"SDE001","stockLevel":"IN_STOCK"}]},{"id":"10","title":"Gold Hoop Earrings","description":"Beautiful gold hoop earrings","price":17700,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-hoop-earrings__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-hoop-earrings__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-hoop-earrings","variants":[{"id":"10","name":"Gold Hoop Earrings","price":15000,"priceWithTax":17700,"sku":"GHE001","stockLevel":"IN_STOCK"}]},{"id":"11","title":"Traditional Jhumka Earrings","description":"Beautiful traditional jhumka earrings","price":25960,"thumbnail":"https://youniqueindia.onrender.com/assets/traditional-jhumka-earrings__preview.jpg","images":["https://youniqueindia.onrender.com/assets/traditional-jhumka-earrings__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"traditional-jhumka-earrings","variants":[{"id":"11","name":"Traditional Jhumka Earrings","price":22000,"priceWithTax":25960,"sku":"TJE001","stockLevel":"IN_STOCK"}]},{"id":"12","title":"Gold Sapphire Tennis Bracelet","description":"Beautiful gold sapphire tennis bracelet","price":100300,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-sapphire-tennis-bracelet__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-sapphire-tennis-bracelet__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-sapphire-tennis-bracelet","variants":[{"id":"12","name":"Gold Sapphire Tennis Bracelet","price":85000,"priceWithTax":100300,"sku":"GSB001","stockLevel":"IN_STOCK"}]},{"id":"13","title":"Silver Charm Bracelet","description":"Beautiful silver charm bracelet","price":21240,"thumbnail":"https://youniqueindia.onrender.com/assets/silver-charm-bracelet__preview.jpg","images":["https://youniqueindia.onrender.com/assets/silver-charm-bracelet__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"silver-charm-bracelet","variants":[{"id":"13","name":"Silver Charm Bracelet","price":18000,"priceWithTax":21240,"sku":"SCB001","stockLevel":"IN_STOCK"}]},{"id":"14","title":"Gold Kada Bracelet","description":"Beautiful gold kada bracelet","price":53100,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-kada-bracelet__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-kada-bracelet__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-kada-bracelet","variants":[{"id":"14","name":"Gold Kada Bracelet","price":45000,"priceWithTax":53100,"sku":"GKB001","stockLevel":"IN_STOCK"}]},{"id":"15","title":"Silver Anklet Chain","description":"Beautiful silver anklet chain","price":14160,"thumbnail":"https://youniqueindia.onrender.com/assets/silver-anklet-chain__preview.jpg","images":["https://youniqueindia.onrender.com/assets/silver-anklet-chain__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"silver-anklet-chain","variants":[{"id":"15","name":"Silver Anklet Chain","price":12000,"priceWithTax":14160,"sku":"SAC001","stockLevel":"IN_STOCK"}]},{"id":"16","title":"Gold Payal Anklet","description":"Beautiful gold payal anklet","price":33040,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-payal-anklet__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-payal-anklet__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-payal-anklet","variants":[{"id":"16","name":"Gold Payal Anklet","price":28000,"priceWithTax":33040,"sku":"GPA001","stockLevel":"IN_STOCK"}]},{"id":"17","title":"Beaded Anklet","description":"Beautiful beaded anklet","price":9440,"thumbnail":"https://youniqueindia.onrender.com/assets/beaded-anklet__preview.jpg","images":["https://youniqueindia.onrender.com/assets/beaded-anklet__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"beaded-anklet","variants":[{"id":"17","name":"Beaded Anklet","price":8000,"priceWithTax":9440,"sku":"BA001","stockLevel":"IN_STOCK"}]},{"id":"18","title":"Gold Hair Pin Set","description":"Beautiful gold hair pin set","price":17700,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-hair-pin-set__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-hair-pin-set__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-hair-pin-set","variants":[{"id":"18","name":"Gold Hair Pin Set","price":15000,"priceWithTax":17700,"sku":"GHPS001","stockLevel":"IN_STOCK"}]},{"id":"19","title":"Pearl Hair Comb","description":"Beautiful pearl hair comb","price":14160,"thumbnail":"https://youniqueindia.onrender.com/assets/pearl-hair-comb__preview.jpg","images":["https://youniqueindia.onrender.com/assets/pearl-hair-comb__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"pearl-hair-comb","variants":[{"id":"19","name":"Pearl Hair Comb","price":12000,"priceWithTax":14160,"sku":"PHC001","stockLevel":"IN_STOCK"}]},{"id":"20","title":"Traditional Maang Tikka","description":"Beautiful traditional maang tikka","price":41300,"thumbnail":"https://youniqueindia.onrender.com/assets/traditional-maang-tikka__preview.jpg","images":["https://youniqueindia.onrender.com/assets/traditional-maang-tikka__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"traditional-maang-tikka","variants":[{"id":"20","name":"Traditional Maang Tikka","price":35000,"priceWithTax":41300,"sku":"TMT001","stockLevel":"IN_STOCK"}]},{"id":"21","title":"Gold Chain For Men","description":"Beautiful gold chain for men","price":56640,"thumbnail":"https://youniqueindia.onrender.com/assets/gold-chain-for-men__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gold-chain-for-men__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gold-chain-for-men","variants":[{"id":"21","name":"Gold Chain for Men","price":48000,"priceWithTax":56640,"sku":"GCM001","stockLevel":"IN_STOCK"}]},{"id":"22","title":"Silver Bracelet For Men","description":"Beautiful silver bracelet for men","price":25960,"thumbnail":"https://youniqueindia.onrender.com/assets/silver-bracelet-for-men__preview.jpg","images":["https://youniqueindia.onrender.com/assets/silver-bracelet-for-men__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"silver-bracelet-for-men","variants":[{"id":"22","name":"Silver Bracelet for Men","price":22000,"priceWithTax":25960,"sku":"SBM001","stockLevel":"IN_STOCK"}]},{"id":"23","title":"Mens Gold Ring","description":"Beautiful mens gold ring","price":44840,"thumbnail":"https://youniqueindia.onrender.com/assets/mens-gold-ring__preview.jpg","images":["https://youniqueindia.onrender.com/assets/mens-gold-ring__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"mens-gold-ring","variants":[{"id":"23","name":"Mens Gold Ring","price":38000,"priceWithTax":44840,"sku":"MGR001","stockLevel":"IN_STOCK"}]},{"id":"24","title":"Gift Set Pearl Earrings Necklace","description":"Beautiful gift set pearl earrings necklace","price":49560,"thumbnail":"https://youniqueindia.onrender.com/assets/gift-set-pearl-earrings-necklace__preview.jpg","images":["https://youniqueindia.onrender.com/assets/gift-set-pearl-earrings-necklace__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"gift-set-pearl-earrings-necklace","variants":[{"id":"24","name":"Gift Set - Pearl Earrings & Necklace","price":42000,"priceWithTax":49560,"sku":"GS001","stockLevel":"IN_STOCK"}]},{"id":"25","title":"Anniversary Ring Set","description":"Beautiful anniversary ring set","price":112100,"thumbnail":"https://youniqueindia.onrender.com/assets/anniversary-ring-set__preview.jpg","images":["https://youniqueindia.onrender.com/assets/anniversary-ring-set__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"anniversary-ring-set","variants":[{"id":"25","name":"Anniversary Ring Set","price":95000,"priceWithTax":112100,"sku":"ARS001","stockLevel":"IN_STOCK"}]},{"id":"26","title":"Birthday Jewelry Box","description":"Beautiful birthday jewelry box","price":68440,"thumbnail":"https://youniqueindia.onrender.com/assets/birthday-jewelry-box__preview.jpg","images":["https://youniqueindia.onrender.com/assets/birthday-jewelry-box__preview.jpg"],"category":"Material","rating":4.5,"stock":0,"brand":"Younique India","slug":"birthday-jewelry-box","variants":[{"id":"26","name":"Birthday Jewelry Box","price":58000,"priceWithTax":68440,"sku":"BJB001","stockLevel":"IN_STOCK"}]}],"timestamp":1752845732504}
+CONTENTFUL_ACCESS_TOKEN: xdv2U7lI3zYMf7VfVDdH68ZAs6onXyWgSflMZ8Q7ObU
+admin_session: {"username":"YouniqueAdmin","userId":"env-admin-1","identifier":"YouniqueAdmin","loggedInAt":"2025-07-25T08:31:31.245Z","expiresAt":"2025-07-26T08:31:31.245Z"}
+isAdminLoggedIn: true
+cached_collections: [{"id":"2","name":"Necklaces","slug":"necklaces","description":"Browse our necklaces collection","featuredAsset":null,"productVariants":{"totalItems":31}},{"id":"3","name":"Bracelets","slug":"bracelets","description":"Browse our bracelets collection","featuredAsset":null,"productVariants":{"totalItems":25}},{"id":"4","name":"Earrings","slug":"earrings","description":"Browse our earrings collection","featuredAsset":null,"productVariants":{"totalItems":13}},{"id":"5","name":"Rings","slug":"rings","description":"Browse our rings collection","featuredAsset":null,"productVariants":{"totalItems":2}},{"id":"6","name":"Anklets","slug":"anklets","description":"Browse our anklets collection","featuredAsset":null,"productVariants":{"totalItems":0}},{"id":"7","name":"Hair Accessories","slug":"hair-accessories","description":"Browse our hair accessories collection","featuredAsset":null,"productVariants":{"totalItems":0}},{"id":"8","name":"Mens Jewellery","slug":"mens-jewellery","description":"Browse our mens jewellery collection","featuredAsset":null,"productVariants":{"totalItems":1}},{"id":"9","name":"Gifts","slug":"gifts","description":"Browse our gifts collection","featuredAsset":null,"productVariants":{"totalItems":0}}]
+
+🔄 Complete SessionStorage Dump:
+
+🔗 URL and Parameters:
+Full URL: http://localhost:8080/shop
+Search params: {}
+Selected collection: All
+Sort by: featured
+Search term: 
+
+🌍 Environment Variables:
+VITE_VENDURE_API_URL: https://youniqueindia.onrender.com/shop-api
+NODE_ENV: undefined
+MODE: development
+DEV: true
+PROD: false
+
+=================================================
+🔚 END OF MANUAL EXPORT
+=================================================

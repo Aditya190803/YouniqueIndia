@@ -10,8 +10,8 @@
     "start:server": "node ./dist/index.js",
     "start:worker": "node ./dist/index-worker.js",
     "start": "concurrently npm:start:*",
-    "clean-db": "ts-node ./src/scripts/clean-database.ts",
-    "seed-db": "ts-node ./src/scripts/seed-jewelry-final.ts"
+    "setup": "ts-node ./src/scripts/1-setup-vendure.ts",
+    "seed": "ts-node ./src/scripts/2-seed-products.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.848.0",
