@@ -51,6 +51,14 @@ export const config: VendureConfig = {
             adminApiDebug: true,
             shopApiDebug: true,
         } : {}),
+        middleware: [
+            {
+                handler: (app: any) => {
+                    app.set('trust proxy', true);
+                },
+                route: '/',
+            },
+        ],
     },
     // Language configuration - essential for proper Product.languageCode handling
     defaultLanguageCode: LanguageCode.en,
@@ -184,9 +192,6 @@ export const config: VendureConfig = {
             limitEmailToStock: true,
         }),
     ],
-    configureExpress: (app) => {
-        app.set('trust proxy', true);
-    },
 };
 
 export { config as vendureConfig };
