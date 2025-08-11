@@ -184,6 +184,9 @@ export const config: VendureConfig = {
             limitEmailToStock: true,
         }),
     ],
+    configureExpress: (app) => {
+        app.set('trust proxy', true);
+    },
 };
 
 export { config as vendureConfig };
