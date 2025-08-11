@@ -9,15 +9,15 @@ import {
     DefaultAssetNamingStrategy,
 } from '@vendure/core';
 import { defaultEmailHandlers, EmailPlugin, FileBasedTemplateLoader } from '@vendure/email-plugin';
-import { AssetServerPlugin, configureS3AssetStorage } from '@vendure/asset-server-plugin';
+import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
 import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
 import 'dotenv/config';
 import path from 'path';
-import { fromEnv } from '@aws-sdk/credential-providers';
-import { MultiServerDbSessionCachePlugin } from '@pinelab/vendure-plugin-multiserver-db-sessioncache';
+// Cloudinary storage strategy
+import { configureCloudinaryAssetStorage } from './plugins/cloudinary/cloudinary-asset-storage-strategy';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
@@ -33,6 +33,7 @@ export const config: VendureConfig = {
             origin: [
                 'http://localhost:8080',
                 'http://localhost:3000',
+                'http://localhost:3001',
                 'https://younique-storefront.vercel.app',
                 'https://youniqueindia.onrender.com',
                 'https://youniqueindia.onrender.com:443',
@@ -131,12 +132,12 @@ export const config: VendureConfig = {
             // Use a proper temporary directory for asset uploads (S3 handles actual storage)
             assetUploadDir: '/tmp/assets',
             namingStrategy: new DefaultAssetNamingStrategy(),
-            storageStrategyFactory: configureS3AssetStorage({
-                bucket: process.env.AWS_S3_BUCKET!,
-                credentials: fromEnv(),
-                nativeS3Configuration: {
-                    region: process.env.AWS_REGION,
-                },
+            storageStrategyFactory: configureCloudinaryAssetStorage({
+                cloudName: process.env.CLOUDINARY_CLOUD_NAME!,
+                apiKey: process.env.CLOUDINARY_API_KEY!,
+                apiSecret: process.env.CLOUDINARY_API_SECRET!,
+                folder: process.env.CLOUDINARY_FOLDER,
+                secure: true,
             }),
         }),
         DefaultSchedulerPlugin.init(),

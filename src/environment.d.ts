@@ -22,6 +22,10 @@ declare global {
             AWS_SECRET_ACCESS_KEY?: string;
             AWS_REGION?: string;
             AWS_S3_BUCKET?: string;
+            CLOUDINARY_CLOUD_NAME?: string;
+            CLOUDINARY_API_KEY?: string;
+            CLOUDINARY_API_SECRET?: string;
+            CLOUDINARY_FOLDER?: string;
             SMTP_HOST?: string;
             SMTP_PORT?: string;
             SMTP_USER?: string;
