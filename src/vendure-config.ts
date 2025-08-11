@@ -53,8 +53,11 @@ export const config: VendureConfig = {
         } : {}),
         middleware: [
             {
-                handler: (app: any) => {
-                    app.set('trust proxy', true);
+                // Ensure Express trusts the proxy (needed on platforms like Render/Heroku)
+                handler: (req: any, res: any, next: any) => {
+                    // Access the Express app via req.app
+                    req.app?.set?.('trust proxy', true);
+                    next();
                 },
                 route: '/',
             },
