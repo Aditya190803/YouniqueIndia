@@ -76,44 +76,24 @@ async function setupBasicData() {
                 }
             });
             
-            console.log('💳 Setting up payment methods...');
-            
-            // Create dummy payment method (since Razorpay plugin might not be properly configured)
+            console.log('💳 Setting up Razorpay payment method...');
             await paymentMethodService.create(ctx, {
-                code: 'online-payment',
+                code: 'razorpay',
                 translations: [
                     {
                         languageCode: LanguageCode.en,
-                        name: 'Online Payment',
-                        description: 'Pay online securely (UPI, Cards, Net Banking, Wallets)'
+                        name: 'Razorpay',
+                        description: 'Pay with Razorpay (UPI, Cards, Net Banking, Wallets)'
                     }
                 ],
                 handler: {
-                    code: 'dummy-payment-handler',
+                    code: 'razorpay',
                     arguments: [
-                        { name: 'automaticSettle', value: 'false' }
+                        { name: 'razorpayKeyId', value: process.env.key_id || '' },
+                        { name: 'razorpayKeySecret', value: process.env.key_secret || '' },
                     ]
                 },
-                enabled: true
-            });
-            
-            // Create Cash on Delivery for India
-            await paymentMethodService.create(ctx, {
-                code: 'cash-on-delivery',
-                translations: [
-                    {
-                        languageCode: LanguageCode.en,
-                        name: 'Cash on Delivery',
-                        description: 'Pay when your order is delivered'
-                    }
-                ],
-                handler: {
-                    code: 'dummy-payment-handler',
-                    arguments: [
-                        { name: 'automaticSettle', value: 'false' }
-                    ]
-                },
-                enabled: true
+                enabled: true,
             });
             
             console.log('💱 Setting up INR currency...');

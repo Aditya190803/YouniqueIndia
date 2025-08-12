@@ -1,5 +1,4 @@
 import {
-    dummyPaymentHandler,
     DefaultJobQueuePlugin,
     DefaultSchedulerPlugin,
     DefaultSearchPlugin,
@@ -9,15 +8,19 @@ import {
     DefaultAssetNamingStrategy,
 } from '@vendure/core';
 import { defaultEmailHandlers, EmailPlugin, FileBasedTemplateLoader } from '@vendure/email-plugin';
+import { StellatePlugin, defaultPurgeRules } from '@vendure/stellate-plugin';
+import { ResendEmailSender } from './config/resend-email-sender';
+import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
-import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
+// ...existing code...
 import 'dotenv/config';
 import path from 'path';
 // Cloudinary storage strategy
 import { configureCloudinaryAssetStorage } from './plugins/cloudinary/cloudinary-asset-storage-strategy';
+import { RazorpayPaymentHandler } from './plugins/razorpay/razorpay-payment.handler';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
@@ -119,7 +122,7 @@ export const config: VendureConfig = {
         ),
     },
     paymentOptions: {
-        paymentMethodHandlers: [dummyPaymentHandler],
+        paymentMethodHandlers: [RazorpayPaymentHandler],
     },
 
     // Custom fields for Firebase authentication
@@ -154,10 +157,24 @@ export const config: VendureConfig = {
         DefaultSchedulerPlugin.init(),
         DefaultJobQueuePlugin.init({ useDatabaseForBuffer: true }),
         DefaultSearchPlugin.init({ bufferUpdates: false, indexStockStatus: true }),
+        // Optional GraphQL edge cache integration via Stellate
+        ...(process.env.STELLATE_SERVICE_NAME && process.env.STELLATE_PURGE_API_TOKEN
+            ? [
+                StellatePlugin.init({
+                    serviceName: process.env.STELLATE_SERVICE_NAME!,
+                    apiToken: process.env.STELLATE_PURGE_API_TOKEN!,
+                    devMode: process.env.APP_ENV !== 'prod' || process.env.STELLATE_DEBUG_MODE === 'true',
+                    debugLogging: process.env.STELLATE_DEBUG_MODE === 'true',
+                    purgeRules: [
+                        ...defaultPurgeRules,
+                        // Add custom PurgeRules here if you cache custom types in Stellate config
+                    ],
+                }),
+            ]
+            : []),
         EmailPlugin.init({
-            devMode: true,
+            ...(IS_DEV ? { devMode: true as const, route: 'mailbox' } : {}),
             outputPath: path.join(__dirname, '../static/email/test-emails'),
-            route: 'mailbox',
             handlers: defaultEmailHandlers,
             templateLoader: new FileBasedTemplateLoader(path.join(__dirname, '../static/email/templates')),
             globalTemplateVars: {
@@ -167,15 +184,9 @@ export const config: VendureConfig = {
                 passwordResetUrl: process.env.PASSWORD_RESET_URL || 'http://localhost:8080/password-reset',
                 changeEmailAddressUrl: process.env.CHANGE_EMAIL_URL || 'http://localhost:8080/verify-email-address-change'
             },
-            transport: {
-                type: 'smtp',
-                host: process.env.SMTP_HOST,
-                port: Number(process.env.SMTP_PORT),
-                auth: {
-                    user: process.env.SMTP_USER,
-                    pass: process.env.SMTP_PASS,
-                },
-            },
+            // Use custom EmailSender with Resend API (no SMTP)
+            transport: { type: 'none' },
+            emailSender: new ResendEmailSender(process.env.RESEND_API_KEY || ''),
         }),
         AdminUiPlugin.init({
             route: 'admin',
@@ -185,8 +196,6 @@ export const config: VendureConfig = {
                 apiPort: IS_PRODUCTION ? 443 : serverPort,
                 adminApiPath: 'admin-api',
                 tokenMethod: 'bearer',
-                // Remove loginUrl to use default native authentication
-                // loginUrl: '/social-auth/login',
             },
         }),
 

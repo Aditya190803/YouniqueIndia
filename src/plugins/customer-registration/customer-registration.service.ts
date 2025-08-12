@@ -5,14 +5,12 @@ export interface CustomerRegistrationData {
     emailAddress: string;
     firstName: string;
     lastName: string;
-    googleId?: string;
 }
 
 /**
  * Customer Registration Service
  * 
- * This service handles customer registration with support for Google ID storage.
- * It can be used to create customers with Google authentication data during manual registration.
+ * This service handles customer registration.
  */
 @Injectable()
 export class CustomerRegistrationService {
@@ -22,9 +20,9 @@ export class CustomerRegistrationService {
     ) {}
 
     /**
-     * Create a new customer with optional Google ID
+     * Create a new customer
      */
-    async createCustomerWithGoogleId(
+    async createCustomer(
         ctx: RequestContext,
         data: CustomerRegistrationData,
     ): Promise<Customer | null> {
@@ -39,7 +37,7 @@ export class CustomerRegistrationService {
 
                 // Check if creation was successful
                 if ('id' in result) {
-                    console.log(`Customer registration: Created customer ${data.emailAddress}${data.googleId ? ` with Google ID ${data.googleId}` : ''}`);
+                    console.log(`Customer registration: Created customer ${data.emailAddress}`);
                     return result;
                 } else {
                     console.error('Customer registration: Failed to create customer', result);
@@ -52,76 +50,9 @@ export class CustomerRegistrationService {
         }
     }
 
-    /**
-     * Update an existing customer with Google ID
-     */
-    async updateCustomerWithGoogleId(
-        ctx: RequestContext,
-        customerId: string,
-        googleId: string,
-    ): Promise<Customer | null> {
-        try {
-            return this.connection.withTransaction(async (transactionCtx) => {
-                const customer = await this.customerService.findOne(transactionCtx, customerId);
-                if (!customer) {
-                    throw new Error(`Customer with ID ${customerId} not found`);
-                }
+    // ...existing code...
 
-                // Update customer with Google ID
-                const result = await this.customerService.update(transactionCtx, {
-                    id: customerId,
-                    customFields: {
-                        googleId,
-                    },
-                });
+    // ...existing code...
 
-                if ('id' in result) {
-                    console.log(`Customer registration: Updated customer ${customer.emailAddress} with Google ID ${googleId}`);
-                    return result;
-                } else {
-                    console.error('Customer registration: Failed to update customer', result);
-                    return null;
-                }
-            });
-        } catch (error) {
-            console.error('Customer registration: Error updating customer', error);
-            return null;
-        }
-    }
-
-    /**
-     * Check if a customer already has a Google ID
-     */
-    async hasGoogleId(ctx: RequestContext, customerId: string): Promise<boolean> {
-        try {
-            const customer = await this.customerService.findOne(ctx, customerId);
-            const customFields = customer?.customFields as any;
-            return customFields?.googleId ? true : false;
-        } catch (error) {
-            console.error('Customer registration: Error checking Google ID', error);
-            return false;
-        }
-    }
-
-    /**
-     * Get customer by Google ID
-     */
-    async findByGoogleId(ctx: RequestContext, googleId: string): Promise<Customer | null> {
-        try {
-            const customers = await this.customerService.findAll(ctx, {
-                take: 100, // Get more customers to search through
-            });
-
-            // Filter by Google ID manually since the filter might not work
-            const customerWithGoogleId = customers.items.find(customer => {
-                const customFields = customer.customFields as any;
-                return customFields?.googleId === googleId;
-            });
-
-            return customerWithGoogleId || null;
-        } catch (error) {
-            console.error('Customer registration: Error finding customer by Google ID', error);
-            return null;
-        }
-    }
+    // ...existing code...
 } 
