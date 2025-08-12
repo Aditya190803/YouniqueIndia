@@ -14,7 +14,6 @@ import { GoogleAuthenticationStrategy } from './plugins/authentication/google-au
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
-import { BackInStockPlugin } from '@callit-today/vendure-plugin-back-in-stock';
 // ...existing code...
 import 'dotenv/config';
 import path from 'path';
@@ -188,7 +187,7 @@ export const config: VendureConfig = {
             transport: { type: 'none' },
             emailSender: new ResendEmailSender(process.env.RESEND_API_KEY || ''),
         }),
-        AdminUiPlugin.init({
+    AdminUiPlugin.init({
             route: 'admin',
             port: serverPort,
             adminUiConfig: {
@@ -197,11 +196,6 @@ export const config: VendureConfig = {
                 adminApiPath: 'admin-api',
                 tokenMethod: 'bearer',
             },
-        }),
-
-        BackInStockPlugin.init({
-            enableEmail: true,
-            limitEmailToStock: true,
         }),
     ],
 };

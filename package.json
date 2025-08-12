@@ -18,8 +18,6 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.864.0",
-    "@callit-today/vendure-plugin-back-in-stock": "^2.0.2",
-    "@glarus-labs/vendure-social-auth": "^0.1.1",
     "@pinelab/vendure-plugin-facet-suggestions": "^1.3.0",
     "@pinelab/vendure-plugin-multiserver-db-sessioncache": "^1.4.0",
     "@types/nodemailer": "^6.4.17",
@@ -40,6 +38,15 @@
     "pg": "8.16.2",
     "prompt-sync": "^4.2.0",
     "resend": "^6.0.1"
+  },
+  "overrides": {
+    "multer": "2.0.2",
+    "qs": "6.14.0",
+    "xml2js": "0.6.2",
+    "on-headers": "1.1.0",
+    "send": "1.2.0",
+  "serve-static": "2.2.0",
+  "form-data": "4.0.4"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",

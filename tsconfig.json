@@ -21,7 +21,10 @@
     "src/plugins/**/dashboard/*",
     "admin-ui",
     "vite.*.*ts",
-    "src/scripts/WhatsAppPaymentComponent.tsx"
+  "**/*.spec.ts",
+  "**/*.test.ts",
+  "src/**/__tests__/**",
+  "jest.config.js"
   ],
   "ts-node": {
     "files": true
