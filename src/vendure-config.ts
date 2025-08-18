@@ -6,11 +6,11 @@ import {
     NativeAuthenticationStrategy,
     LanguageCode,
     DefaultAssetNamingStrategy,
+    manualFulfillmentHandler,
 } from '@vendure/core';
 import { defaultEmailHandlers, EmailPlugin, FileBasedTemplateLoader } from '@vendure/email-plugin';
 import { StellatePlugin, defaultPurgeRules } from '@vendure/stellate-plugin';
 import { ResendEmailSender } from './config/resend-email-sender';
-import { GoogleAuthenticationStrategy } from './plugins/authentication/google-authentication-strategy';
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
@@ -20,6 +20,9 @@ import path from 'path';
 // Cloudinary storage strategy
 import { configureCloudinaryAssetStorage } from './plugins/cloudinary/cloudinary-asset-storage-strategy';
 import { RazorpayPaymentHandler } from './plugins/razorpay/razorpay-payment.handler';
+import { RazorpayPlugin } from './plugins/razorpay/razorpay.plugin';
+import { indiaShippingEligibilityChecker } from './plugins/shipping/india-shipping-eligibility';
+import { alwaysFreeShippingEligibilityChecker } from './plugins/shipping/always-free-shipping-checker';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
@@ -57,8 +60,10 @@ export const config: VendureConfig = {
             {
                 // Ensure Express trusts the proxy (needed on platforms like Render/Heroku)
                 handler: (req: any, res: any, next: any) => {
-                    // Access the Express app via req.app
-                    req.app?.set?.('trust proxy', true);
+                    const trustProxy = process.env.TRUST_PROXY_SETTING;
+                    if (trustProxy) {
+                        req.app?.set?.('trust proxy', trustProxy);
+                    }
                     next();
                 },
                 route: '/',
@@ -83,7 +88,6 @@ export const config: VendureConfig = {
         // Shop API authentication strategies (for customers)
         shopAuthenticationStrategy: [
             new NativeAuthenticationStrategy(),
-            new GoogleAuthenticationStrategy(),
         ],
         // Require verification for new customer accounts
         requireVerification: false,
@@ -123,6 +127,10 @@ export const config: VendureConfig = {
     paymentOptions: {
         paymentMethodHandlers: [RazorpayPaymentHandler],
     },
+    shippingOptions: {
+        shippingEligibilityCheckers: [alwaysFreeShippingEligibilityChecker, indiaShippingEligibilityChecker],
+        fulfillmentHandlers: [manualFulfillmentHandler],
+    },
 
     // Custom fields for Firebase authentication
     customFields: {
@@ -139,6 +147,7 @@ export const config: VendureConfig = {
         ],
     },
     plugins: [
+        RazorpayPlugin,
         GraphiqlPlugin.init(),
         AssetServerPlugin.init({
             route: 'assets',
@@ -149,7 +158,7 @@ export const config: VendureConfig = {
                 cloudName: process.env.CLOUDINARY_CLOUD_NAME!,
                 apiKey: process.env.CLOUDINARY_API_KEY!,
                 apiSecret: process.env.CLOUDINARY_API_SECRET!,
-                folder: process.env.CLOUDINARY_FOLDER,
+                folder: process.env.CLOUDINARY_FOLDER || 'vendure',
                 secure: true,
             }),
         }),

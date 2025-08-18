@@ -4,6 +4,14 @@ import path from 'path';
 
 const isDev = process.env.APP_ENV === 'dev';
 
+// Use only TS sources during development (ts-node scripts) to avoid loading stale compiled JS
+// which can reference removed dependencies (e.g., deleted auth strategies). In production (NODE_ENV=production),
+// rely on compiled JS in dist.
+const isProd = process.env.NODE_ENV === 'production';
+// Narrow entity glob to only model/entity files to prevent recursive scanning loops
+const entityGlobs = isProd ? ['dist/**/!(*.spec).js'] : ['src/**/*.{entity,model}.ts'];
+const migrationGlobs = isProd ? ['dist/migrations/*.{js}'] : ['src/migrations/*.{ts,js}'];
+
 const AppDataSource = new DataSource({
     type: 'postgres',
     host: process.env.DB_HOST,
@@ -14,9 +22,9 @@ const AppDataSource = new DataSource({
     schema: process.env.DB_SCHEMA || 'public',
     ssl: process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : false,
     synchronize: false,
-    logging: isDev,
-    entities: ['src/**/*.ts', 'dist/**/*.js'],
-    migrations: ['src/migrations/*.{ts,js}', 'dist/migrations/*.{ts,js}'],
+    logging: false,
+    entities: entityGlobs,
+    migrations: migrationGlobs,
 });
 
 export default AppDataSource; 
