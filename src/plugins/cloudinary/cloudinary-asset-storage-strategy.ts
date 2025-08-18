@@ -28,6 +28,8 @@ class CloudinaryAssetStorageStrategy implements AssetStorageStrategy {
   private readonly apiSecret: string;
   private readonly rootFolder: string;
   private readonly secure: boolean;
+  // Cache recently uploaded buffers to avoid immediate fetch 404s due to Cloudinary eventual consistency
+  private uploadCache = new Map<string, Buffer>();
 
   constructor(config: CloudinaryConfig) {
     this.cloudName = config.cloudName;
@@ -56,7 +58,7 @@ class CloudinaryAssetStorageStrategy implements AssetStorageStrategy {
           public_id: publicId,
           resource_type: resourceType,
           overwrite: true,
-          folder: undefined, // public_id already contains folder path
+          folder: undefined, // public_id already contains any folder path
         },
         (error, result) => {
           if (error || !result) return reject(error);
@@ -65,12 +67,26 @@ class CloudinaryAssetStorageStrategy implements AssetStorageStrategy {
       );
       Readable.from(data).pipe(uploadStream);
     });
+    // Cache the buffer for immediate reads (avoids 404 from eventual consistency)
+    const identifier = this.normalizeIdentifier(fileName);
+    this.uploadCache.set(identifier, data);
+    // Clean cache after 30 seconds
+    setTimeout(() => this.uploadCache.delete(identifier), 30000);
     // Return identifier matching input (folder + filename)
-    return this.normalizeIdentifier(fileName);
-  }
-
-  async writeFileFromStream(fileName: string, data: Readable): Promise<string> {
+    return identifier;
+  }  async writeFileFromStream(fileName: string, data: Readable): Promise<string> {
     const { publicId, resourceType } = this.toPublicIdAndResourceType(fileName);
+    
+    // Convert stream to buffer for caching
+    const chunks: Buffer[] = [];
+    const bufferPromise = new Promise<Buffer>((resolve, reject) => {
+      data.on('data', (chunk) => chunks.push(chunk));
+      data.on('end', () => resolve(Buffer.concat(chunks)));
+      data.on('error', reject);
+    });
+    
+    const buffer = await bufferPromise;
+    
     await new Promise<UploadApiResponse>((resolve, reject) => {
       const uploadStream = cloudinary.uploader.upload_stream(
         {
@@ -84,19 +100,58 @@ class CloudinaryAssetStorageStrategy implements AssetStorageStrategy {
           resolve(result);
         },
       );
-      data.pipe(uploadStream);
+      Readable.from(buffer).pipe(uploadStream);
     });
-    return this.normalizeIdentifier(fileName);
+    
+    // Cache the buffer for immediate reads
+    const identifier = this.normalizeIdentifier(fileName);
+    this.uploadCache.set(identifier, buffer);
+    setTimeout(() => this.uploadCache.delete(identifier), 30000);
+    
+    return identifier;
   }
 
   async readFileToBuffer(identifier: string): Promise<Buffer> {
-    const url = this.buildDeliveryUrl(identifier);
-    const res = await fetch(url);
-    if (!res.ok) {
-      throw new Error(`Cloudinary fetch failed (${res.status}) for ${url}`);
+    // Check cache first (for recently uploaded files)
+    const cached = this.uploadCache.get(identifier);
+    if (cached) {
+      // eslint-disable-next-line no-console
+      console.log(`🎯 Using cached buffer for ${identifier}`);
+      return cached;
     }
-    const arrayBuffer = await res.arrayBuffer();
-    return Buffer.from(arrayBuffer);
+    
+    const url = this.buildDeliveryUrl(identifier);
+    const attempts = 6; // give Cloudinary a bit more time before failing (approx 4.2s total)
+    let lastStatus = 0;
+    let lastError: any;
+    for (let i = 1; i <= attempts; i++) {
+      try {
+        const res = await fetch(url);
+        lastStatus = res.status;
+        if (res.ok) {
+          const arrayBuffer = await res.arrayBuffer();
+          // eslint-disable-next-line no-console
+          if (i > 1) console.log(`🔁 Cloudinary fetch succeeded attempt ${i} for ${identifier}`);
+          return Buffer.from(arrayBuffer);
+        }
+        if (res.status === 404) {
+          // eslint-disable-next-line no-console
+          console.warn(`⏳ Cloudinary 404 (attempt ${i}/${attempts}) for ${identifier} - retrying`);
+          await new Promise(r => setTimeout(r, i * 300));
+          continue;
+        }
+        // Other status codes -> abort retries
+        throw new Error(`Unexpected status ${res.status}`);
+      } catch (e: any) {
+        lastError = e;
+        await new Promise(r => setTimeout(r, i * 300));
+      }
+    }
+    // After retries, throw so asset pipeline fails visibly instead of producing placeholder images.
+    const msg = `Cloudinary fetch failed after ${attempts} attempts for ${identifier} (last status ${lastStatus}) ${lastError ? '- ' + lastError.message : ''}`;
+    // eslint-disable-next-line no-console
+    console.error('❌', msg, '\nURL:', url);
+    throw new Error(msg);
   }
 
   async readFileToStream(identifier: string): Promise<Readable> {
@@ -142,9 +197,10 @@ class CloudinaryAssetStorageStrategy implements AssetStorageStrategy {
     const normalized = this.normalizeIdentifier(identifier);
     // normalized like: cache/abc.jpg or foo/bar.png
     const ext = path.extname(normalized).replace(/^\./, '');
-    const publicId = this.joinWithRoot(path.join(path.dirname(normalized), path.basename(normalized, path.extname(normalized))));
+  const withoutExt = path.join(path.dirname(normalized), path.basename(normalized, path.extname(normalized)));
+  const publicId = this.joinWithRoot(withoutExt);
     const resourceType = this.getResourceTypeFromExtension(ext);
-    return cloudinary.url(publicId, {
+  return cloudinary.url(publicId, {
       secure: this.secure,
       resource_type: resourceType,
       type: 'upload',
@@ -170,7 +226,7 @@ class CloudinaryAssetStorageStrategy implements AssetStorageStrategy {
   }
 
   private normalizeIdentifier(identifier: string): string {
-    return identifier.replace(/^\/+/, '').replace(/\\/g, '/');
+  return identifier.replace(/^\/+/, '').replace(/\\/g, '/').replace(/imagee\//, 'image/');
   }
 
   private joinWithRoot(p: string): string {
