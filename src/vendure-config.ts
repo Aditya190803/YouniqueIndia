@@ -16,6 +16,14 @@ import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 // ...existing code...
 import 'dotenv/config';
+// If DB_SSL is enabled for development with a self-signed certificate,
+// disable Node's strict certificate chain checks so the Postgres client
+// can connect. This is only intended for local/dev environments.
+if (process.env.DB_SSL === 'true') {
+    // NOTE: Disables TLS certificate validation globally for this process.
+    // Do NOT enable this in production systems.
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+}
 import path from 'path';
 // Cloudinary storage strategy
 import { configureCloudinaryAssetStorage } from './plugins/cloudinary/cloudinary-asset-storage-strategy';
@@ -37,6 +45,7 @@ export const config: VendureConfig = {
         cors: {
             origin: [
                 'http://localhost:8080',
+                'http://localhost:8081',
                 'http://localhost:3000',
                 'http://localhost:3001',
                 'https://younique-storefront.vercel.app',
@@ -101,11 +110,14 @@ export const config: VendureConfig = {
         synchronize: IS_DEV,
         migrations: [path.join(__dirname, './migrations/*.+(js|ts)')],
         logging: IS_DEV,
-        // Connection pool settings for better reliability
         extra: {
-            connectionLimit: 10,
-            acquireTimeout: 60000,
-            timeout: 60000,
+            // Maximum number of clients in the pool. Keep this below your Postgres
+            // server's max_connections minus the reserved superuser slots (usually 3).
+            max: +(process.env.DB_POOL_MAX || 5),
+            // How long to wait when connecting a new client (ms)
+            connectionTimeoutMillis: +(process.env.DB_CONNECTION_TIMEOUT_MS || 60000),
+            // How long a client is allowed to remain idle before being closed (ms)
+            idleTimeoutMillis: +(process.env.DB_IDLE_TIMEOUT_MS || 30000),
         },
         // Prefer DATABASE_URL if set, otherwise fall back to individual params
         ...(process.env.DATABASE_URL

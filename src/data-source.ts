@@ -28,3 +28,9 @@ const AppDataSource = new DataSource({
 });
 
 export default AppDataSource; 
+
+// Ensure TLS rejection is disabled when DB_SSL is true to allow self-signed certs
+// for local development. This mirrors the behavior in vendure-config.ts.
+if (process.env.DB_SSL === 'true') {
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+}

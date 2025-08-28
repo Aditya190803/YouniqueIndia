@@ -10,20 +10,19 @@
     "start:server": "node ./dist/index.js",
     "start:worker": "node ./dist/index-worker.js",
     "start": "concurrently npm:start:*",
-  "test:razorpay": "ts-node ./src/scripts/test-razorpay.ts",
-  "setup": "ts-node ./src/scripts/1-setup-vendure.ts",
-  "seed": "ts-node ./src/scripts/2-seed-products.ts",
-  "db:wipe": "ts-node ./src/scripts/wipe-db.ts",
-  "reset:store": "npm run db:wipe && npm run setup",
-  "setup:complete": "npm run db:wipe && npm run setup && npm run seed",
-  "export:products": "ts-node ./src/scripts/export-products-to-seed.ts ./src/scripts/2-seed-products.ts",
-  "import:products": "ts-node ./src/scripts/import-seed-products.ts",
-  "seed:download-assets": "ts-node ./src/scripts/download-seed-assets.ts",
-  "seed:rewrite-local": "ts-node ./src/scripts/rewrite-seed-to-local.ts",
-  "migrate:neon->render": "npm run export:products && npm run db:wipe && npm run setup && npm run seed",
-  "clean": "node -e \"require('fs').rmSync('./dist',{recursive:true,force:true});console.log('dist cleared');\"",
-    "migrate:assets": "ts-node ./src/scripts/migrate-assets-to-cloudinary.ts",
-    "cloudinary:wipe": "ts-node ./src/scripts/wipe-cloudinary.ts",
+    "test:razorpay": "ts-node ./src/scripts/test-razorpay.ts",
+
+    "setup": "ts-node ./src/scripts/1-setup-vendure.ts",
+  "seed": "ts-node ./src/scripts/import-seed-products.ts",
+    "seed:local": "ts-node ./src/scripts/2-seed-products.ts",
+
+    "db:wipe": "ts-node ./src/scripts/wipe-db.ts",
+    "reset:store": "npm run db:wipe && npm run setup",
+    "setup:complete": "npm run db:wipe && npm run setup && npm run seed",
+
+    "import:products": "ts-node ./src/scripts/import-seed-products.ts",
+
+    "clean": "node -e \"require('fs').rmSync('./dist',{recursive:true,force:true});console.log('dist cleared');\"",
     "email:test": "ts-node ./src/scripts/send-test-email.ts"
   },
   "dependencies": {

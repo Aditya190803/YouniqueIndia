@@ -3,7 +3,7 @@ import { bootstrap, ProductService, ProductVariantService, TransactionalConnecti
 import path from 'path';
 import fs from 'fs';
 import { config as vendureConfig } from '../vendure-config';
-import { SEED_PRODUCTS } from './2-seed-products';
+import { SEED_PRODUCTS } from './2-seed-products.generated';
 
 // Suppress noisy post-import connection termination errors triggered by background jobs after shutdown
 process.on('uncaughtException', err => {
@@ -39,20 +39,139 @@ async function run() {
   const requestContextService = app.get(RequestContextService);
   const channelService = app.get(ChannelService);
 
-  const defaultChannel = await channelService.getDefaultChannel();
-  const adminCtx = await requestContextService.create({
+  let defaultChannel = await channelService.getDefaultChannel();
+  let adminCtx = await requestContextService.create({
     apiType: 'admin',
     channelOrToken: defaultChannel,
     languageCode: LanguageCode.en,
     isAuthorized: true,
   } as any);
 
-  // Load Tax Free category id for assignment
+  // Ensure default tax setup exists to avoid "no active tax zone" errors
+  async function ensureDefaultTaxSetup() {
+    await tx.withTransaction(async ctx => {
+      const zoneRepo = tx.getRepository(ctx, 'Zone' as any);
+      const countryRepo = tx.getRepository(ctx, 'Country' as any);
+      const channelRepo = tx.getRepository(ctx, 'Channel' as any);
+      const taxCategoryRepo = tx.getRepository(ctx, 'TaxCategory' as any);
+      const taxRateRepo = tx.getRepository(ctx, 'TaxRate' as any);
+
+      // 1) Ensure a Zone exists with at least one Country (prefer IN). If none, create empty zone anyway.
+      let zone = await zoneRepo.findOne({ where: { name: 'Default Tax Zone' } as any, relations: ['members'] });
+      if (!zone) {
+        let country = await countryRepo.findOne({ where: { code: 'IN', enabled: true } as any });
+        if (!country) {
+          // fallback to any enabled country
+          country = await countryRepo.findOne({ where: { enabled: true } as any });
+        }
+        if (country) {
+          zone = await zoneRepo.save({ name: 'Default Tax Zone', members: [country] } as any);
+        } else {
+          // create zone without members; still usable as default zone
+          zone = await zoneRepo.save({ name: 'Default Tax Zone' } as any);
+        }
+      }
+
+      // 2) Assign Channel.defaultTaxZone if missing
+      if (zone) {
+        const ch = await channelRepo.findOne({ where: { id: (defaultChannel as any).id } as any, relations: ['defaultTaxZone','defaultShippingZone'] });
+        const needsTax = !ch?.defaultTaxZone || (ch.defaultTaxZone as any).id !== (zone as any).id;
+        const needsShip = !ch?.defaultShippingZone || (ch.defaultShippingZone as any).id !== (zone as any).id;
+        if (needsTax || needsShip) {
+          try {
+            if (typeof (channelService as any).update === 'function') {
+              await (channelService as any).update(adminCtx as any, { id: (defaultChannel as any).id, defaultTaxZoneId: (zone as any).id, defaultShippingZoneId: (zone as any).id } as any);
+            } else {
+              // best-effort direct repo update
+              await channelRepo.update({ id: (defaultChannel as any).id } as any, { defaultTaxZone: zone, defaultShippingZone: zone } as any);
+            }
+          } catch {
+            // ignore failures, variant creation will still try proceed
+          }
+        }
+      }
+
+      // 3) Ensure a default TaxCategory exists
+      let defaultTaxCat = await taxCategoryRepo.findOne({ where: { isDefault: true } as any });
+      if (!defaultTaxCat) {
+        defaultTaxCat = await taxCategoryRepo.save({ name: 'Standard', isDefault: true } as any);
+      }
+
+      // 4) Ensure a TaxRate exists for (zone, category); use 0% to avoid price changes
+      if (zone && defaultTaxCat) {
+        const existingRate = await taxRateRepo.findOne({ where: { category: { id: (defaultTaxCat as any).id }, zone: { id: (zone as any).id } } as any, relations: ['category', 'zone'] });
+        if (!existingRate) {
+          try {
+            await taxRateRepo.save({ name: 'Standard 0%', enabled: true, value: 0, category: defaultTaxCat, zone } as any);
+          } catch {
+            // ignore if shape mismatch
+          }
+        }
+      }
+    });
+  }
+
+  await ensureDefaultTaxSetup();
+  // refresh channel and admin context to ensure updated zones are active in ctx
+  defaultChannel = await channelService.getDefaultChannel();
+  adminCtx = await requestContextService.create({
+    apiType: 'admin',
+    channelOrToken: defaultChannel,
+    languageCode: LanguageCode.en,
+    isAuthorized: true,
+  } as any);
+
+  // Basic preflight checks: DB connectivity, default channel and default tax zone
+  async function preflightCheck() {
+    try {
+      await tx.withTransaction(async ctx => {
+        // check DB reachable by counting products (fast)
+        const productRepo = tx.getRepository(ctx, 'Product' as any);
+        await productRepo.count();
+
+        const channelRepo = tx.getRepository(ctx, 'Channel' as any);
+        const ch = await channelRepo.findOne({ where: { id: (defaultChannel as any).id } as any, relations: ['defaultTaxZone'] });
+        if (!ch) throw new Error('Default channel not found');
+        if (!ch.defaultTaxZone) {
+          console.log('⚠️ Default channel has no defaultTaxZone assigned — attempting to ensure default tax setup now');
+          // attempt to repair
+          await ensureDefaultTaxSetup();
+        }
+      });
+
+      // re-check after attempted repair
+      const refreshed = await tx.withTransaction(async ctx => {
+        const channelRepo = tx.getRepository(ctx, 'Channel' as any);
+        return await channelRepo.findOne({ where: { id: (defaultChannel as any).id } as any, relations: ['defaultTaxZone'] });
+      });
+      if (!refreshed || !refreshed.defaultTaxZone) {
+        console.error('❌ Preflight failed: default tax zone still not configured for default channel.');
+        return false;
+      }
+      console.log('✅ Preflight checks passed');
+      return true;
+    } catch (e:any) {
+      console.error('❌ Preflight DB check failed:', e?.message || e);
+      return false;
+    }
+  }
+
+  const preflightOk = await preflightCheck();
+  if (!preflightOk) {
+    console.error('Aborting import due to failed preflight checks. Please ensure the database and channel configuration are correct, or run `npm run setup` to initialize.');
+    try { await app.close(); } catch {};
+    process.exit(1);
+  }
+
+  // Load default tax category id for assignment
   let taxCategoryId: string | undefined;
   await tx.withTransaction(async ctx => {
     const taxRepo = tx.getRepository(ctx, 'TaxCategory' as any);
-    const taxCat = await taxRepo.findOne({ where: { isDefault: true } as any });
-    taxCategoryId = taxCat?.id;
+    let taxCat = await taxRepo.findOne({ where: { isDefault: true } as any });
+    if (!taxCat) {
+      taxCat = await taxRepo.save({ name: 'Standard', isDefault: true } as any);
+    }
+    taxCategoryId = (taxCat as any)?.id;
   });
   console.log('🔧 Using tax category id:', taxCategoryId);
 
@@ -109,8 +228,30 @@ async function run() {
             variantCreated++;
             console.log(`   ➕ Variant created ${v.sku}`);
           } catch (ve: any) {
-            if (/no-active-tax-zone/i.test(ve?.message || '')) {
-              console.log(`   ⚠️ Ignored tax zone error for variant ${v.sku}`);
+            if (/no[-\s]*active[-\s]*tax[-\s]*zone/i.test(ve?.message || '')) {
+              console.log(`   ⚠️ No active tax zone for variant ${v.sku} — attempting to ensure default tax setup and retrying...`);
+              try {
+                await ensureDefaultTaxSetup();
+                // refresh channel and admin context
+                defaultChannel = await channelService.getDefaultChannel();
+                adminCtx = await requestContextService.create({
+                  apiType: 'admin',
+                  channelOrToken: defaultChannel,
+                  languageCode: LanguageCode.en,
+                  isAuthorized: true,
+                } as any);
+                await variantService.create(adminCtx as any, [{
+                  productId,
+                  sku: v.sku,
+                  price: v.price,
+                  translations: v.translations,
+                }] as any);
+                variantCreated++;
+                console.log(`   ➕ Variant created on retry ${v.sku}`);
+              } catch (retryErr: any) {
+                console.log(`   ⚠️ Retry failed for variant ${v.sku}:`, (retryErr?.message || retryErr));
+                console.log(`   ⚠️ Ignored tax zone error for variant ${v.sku}`);
+              }
             } else {
               throw ve;
             }
@@ -170,8 +311,30 @@ async function run() {
               console.log(`   ➕ Variant created ${sku}`);
             }
           } catch (ve: any) {
-            if (/no-active-tax-zone/i.test(ve?.message || '')) {
-              console.log(`   ⚠️ Ignored tax zone error for variant ${sku}`);
+            if (/no[-\s]*active[-\s]*tax[-\s]*zone/i.test(ve?.message || '')) {
+              console.log(`   ⚠️ No active tax zone for variant ${sku} — attempting to ensure default tax setup and retrying...`);
+              try {
+                await ensureDefaultTaxSetup();
+                // refresh channel and admin context
+                defaultChannel = await channelService.getDefaultChannel();
+                adminCtx = await requestContextService.create({
+                  apiType: 'admin',
+                  channelOrToken: defaultChannel,
+                  languageCode: LanguageCode.en,
+                  isAuthorized: true,
+                } as any);
+                await variantService.create(adminCtx as any, [{
+                  productId,
+                  sku,
+                  price: Number.isFinite((v as any).price) ? (v as any).price : 0,
+                  translations: [{ languageCode: LanguageCode.en, name: seed.name || slug }],
+                }] as any);
+                variantCreated++;
+                console.log(`   ➕ Variant created on retry ${sku}`);
+              } catch (retryErr: any) {
+                console.log(`   ⚠️ Retry failed for variant ${sku}:`, (retryErr?.message || retryErr));
+                console.log(`   ⚠️ Ignored tax zone error for variant ${sku}`);
+              }
             } else {
               throw ve;
             }
