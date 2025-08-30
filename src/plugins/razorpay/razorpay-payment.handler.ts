@@ -1,97 +1,57 @@
-import {
-  CreatePaymentErrorResult,
-  CreatePaymentResult,
-  Logger,
-  PaymentMethodHandler,
-  SettlePaymentErrorResult,
-  SettlePaymentResult,
-  LanguageCode,
-} from '@vendure/core';
+import { LanguageCode, PaymentMethodHandler } from '@vendure/core';
 import crypto from 'crypto';
+
+type RazorpayMetadata = {
+  razorpay_order_id?: string;
+  razorpay_payment_id?: string;
+  razorpay_signature?: string;
+  [k: string]: any;
+};
 
 export const RazorpayPaymentHandler = new PaymentMethodHandler({
   code: 'razorpay',
-  description: [{ languageCode: LanguageCode.en, value: 'Razorpay payment gateway' }],
+  description: [{ languageCode: LanguageCode.en, value: 'Razorpay Checkout' }],
   args: {
-    razorpayKeyId: {
-      type: 'string',
-      label: [{ languageCode: LanguageCode.en, value: 'Razorpay Key ID' }],
-      description: [{ languageCode: LanguageCode.en, value: 'Public key (used on the client side)' }],
-    },
-    razorpayKeySecret: {
-      type: 'string',
-      label: [{ languageCode: LanguageCode.en, value: 'Razorpay Key Secret' }],
-      description: [{ languageCode: LanguageCode.en, value: 'Secret key used to verify signatures' }],
-      required: true,
-    },
+    keyId: { type: 'string' },
+    keySecret: { type: 'string' },
+    webhookSecret: { type: 'string', required: false },
+    autoSettle: { type: 'boolean', required: false },
   },
-  /**
-   * Expects metadata from storefront: {
-   *   razorpay_payment_id: string,
-   *   razorpay_order_id: string,
-   *   razorpay_signature: string
-   * }
-   */
-  createPayment: async (
-    ctx,
-    order,
-    amount,
-    args,
-    metadata,
-  ): Promise<CreatePaymentResult | CreatePaymentErrorResult> => {
-    try {
-      const paymentId = (metadata as any)?.razorpay_payment_id as string | undefined;
-      const orderId = (metadata as any)?.razorpay_order_id as string | undefined;
-      const signature = (metadata as any)?.razorpay_signature as string | undefined;
-      if (!paymentId || !orderId || !signature) {
-        return {
-          amount,
-          state: 'Declined',
-          metadata: {
-            error: 'Missing Razorpay parameters',
-          },
-        };
-      }
+  createPayment: async (ctx, order, amount, args, metadata: RazorpayMetadata) => {
+    const { keySecret, autoSettle } = args as any;
 
-      const secret = args['razorpayKeySecret'] as string;
-      const expected = crypto
-        .createHmac('sha256', secret)
-        .update(`${orderId}|${paymentId}`)
-        .digest('hex');
+    const orderId = metadata?.razorpay_order_id;
+    const paymentId = metadata?.razorpay_payment_id;
+    const signature = metadata?.razorpay_signature;
 
-      if (expected !== signature) {
-        Logger.warn(
-          `Razorpay signature verification failed for order ${order.code}`,
-          'RazorpayPaymentHandler',
-        );
-        return {
-          amount,
-          state: 'Declined',
-          metadata: {
-            error: 'Invalid signature',
-          },
-        };
-      }
-
-      // Signature is valid. Mark payment as Settled.
+    if (!keySecret || !orderId || !paymentId || !signature) {
       return {
         amount,
-        state: 'Settled',
-        transactionId: paymentId,
-        metadata: {
-          razorpay_order_id: orderId,
-        },
-      };
-    } catch (e: any) {
-      Logger.error(e?.message ?? String(e), 'RazorpayPaymentHandler');
-      return {
-        amount,
-        state: 'Declined',
-        metadata: { error: 'Exception during Razorpay verification' },
+        state: 'Declined' as const,
+        metadata: { reason: 'missing-fields' },
       };
     }
+
+    const expected = crypto
+      .createHmac('sha256', keySecret)
+      .update(`${orderId}|${paymentId}`)
+      .digest('hex');
+
+    if (expected !== signature) {
+      return {
+        amount,
+        state: 'Declined' as const,
+        metadata: { reason: 'signature-mismatch' },
+      };
+    }
+
+    return {
+      amount,
+      state: autoSettle ? 'Settled' : 'Authorized',
+      transactionId: paymentId,
+      metadata,
+    };
   },
-  settlePayment: async (): Promise<SettlePaymentResult | SettlePaymentErrorResult> => {
-    return { success: true };
-  },
+  // If autoSettle was used, this is a no-op.
+  settlePayment: async () => ({ success: true }),
 });

@@ -28,13 +28,14 @@ import path from 'path';
 // Cloudinary storage strategy
 import { configureCloudinaryAssetStorage } from './plugins/cloudinary/cloudinary-asset-storage-strategy';
 import { RazorpayPaymentHandler } from './plugins/razorpay/razorpay-payment.handler';
-import { RazorpayPlugin } from './plugins/razorpay/razorpay.plugin';
 import { indiaShippingEligibilityChecker } from './plugins/shipping/india-shipping-eligibility';
 import { alwaysFreeShippingEligibilityChecker } from './plugins/shipping/always-free-shipping-checker';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 const serverPort = +process.env.PORT || 3000;
+// Allow forcing the dev mailbox off to test real email sending with Resend in development
+const EMAIL_DEV_MAILBOX = (process.env.EMAIL_DEV_MAILBOX ?? (IS_DEV ? 'true' : 'false')).toLowerCase() === 'true';
 
 export const config: VendureConfig = {
     apiOptions: {
@@ -159,7 +160,6 @@ export const config: VendureConfig = {
         ],
     },
     plugins: [
-        RazorpayPlugin,
         GraphiqlPlugin.init(),
         AssetServerPlugin.init({
             route: 'assets',
@@ -193,13 +193,13 @@ export const config: VendureConfig = {
             ]
             : []),
         EmailPlugin.init({
-            ...(IS_DEV ? { devMode: true as const, route: 'mailbox' } : {}),
+            ...(EMAIL_DEV_MAILBOX ? { devMode: true as const, route: 'mailbox' } : {}),
             outputPath: path.join(__dirname, '../static/email/test-emails'),
             handlers: defaultEmailHandlers,
             templateLoader: new FileBasedTemplateLoader(path.join(__dirname, '../static/email/templates')),
             globalTemplateVars: {
                 // The following variables will change depending on your storefront implementation.
-                fromAddress: '"YouniqueIndia" <noreply@youniqueindia.com>',
+                fromAddress: process.env.FROM_EMAIL || '"YouniqueIndia" <noreply@youniqueindia.com>',
                 verifyEmailAddressUrl: process.env.VERIFY_EMAIL_URL || 'http://localhost:8080/verify',
                 passwordResetUrl: process.env.PASSWORD_RESET_URL || 'http://localhost:8080/password-reset',
                 changeEmailAddressUrl: process.env.CHANGE_EMAIL_URL || 'http://localhost:8080/verify-email-address-change'
