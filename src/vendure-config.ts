@@ -180,16 +180,24 @@ export const config: VendureConfig = {
         // Optional GraphQL edge cache integration via Stellate
         ...(process.env.STELLATE_SERVICE_NAME && process.env.STELLATE_PURGE_API_TOKEN
             ? [
+                // Cast to any to allow passing a passthrough `saveOnce` option
+                // which may not exist in older versions of the plugin types.
                 StellatePlugin.init({
                     serviceName: process.env.STELLATE_SERVICE_NAME!,
                     apiToken: process.env.STELLATE_PURGE_API_TOKEN!,
                     devMode: process.env.APP_ENV !== 'prod' || process.env.STELLATE_DEBUG_MODE === 'true',
                     debugLogging: process.env.STELLATE_DEBUG_MODE === 'true',
+                    // Optional passthrough flag: if supported by the installed
+                    // @vendure/stellate-plugin version, this will enable a
+                    // "save once" behavior so the cache only needs to be
+                    // persisted a single time. If the plugin doesn't support
+                    // this option, it's ignored harmlessly.
+                    saveOnce: process.env.STELLATE_SAVE_ONCE === 'true',
                     purgeRules: [
                         ...defaultPurgeRules,
                         // Add custom PurgeRules here if you cache custom types in Stellate config
                     ],
-                }),
+                } as any),
             ]
             : []),
         EmailPlugin.init({
