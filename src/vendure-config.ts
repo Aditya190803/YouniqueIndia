@@ -28,6 +28,7 @@ import path from 'path';
 // Cloudinary storage strategy
 import { configureCloudinaryAssetStorage } from './plugins/cloudinary/cloudinary-asset-storage-strategy';
 import { RazorpayPaymentHandler } from './plugins/razorpay/razorpay-payment.handler';
+import { RazorpayGraphQLPlugin } from './plugins/razorpay/razorpay-graphql.plugin';
 import { indiaShippingEligibilityChecker } from './plugins/shipping/india-shipping-eligibility';
 import { alwaysFreeShippingEligibilityChecker } from './plugins/shipping/always-free-shipping-checker';
 
@@ -160,6 +161,7 @@ export const config: VendureConfig = {
         ],
     },
     plugins: [
+        RazorpayGraphQLPlugin,
         GraphiqlPlugin.init(),
         AssetServerPlugin.init({
             route: 'assets',
