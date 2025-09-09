@@ -21,6 +21,8 @@
     "src/plugins/**/dashboard/*",
     "admin-ui",
     "vite.*.*ts",
+  "src/plugins/razorpay/frontend-integration-example.js",
+  "src/plugins/razorpay/razorpay-resolver.ts",
   "**/*.spec.ts",
   "**/*.test.ts",
   "src/**/__tests__/**",

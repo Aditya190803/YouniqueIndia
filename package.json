@@ -10,7 +10,6 @@
     "start:server": "node ./dist/index.js",
     "start:worker": "node ./dist/index-worker.js",
     "start": "concurrently npm:start:*",
-    "test:razorpay": "ts-node ./src/scripts/test-razorpay.ts",
 
     "setup": "ts-node ./src/scripts/1-setup-vendure.ts",
   "seed": "ts-node ./src/scripts/import-seed-products.ts",

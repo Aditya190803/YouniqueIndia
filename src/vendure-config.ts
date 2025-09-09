@@ -27,8 +27,8 @@ if (process.env.DB_SSL === 'true') {
 import path from 'path';
 // Cloudinary storage strategy
 import { configureCloudinaryAssetStorage } from './plugins/cloudinary/cloudinary-asset-storage-strategy';
-import { RazorpayPaymentHandler } from './plugins/razorpay/razorpay-payment.handler';
-import { RazorpayGraphQLPlugin } from './plugins/razorpay/razorpay-graphql.plugin';
+import { RazorpayPaymentHandler } from './plugins/razorpay/razorpay-payment-handler';
+import { RazorpayPlugin } from './plugins/razorpay/razorpay.plugin';
 import { indiaShippingEligibilityChecker } from './plugins/shipping/india-shipping-eligibility';
 import { alwaysFreeShippingEligibilityChecker } from './plugins/shipping/always-free-shipping-checker';
 
@@ -161,7 +161,6 @@ export const config: VendureConfig = {
         ],
     },
     plugins: [
-        RazorpayGraphQLPlugin,
         GraphiqlPlugin.init(),
         AssetServerPlugin.init({
             route: 'assets',
@@ -179,6 +178,8 @@ export const config: VendureConfig = {
         DefaultSchedulerPlugin.init(),
         DefaultJobQueuePlugin.init({ useDatabaseForBuffer: true }),
         DefaultSearchPlugin.init({ bufferUpdates: false, indexStockStatus: true }),
+        // Razorpay Payment Plugin
+        RazorpayPlugin,
         // Optional GraphQL edge cache integration via Stellate
         ...(process.env.STELLATE_SERVICE_NAME && process.env.STELLATE_PURGE_API_TOKEN
             ? [
