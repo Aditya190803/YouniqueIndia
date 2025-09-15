@@ -9,7 +9,27 @@ Useful links:
 - [Vendure on GitHub](https://github.com/vendure-ecommerce/vendure)
 - [Vendure plugin template](https://github.com/vendure-ecommerce/plugin-template)
 
+# YouniqueIndia
+
+This project was generated with [`@vendure/create`](https://github.com/vendure-ecommerce/vendure/tree/master/packages/create).
+
 ## Directory structure
+## Payments: Settlement without upfront payment (Pinelab)
+
+This project uses the Pinelab Payment Extensions plugin to allow settling orders without an external PSP. It provides:
+
+- `isCustomerInGroupPaymentChecker`: restrict payment method eligibility to members of a specific CustomerGroup.
+- `settleWithoutPaymentHandler`: immediately settles the Payment when added.
+
+Setup steps:
+
+1. Ensure the plugin is enabled in `src/vendure-config.ts` and that `settleWithoutPaymentHandler` and `isCustomerInGroupPaymentChecker` are included in `paymentOptions`.
+2. Start the server and open Admin > Settings > Payment Methods.
+3. Create a new Payment Method:
+	- Eligibility checker: `isCustomerInGroupPaymentChecker` and select the desired CustomerGroup.
+	- Payment handler: `settleWithoutPaymentHandler`.
+4. Save. Customers in the selected group will see this method and orders will be settled on checkout.
+
 
 * `/src` contains the source code of your Vendure server. All your custom code and plugins should reside here.
 * `/static` contains static (non-code) files such as assets (e.g. uploaded images) and email templates.
