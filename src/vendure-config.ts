@@ -58,6 +58,9 @@ export const config: VendureConfig = {
                 'http://www.youniqueindia.co.in',
             ],
             credentials: true,
+            // Be explicit to ensure OPTIONS preflight succeeds on all platforms
+            methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+            allowedHeaders: 'Authorization,Content-Type,Accept,Accept-Language,Content-Language',
         },
         // The following options are useful in development mode,
         // but are best turned off for production for security
@@ -216,8 +219,9 @@ export const config: VendureConfig = {
             route: 'admin',
             port: serverPort,
             adminUiConfig: {
-                apiHost: IS_PRODUCTION ? 'https://youniqueindia.onrender.com' : 'http://localhost',
-                apiPort: IS_PRODUCTION ? 443 : serverPort,
+                // Auto-detect API host/port from window.location to avoid CORS/proxy issues
+                apiHost: 'auto',
+                apiPort: 'auto',
                 adminApiPath: 'admin-api',
                 tokenMethod: 'bearer',
             },
