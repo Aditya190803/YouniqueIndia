@@ -12,7 +12,7 @@ async function setupBasicData() {
         const app = await bootstrap(config);
         const connection = app.get(TransactionalConnection);
         
-        await connection.withTransaction(async ctx => {
+    await connection.withTransaction(async (ctx: any) => {
             const channelService = app.get(ChannelService);
             const countryService = app.get(CountryService);
             const zoneService = app.get(ZoneService);
@@ -118,44 +118,32 @@ async function setupBasicData() {
                 }
             }
 
-            const razorpayKeyId = process.env.RAZORPAY_KEY_ID || process.env.key_id;
-            const razorpayKeySecret = process.env.RAZORPAY_KEY_SECRET || process.env.key_secret;
-            if (razorpayKeyId && razorpayKeySecret) {
-                console.log('💳 Ensuring Razorpay payment method exists...');
-                const existingRazorpay = await (paymentMethodService as any).findAll?.(ctx).then((r:any)=> r.items.find((pm:any)=> pm.code==='razorpay'));
-                if (existingRazorpay) {
-                    console.log('ℹ️ Razorpay payment method already exists');
+            // Optional: create a placeholder PaymentMethod using Pinelab's settleWithoutPaymentHandler
+            try {
+                const existing = await (paymentMethodService as any).findAll?.(ctx).then((r:any)=> r.items.find((pm:any)=> pm.code==='settle-without-payment'));
+                if (!existing) {
+                    await paymentMethodService.create(ctx, {
+                        code: 'settle-without-payment',
+                        translations: [
+                            {
+                                languageCode: LanguageCode.en,
+                                name: 'Settle without payment',
+                                description: 'For whitelisted customers/groups; settles immediately.'
+                            }
+                        ],
+                        handler: {
+                            // Use the handler code as registered by the plugin
+                            code: 'settleWithoutPaymentHandler',
+                            arguments: []
+                        },
+                        enabled: true,
+                    } as any);
+                    console.log('✅ Created "Settle without payment" PaymentMethod (configure eligibility in Admin)');
                 } else {
-                    try {
-                        await paymentMethodService.create(ctx, {
-                            code: 'razorpay',
-                            translations: [
-                                {
-                                    languageCode: LanguageCode.en,
-                                    name: 'Razorpay',
-                                    description: 'Pay with Razorpay (UPI, Cards, Net Banking, Wallets)'
-                                }
-                            ],
-                            handler: {
-                                code: 'razorpay',
-                                arguments: [
-                                    { name: 'razorpayKeyId', value: razorpayKeyId },
-                                    { name: 'razorpayKeySecret', value: razorpayKeySecret },
-                                ]
-                            },
-                            enabled: true,
-                        });
-                        console.log('✅ Razorpay payment method created');
-                    } catch (e:any) {
-                        if (/(duplicate|unique)/i.test(e?.message||'')) {
-                            console.log('ℹ️ Razorpay payment method already exists (race)');
-                        } else {
-                            throw e;
-                        }
-                    }
+                    console.log('ℹ️  "Settle without payment" PaymentMethod already exists');
                 }
-            } else {
-                console.log('⚠️  Skipping Razorpay payment method (missing RAZORPAY_KEY_ID/RAZORPAY_KEY_SECRET)');
+            } catch (e:any) {
+                console.log('⚠️  Could not create default "Settle without payment" method (you can add it in Admin):', e?.message);
             }
 
             try {
