@@ -12,7 +12,11 @@
     "sourceMap": false,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ]
   },
   "exclude": [
     "node_modules",
@@ -21,12 +25,10 @@
     "src/plugins/**/dashboard/*",
     "admin-ui",
     "vite.*.*ts",
-  "src/plugins/razorpay/frontend-integration-example.js",
-  "src/plugins/razorpay/razorpay-resolver.ts",
-  "**/*.spec.ts",
-  "**/*.test.ts",
-  "src/**/__tests__/**",
-  "jest.config.js"
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "src/**/__tests__/**",
+    "jest.config.js"
   ],
   "ts-node": {
     "files": true

@@ -1035,7 +1035,7 @@ export const SEED_PRODUCTS: SeedProduct[] = [
   try {
     const seedDir = path.join(__dirname, '../../static/assets/seed');
     if (!fs.existsSync(seedDir)) return;
-    const files = fs.readdirSync(seedDir).map(f => f.toLowerCase());
+  const files = fs.readdirSync(seedDir).map((f: any) => f.toLowerCase());
 
     // Explicit slug->filename map from your provided seed folder
     const LOCAL_ASSET_MAP: Record<string, string> = {
@@ -1133,7 +1133,7 @@ export const SEED_PRODUCTS: SeedProduct[] = [
       // 4) fallback to any file containing first token
       if (tokens.length) {
         const t0 = tokens[0];
-        const match = files.find(f => f.includes(t0));
+  const match = files.find((f: any) => f.includes(t0));
         if (match) return match;
       }
 

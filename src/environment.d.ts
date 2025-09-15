@@ -8,6 +8,7 @@ declare global {
             APP_ENV: string;
             PORT: string;
             COOKIE_SECRET: string;
+            TRUST_PROXY_SETTING?: string;
             SUPERADMIN_USERNAME: string;
             SUPERADMIN_PASSWORD: string;
             DB_HOST: string;
@@ -33,6 +34,11 @@ declare global {
             VERIFY_EMAIL_URL?: string;
             PASSWORD_RESET_URL?: string;
             CHANGE_EMAIL_URL?: string;
+            RAZORPAY_KEY_ID?: string;
+            RAZORPAY_KEY_SECRET?: string;
+            RAZORPAY_WEBHOOK_SECRET?: string;
+            key_id?: string; // backwards compatibility
+            key_secret?: string; // backwards compatibility
         }
     }
 }
