@@ -27,8 +27,7 @@ if (process.env.DB_SSL === 'true') {
 import path from 'path';
 // Cloudinary storage strategy
 import { configureCloudinaryAssetStorage } from './plugins/cloudinary/cloudinary-asset-storage-strategy';
-import { RazorpayPaymentHandler } from './plugins/razorpay/razorpay-payment-handler';
-import { RazorpayPlugin } from './plugins/razorpay/razorpay.plugin';
+import { PaymentExtensionsPlugin, isCustomerInGroupPaymentChecker, settleWithoutPaymentHandler } from '@pinelab/vendure-plugin-payment-extensions';
 import { indiaShippingEligibilityChecker } from './plugins/shipping/india-shipping-eligibility';
 import { alwaysFreeShippingEligibilityChecker } from './plugins/shipping/always-free-shipping-checker';
 
@@ -139,7 +138,9 @@ export const config: VendureConfig = {
         ),
     },
     paymentOptions: {
-        paymentMethodHandlers: [RazorpayPaymentHandler],
+        // Provide Pinelab payment extensions: settle without payment, and eligibility checker
+        paymentMethodHandlers: [settleWithoutPaymentHandler],
+        paymentMethodEligibilityCheckers: [isCustomerInGroupPaymentChecker],
     },
     shippingOptions: {
         shippingEligibilityCheckers: [alwaysFreeShippingEligibilityChecker, indiaShippingEligibilityChecker],
@@ -178,8 +179,8 @@ export const config: VendureConfig = {
         DefaultSchedulerPlugin.init(),
         DefaultJobQueuePlugin.init({ useDatabaseForBuffer: true }),
         DefaultSearchPlugin.init({ bufferUpdates: false, indexStockStatus: true }),
-        // Razorpay Payment Plugin
-        RazorpayPlugin,
+    // Pinelab Payment Extensions Plugin
+    PaymentExtensionsPlugin,
         // Optional GraphQL edge cache integration via Stellate
         ...(process.env.STELLATE_SERVICE_NAME && process.env.STELLATE_PURGE_API_TOKEN
             ? [
