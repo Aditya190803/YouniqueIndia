@@ -20,6 +20,7 @@ This project uses the Pinelab Payment Extensions plugin to allow settling orders
 
 - `isCustomerInGroupPaymentChecker`: restrict payment method eligibility to members of a specific CustomerGroup.
 - `settleWithoutPaymentHandler`: immediately settles the Payment when added.
+- Legacy Razorpay tooling has been removed; the WhatsApp handler documented below replaces it for manual confirmation flows.
 
 Setup steps:
 
@@ -29,6 +30,28 @@ Setup steps:
 	- Eligibility checker: `isCustomerInGroupPaymentChecker` and select the desired CustomerGroup.
 	- Payment handler: `settleWithoutPaymentHandler`.
 4. Save. Customers in the selected group will see this method and orders will be settled on checkout.
+
+## Payments: WhatsApp manual flow
+
+The custom WhatsApp payment integration adds a manual checkout route for customers who confirm orders over chat.
+
+- **Payment method**: `whatsapp-payment` is registered alongside the existing handlers. Adding this payment to an order automatically associates the contact details, creates (or reuses) a customer account, and keeps the order in the Vendure `Draft` state so staff can review it before fulfilment.
+- **GraphQL helper**: A mutation is exposed on both Shop and Admin APIs to automate the flow from a storefront or back-office UI:
+
+```graphql
+mutation CreateWhatsappDraftOrder($input: WhatsappDraftOrderInput!) {
+	createWhatsappDraftOrder(input: $input) {
+		order { id code state totalWithTax }
+		customer { id emailAddress phoneNumber }
+		createdCustomer
+		generatedEmailAddress
+	}
+}
+```
+
+The input accepts the shopper's name, phone number, optional email, any order lines, and optional addresses. When an email is not supplied, a unique placeholder address is generated so the new account can still sign in later via a password reset.
+
+Once payment is confirmed in WhatsApp, staff can settle the order manually through the admin UI.
 
 
 * `/src` contains the source code of your Vendure server. All your custom code and plugins should reside here.
