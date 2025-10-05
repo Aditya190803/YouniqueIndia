@@ -30,6 +30,7 @@ import { configureCloudinaryAssetStorage } from './plugins/cloudinary/cloudinary
 import { PaymentExtensionsPlugin, isCustomerInGroupPaymentChecker, settleWithoutPaymentHandler } from '@pinelab/vendure-plugin-payment-extensions';
 import { indiaShippingEligibilityChecker } from './plugins/shipping/india-shipping-eligibility';
 import { alwaysFreeShippingEligibilityChecker } from './plugins/shipping/always-free-shipping-checker';
+import { WhatsappPaymentPlugin, whatsappPaymentHandler } from './plugins/whatsapp-payment/whatsapp-payment.plugin';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
@@ -142,7 +143,7 @@ export const config: VendureConfig = {
     },
     paymentOptions: {
         // Provide Pinelab payment extensions: settle without payment, and eligibility checker
-        paymentMethodHandlers: [settleWithoutPaymentHandler],
+        paymentMethodHandlers: [settleWithoutPaymentHandler, whatsappPaymentHandler],
         paymentMethodEligibilityCheckers: [isCustomerInGroupPaymentChecker],
     },
     shippingOptions: {
@@ -184,6 +185,7 @@ export const config: VendureConfig = {
         DefaultSearchPlugin.init({ bufferUpdates: false, indexStockStatus: true }),
     // Pinelab Payment Extensions Plugin
     PaymentExtensionsPlugin,
+        WhatsappPaymentPlugin,
         // Optional GraphQL edge cache integration via Stellate
         ...(process.env.STELLATE_SERVICE_NAME && process.env.STELLATE_PURGE_API_TOKEN
             ? [
