@@ -61,7 +61,8 @@ export const config: VendureConfig = {
             credentials: true,
             // Be explicit to ensure OPTIONS preflight succeeds on all platforms
             methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-            allowedHeaders: 'Authorization,Content-Type,Accept,Accept-Language,Content-Language',
+            allowedHeaders: 'Authorization,Content-Type,Accept,Accept-Language,Content-Language,Cache-Control,Cookie,X-Requested-With',
+            exposedHeaders: 'Set-Cookie',
         },
         // The following options are useful in development mode,
         // but are best turned off for production for security
