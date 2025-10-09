@@ -1,0 +1,4832 @@
+{
+  "exportedAt": "2025-10-08T08:17:48.427Z",
+  "source": "https://youniqueindia.onrender.com/shop-api",
+  "totalItems": 73,
+  "products": [
+    {
+      "id": "27",
+      "createdAt": "2025-07-23T18:48:46.847Z",
+      "updatedAt": "2025-07-24T09:12:51.755Z",
+      "name": "Hexa Heart Necklace ",
+      "slug": "hexa-heart-necklace-",
+      "description": "<p>18k gold plated </p><p>Anti tarnish </p><p>Waterproof </p>",
+      "featuredAsset": {
+        "id": "31",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e8d341b7daf94c344dd8ac5191039f82__03__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e8d341b7daf94c344dd8ac5191039f82__03.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "31",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e8d341b7daf94c344dd8ac5191039f82__03__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e8d341b7daf94c344dd8ac5191039f82__03.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "27",
+          "createdAt": "2025-07-23T18:48:50.813Z",
+          "updatedAt": "2025-07-24T10:21:46.880Z",
+          "name": "Hexa Heart Necklace ",
+          "sku": "HN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [
+            {
+              "id": "8",
+              "code": "necklace",
+              "name": "Necklace",
+              "facet": {
+                "id": "3",
+                "code": "category",
+                "name": "Category"
+              }
+            }
+          ],
+          "customFields": {
+            "__entityId__": 27
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 27
+      }
+    },
+    {
+      "id": "28",
+      "createdAt": "2025-07-23T18:52:17.684Z",
+      "updatedAt": "2025-07-24T09:24:26.742Z",
+      "name": "Tangled Heart necklace",
+      "slug": "tangled-heart-necklace",
+      "description": "",
+      "featuredAsset": {
+        "id": "33",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/401baa08de533947705e2ab79794b136__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/401baa08de533947705e2ab79794b136.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "33",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/401baa08de533947705e2ab79794b136__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/401baa08de533947705e2ab79794b136.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "28",
+          "createdAt": "2025-07-23T18:52:21.687Z",
+          "updatedAt": "2025-07-23T18:52:21.687Z",
+          "name": "Tangled Heart necklace",
+          "sku": "",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 28
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 28
+      }
+    },
+    {
+      "id": "30",
+      "createdAt": "2025-07-23T19:19:10.169Z",
+      "updatedAt": "2025-07-25T05:15:38.419Z",
+      "name": "Baby bow necklace",
+      "slug": "baby-bow-necklace",
+      "description": "",
+      "featuredAsset": {
+        "id": "34",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/whatsapp-image-2025-07-24-at-00.45.54_7a66e79e__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/whatsapp-image-2025-07-24-at-00.45.54_7a66e79e.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "34",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/whatsapp-image-2025-07-24-at-00.45.54_7a66e79e__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/whatsapp-image-2025-07-24-at-00.45.54_7a66e79e.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "30",
+          "createdAt": "2025-07-23T19:19:15.820Z",
+          "updatedAt": "2025-07-25T05:16:38.450Z",
+          "name": "Baby bow necklace",
+          "sku": "BBN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 30
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 30
+      }
+    },
+    {
+      "id": "31",
+      "createdAt": "2025-07-24T04:40:47.505Z",
+      "updatedAt": "2025-07-24T04:40:47.505Z",
+      "name": "Reversible Clover Necklace ",
+      "slug": "reversible-clover-necklace-",
+      "description": "<p>18k gold plated </p><p>Anti tarnish </p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "35",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/184507e188684c03edb8446b8dcab453__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/184507e188684c03edb8446b8dcab453.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "35",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/184507e188684c03edb8446b8dcab453__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/184507e188684c03edb8446b8dcab453.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "31",
+          "createdAt": "2025-07-24T04:40:53.574Z",
+          "updatedAt": "2025-07-24T04:40:53.574Z",
+          "name": "Reversible Clover Necklace ",
+          "sku": "RCN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 31
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 31
+      }
+    },
+    {
+      "id": "32",
+      "createdAt": "2025-07-24T04:48:40.791Z",
+      "updatedAt": "2025-07-24T04:49:40.188Z",
+      "name": "Spiral Hoops",
+      "slug": "spiral-hoops",
+      "description": "<p>18k gold plated </p><p>Anti tarnish</p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "36",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/51825289d0abf7c27b55b5c9b62e0093__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/51825289d0abf7c27b55b5c9b62e0093.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "36",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/51825289d0abf7c27b55b5c9b62e0093__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/51825289d0abf7c27b55b5c9b62e0093.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "32",
+          "createdAt": "2025-07-24T04:48:45.451Z",
+          "updatedAt": "2025-07-24T04:48:45.451Z",
+          "name": "Spiral Hoops",
+          "sku": "",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 32
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 32
+      }
+    },
+    {
+      "id": "33",
+      "createdAt": "2025-07-24T05:04:31.684Z",
+      "updatedAt": "2025-07-24T05:04:31.684Z",
+      "name": "Mini Bow Necklace",
+      "slug": "mini-bow-necklace",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "37",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/156a0330-0184-4eda-969e-f42f511f1687__preview.png?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/156a0330-0184-4eda-969e-f42f511f1687.png?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "37",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/156a0330-0184-4eda-969e-f42f511f1687__preview.png?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/156a0330-0184-4eda-969e-f42f511f1687.png?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "33",
+          "createdAt": "2025-07-24T05:04:37.161Z",
+          "updatedAt": "2025-07-24T05:04:37.161Z",
+          "name": "Mini Bow Necklace",
+          "sku": "MBN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 33
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 33
+      }
+    },
+    {
+      "id": "34",
+      "createdAt": "2025-07-24T05:07:06.181Z",
+      "updatedAt": "2025-07-24T05:07:06.181Z",
+      "name": "Bamboo Bracelet",
+      "slug": "bamboo-bracelet",
+      "description": "<p>18k gold plated</p><p>Anti tarnish </p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "39",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/b718c49545eb3a0066dadfbb52215db2__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/b718c49545eb3a0066dadfbb52215db2.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "39",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/b718c49545eb3a0066dadfbb52215db2__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/b718c49545eb3a0066dadfbb52215db2.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "34",
+          "createdAt": "2025-07-24T05:07:12.776Z",
+          "updatedAt": "2025-07-24T05:07:12.776Z",
+          "name": "Bamboo Bracelet",
+          "sku": "BB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 34
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 34
+      }
+    },
+    {
+      "id": "35",
+      "createdAt": "2025-07-24T05:08:44.393Z",
+      "updatedAt": "2025-07-24T05:08:44.393Z",
+      "name": "Knot Cuff Bracelet",
+      "slug": "knot-cuff-bracelet",
+      "description": "<p>18k gold plated</p><p>Anti tarnish </p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "40",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/59d3f19a6424a6785de21a9c5e73a974-1__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/59d3f19a6424a6785de21a9c5e73a974-1.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "40",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/59d3f19a6424a6785de21a9c5e73a974-1__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/59d3f19a6424a6785de21a9c5e73a974-1.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "35",
+          "createdAt": "2025-07-24T05:08:49.232Z",
+          "updatedAt": "2025-07-24T05:08:49.232Z",
+          "name": "Knot Cuff Bracelet",
+          "sku": "KCB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 35
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 35
+      }
+    },
+    {
+      "id": "36",
+      "createdAt": "2025-07-24T05:10:58.357Z",
+      "updatedAt": "2025-07-24T05:10:58.357Z",
+      "name": "Rozel Necklace",
+      "slug": "rozel-necklace",
+      "description": "<p>18k gold plated</p><p>Anti tarnish </p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "41",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e19a0986ae5c8764a7e5a50e9e105f4b__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e19a0986ae5c8764a7e5a50e9e105f4b.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "41",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e19a0986ae5c8764a7e5a50e9e105f4b__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e19a0986ae5c8764a7e5a50e9e105f4b.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "36",
+          "createdAt": "2025-07-24T05:11:04.315Z",
+          "updatedAt": "2025-07-24T05:11:04.315Z",
+          "name": "Rozel Necklace",
+          "sku": "RN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 36
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 36
+      }
+    },
+    {
+      "id": "37",
+      "createdAt": "2025-07-24T05:13:57.457Z",
+      "updatedAt": "2025-07-24T05:13:57.457Z",
+      "name": "Rozel Gold",
+      "slug": "rozel-gold",
+      "description": "<p>18k gold plated </p><p>Anti tarnish </p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "46",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/865c75162061c3a783b58ab887b83e76__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/865c75162061c3a783b58ab887b83e76.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "46",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/865c75162061c3a783b58ab887b83e76__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/865c75162061c3a783b58ab887b83e76.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "37",
+          "createdAt": "2025-07-24T05:14:03.367Z",
+          "updatedAt": "2025-07-24T05:14:03.367Z",
+          "name": "Rozel Gold",
+          "sku": "RGN",
+          "price": 32900,
+          "priceWithTax": 32900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 37
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 37
+      }
+    },
+    {
+      "id": "38",
+      "createdAt": "2025-07-24T05:17:27.854Z",
+      "updatedAt": "2025-07-24T05:17:27.854Z",
+      "name": "Spiral Earrings",
+      "slug": "spiral-earrings",
+      "description": "<p>18k gold plated</p><p>Anti tarnish </p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "47",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/file_000000000be461f8bd1573918feee48e__preview.png?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/file_000000000be461f8bd1573918feee48e.png?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "47",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/file_000000000be461f8bd1573918feee48e__preview.png?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/file_000000000be461f8bd1573918feee48e.png?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "38",
+          "createdAt": "2025-07-24T05:17:33.883Z",
+          "updatedAt": "2025-07-24T05:17:33.883Z",
+          "name": "Spiral Earrings",
+          "sku": "SE",
+          "price": 27900,
+          "priceWithTax": 27900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 38
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 38
+      }
+    },
+    {
+      "id": "40",
+      "createdAt": "2025-07-24T05:21:02.856Z",
+      "updatedAt": "2025-07-24T05:21:02.856Z",
+      "name": "Puffy Hearts",
+      "slug": "puffy-hearts",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "48",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/33024bf2e81e26ed8c0f8ecb50ddae9e__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/33024bf2e81e26ed8c0f8ecb50ddae9e.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "48",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/33024bf2e81e26ed8c0f8ecb50ddae9e__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/33024bf2e81e26ed8c0f8ecb50ddae9e.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "40",
+          "createdAt": "2025-07-24T05:21:09.045Z",
+          "updatedAt": "2025-07-24T05:21:09.045Z",
+          "name": "Puffy Hearts",
+          "sku": "PHE",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 40
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 40
+      }
+    },
+    {
+      "id": "41",
+      "createdAt": "2025-07-24T05:30:52.397Z",
+      "updatedAt": "2025-07-24T05:30:52.397Z",
+      "name": "Reversible Baby heart Necklace",
+      "slug": "reversible-baby-heart-necklace",
+      "description": "<p>18k gold plated </p><p>Waterproof</p><p>Anti tarnish </p>",
+      "featuredAsset": {
+        "id": "49",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105911__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105911.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "49",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105911__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105911.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "41",
+          "createdAt": "2025-07-24T05:30:57.405Z",
+          "updatedAt": "2025-07-24T05:30:57.405Z",
+          "name": "Reversible Baby heart Necklace",
+          "sku": "RBHN",
+          "price": 32900,
+          "priceWithTax": 32900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 41
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 41
+      }
+    },
+    {
+      "id": "42",
+      "createdAt": "2025-07-24T05:32:31.516Z",
+      "updatedAt": "2025-07-24T05:32:31.516Z",
+      "name": "Sunny Necklace",
+      "slug": "sunny-necklace",
+      "description": "<p>18k gold plated </p><p>Anti tarnish </p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "50",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105921__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105921.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "50",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105921__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105921.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "42",
+          "createdAt": "2025-07-24T05:32:37.346Z",
+          "updatedAt": "2025-07-24T05:32:37.346Z",
+          "name": "Sunny Necklace",
+          "sku": "SN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 42
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 42
+      }
+    },
+    {
+      "id": "43",
+      "createdAt": "2025-07-24T05:34:06.978Z",
+      "updatedAt": "2025-07-24T05:34:06.978Z",
+      "name": "Diamor Necklace",
+      "slug": "diamor-necklace",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "51",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105859__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105859.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "51",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105859__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_105859.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "43",
+          "createdAt": "2025-07-24T05:34:12.890Z",
+          "updatedAt": "2025-07-24T05:34:12.890Z",
+          "name": "Diamor Necklace",
+          "sku": "DN",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 43
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 43
+      }
+    },
+    {
+      "id": "44",
+      "createdAt": "2025-07-24T05:38:50.331Z",
+      "updatedAt": "2025-07-24T05:38:50.331Z",
+      "name": "Bangle Bracelet",
+      "slug": "bangle-bracelet",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "52",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0126__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0126.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "52",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0126__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0126.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "44",
+          "createdAt": "2025-07-24T05:38:58.957Z",
+          "updatedAt": "2025-07-24T05:38:58.957Z",
+          "name": "Bangle Bracelet",
+          "sku": "BB",
+          "price": 39900,
+          "priceWithTax": 39900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 44
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 44
+      }
+    },
+    {
+      "id": "45",
+      "createdAt": "2025-07-24T05:40:48.510Z",
+      "updatedAt": "2025-07-24T05:40:48.510Z",
+      "name": "Wavy Bracelet",
+      "slug": "wavy-bracelet",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "53",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0127__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0127.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "53",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0127__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0127.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "45",
+          "createdAt": "2025-07-24T05:40:55.924Z",
+          "updatedAt": "2025-07-24T05:40:55.924Z",
+          "name": "Wavy Bracelet",
+          "sku": "WB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 45
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 45
+      }
+    },
+    {
+      "id": "48",
+      "createdAt": "2025-07-24T05:45:41.051Z",
+      "updatedAt": "2025-07-24T05:45:41.051Z",
+      "name": "Aurelia Link Bracelet",
+      "slug": "aurelia-link-bracelet",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "55",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0128__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0128.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "55",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0128__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0128.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "48",
+          "createdAt": "2025-07-24T05:45:47.042Z",
+          "updatedAt": "2025-07-24T05:45:47.042Z",
+          "name": "Aurelia Link Bracelet",
+          "sku": "ALB",
+          "price": 36500,
+          "priceWithTax": 36500,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 48
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 48
+      }
+    },
+    {
+      "id": "49",
+      "createdAt": "2025-07-24T05:52:40.042Z",
+      "updatedAt": "2025-07-24T05:52:40.042Z",
+      "name": "Daisy Necklace",
+      "slug": "daisy-necklace",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "57",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0444__02__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0444__02.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "57",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0444__02__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0444__02.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "49",
+          "createdAt": "2025-07-24T05:52:46.012Z",
+          "updatedAt": "2025-07-24T05:52:46.012Z",
+          "name": "Daisy Necklace",
+          "sku": "DN",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 49
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 49
+      }
+    },
+    {
+      "id": "50",
+      "createdAt": "2025-07-24T05:54:48.069Z",
+      "updatedAt": "2025-07-24T05:54:48.069Z",
+      "name": "Hexa Heart studs",
+      "slug": "hexa-heart-studs",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "58",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/f84375d3a4877b263ad6c130c7aa9e0d__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/f84375d3a4877b263ad6c130c7aa9e0d.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "58",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/f84375d3a4877b263ad6c130c7aa9e0d__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/f84375d3a4877b263ad6c130c7aa9e0d.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "50",
+          "createdAt": "2025-07-24T05:54:53.483Z",
+          "updatedAt": "2025-07-24T05:54:53.483Z",
+          "name": "Hexa Heart studs",
+          "sku": "HHS",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 50
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 50
+      }
+    },
+    {
+      "id": "51",
+      "createdAt": "2025-07-24T05:58:47.735Z",
+      "updatedAt": "2025-07-24T05:58:47.735Z",
+      "name": "11:11 Manifest Necklace",
+      "slug": "1111-manifest-necklace",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "59",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e90c00d06df21be899ad0c9098629181__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e90c00d06df21be899ad0c9098629181.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "59",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e90c00d06df21be899ad0c9098629181__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e90c00d06df21be899ad0c9098629181.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "51",
+          "createdAt": "2025-07-24T05:58:53.873Z",
+          "updatedAt": "2025-07-24T05:58:53.873Z",
+          "name": "11:11 Manifest Necklace",
+          "sku": "MN",
+          "price": 32900,
+          "priceWithTax": 32900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 51
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 51
+      }
+    },
+    {
+      "id": "52",
+      "createdAt": "2025-07-24T06:00:24.215Z",
+      "updatedAt": "2025-07-24T06:00:24.215Z",
+      "name": "11:11 Heart Manifest Necklace",
+      "slug": "1111-heart-manifest-necklace",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p><p></p>",
+      "featuredAsset": {
+        "id": "60",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/a41195a631a69958d4590d3cc1c376ca__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/a41195a631a69958d4590d3cc1c376ca.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "60",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/a41195a631a69958d4590d3cc1c376ca__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/a41195a631a69958d4590d3cc1c376ca.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "52",
+          "createdAt": "2025-07-24T06:00:30.022Z",
+          "updatedAt": "2025-07-24T06:00:30.022Z",
+          "name": "11:11 Heart Manifest Necklace",
+          "sku": "MHNz",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 52
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 52
+      }
+    },
+    {
+      "id": "53",
+      "createdAt": "2025-07-24T06:07:49.055Z",
+      "updatedAt": "2025-07-24T06:07:49.055Z",
+      "name": "Hearty Necklace",
+      "slug": "hearty-necklace",
+      "description": "<p>18k gold plated</p><p>Anti tarnish</p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "61",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250627-wa0128__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250627-wa0128.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "61",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250627-wa0128__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250627-wa0128.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "53",
+          "createdAt": "2025-07-24T06:07:55.053Z",
+          "updatedAt": "2025-07-24T06:07:55.053Z",
+          "name": "Hearty Necklace",
+          "sku": "HN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 53
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 53
+      }
+    },
+    {
+      "id": "54",
+      "createdAt": "2025-07-24T06:14:21.362Z",
+      "updatedAt": "2025-07-24T06:14:21.362Z",
+      "name": "Tennis Bracelet",
+      "slug": "tennis-bracelet",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "62",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/9538606e00c41959f1e44b014ec37649__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/9538606e00c41959f1e44b014ec37649.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "62",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/9538606e00c41959f1e44b014ec37649__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/9538606e00c41959f1e44b014ec37649.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "54",
+          "createdAt": "2025-07-24T06:14:27.163Z",
+          "updatedAt": "2025-07-24T06:14:27.163Z",
+          "name": "Tennis Bracelet",
+          "sku": "TB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 54
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 54
+      }
+    },
+    {
+      "id": "55",
+      "createdAt": "2025-07-24T06:16:51.370Z",
+      "updatedAt": "2025-07-24T06:16:51.370Z",
+      "name": "Gold clover Bracelet",
+      "slug": "gold-clover-bracelet",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "63",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/9cf9efc13116063a95a5f97fa86dca85__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/9cf9efc13116063a95a5f97fa86dca85.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "63",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/9cf9efc13116063a95a5f97fa86dca85__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/9cf9efc13116063a95a5f97fa86dca85.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        },
+        {
+          "id": "64",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/88a28879723d435e18af6c4740006e84__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/88a28879723d435e18af6c4740006e84.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "55",
+          "createdAt": "2025-07-24T06:16:57.197Z",
+          "updatedAt": "2025-07-24T06:16:57.197Z",
+          "name": "Gold clover Bracelet",
+          "sku": "GCB",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 55
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 55
+      }
+    },
+    {
+      "id": "56",
+      "createdAt": "2025-07-24T06:19:08.382Z",
+      "updatedAt": "2025-07-24T06:19:08.382Z",
+      "name": "Reversible Clover Bracelet",
+      "slug": "reversible-clover-bracelet",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic </p>",
+      "featuredAsset": {
+        "id": "65",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/c651be6b91279b90adb303da4180b40e__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/c651be6b91279b90adb303da4180b40e.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "65",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/c651be6b91279b90adb303da4180b40e__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/c651be6b91279b90adb303da4180b40e.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "56",
+          "createdAt": "2025-07-24T06:19:14.287Z",
+          "updatedAt": "2025-07-24T06:19:14.287Z",
+          "name": "Reversible Clover Bracelet",
+          "sku": "RCB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 56
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 56
+      }
+    },
+    {
+      "id": "57",
+      "createdAt": "2025-07-24T06:21:02.938Z",
+      "updatedAt": "2025-07-24T06:21:02.938Z",
+      "name": "Hearty Hoops",
+      "slug": "hearty-hoops",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "66",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/a55147420e807de6d3c5ee97267d6e26__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/a55147420e807de6d3c5ee97267d6e26.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "66",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/a55147420e807de6d3c5ee97267d6e26__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/a55147420e807de6d3c5ee97267d6e26.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "57",
+          "createdAt": "2025-07-24T06:21:08.761Z",
+          "updatedAt": "2025-07-24T06:21:08.761Z",
+          "name": "Hearty Hoops",
+          "sku": "HH",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 57
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 57
+      }
+    },
+    {
+      "id": "58",
+      "createdAt": "2025-07-24T06:22:47.157Z",
+      "updatedAt": "2025-07-24T06:22:47.157Z",
+      "name": "Textured Square Earring",
+      "slug": "textured-square-earring",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "67",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e6a6d45a853a66d1e42ea7e5affe1ba5__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e6a6d45a853a66d1e42ea7e5affe1ba5.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "67",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e6a6d45a853a66d1e42ea7e5affe1ba5__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/e6a6d45a853a66d1e42ea7e5affe1ba5.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "58",
+          "createdAt": "2025-07-24T06:22:53.016Z",
+          "updatedAt": "2025-07-24T06:22:53.016Z",
+          "name": "Textured Square Earring",
+          "sku": "TSE",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 58
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 58
+      }
+    },
+    {
+      "id": "59",
+      "createdAt": "2025-07-24T06:24:20.266Z",
+      "updatedAt": "2025-07-24T06:24:20.266Z",
+      "name": "Bow-tiful Earrings",
+      "slug": "bow-tiful-earrings",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "68",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/07f49b7b6c020f37bc2191e8471a4c43__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/07f49b7b6c020f37bc2191e8471a4c43.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "68",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/07f49b7b6c020f37bc2191e8471a4c43__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/07f49b7b6c020f37bc2191e8471a4c43.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "59",
+          "createdAt": "2025-07-24T06:24:26.193Z",
+          "updatedAt": "2025-07-24T06:24:26.193Z",
+          "name": "Bow-tiful Earrings",
+          "sku": "BHE",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 59
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 59
+      }
+    },
+    {
+      "id": "60",
+      "createdAt": "2025-07-24T06:25:49.416Z",
+      "updatedAt": "2025-07-24T06:25:49.416Z",
+      "name": "Rosy Necklace",
+      "slug": "rosy-necklace",
+      "description": "<p>Anti tarnish</p><p>Waterproof </p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "69",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/fa100ff55f3475cd31c982f7dd858d53__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/fa100ff55f3475cd31c982f7dd858d53.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "69",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/fa100ff55f3475cd31c982f7dd858d53__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/fa100ff55f3475cd31c982f7dd858d53.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "60",
+          "createdAt": "2025-07-24T06:25:55.221Z",
+          "updatedAt": "2025-07-24T06:25:55.221Z",
+          "name": "Rosy Necklace",
+          "sku": "R",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 60
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 60
+      }
+    },
+    {
+      "id": "62",
+      "createdAt": "2025-07-24T06:32:01.240Z",
+      "updatedAt": "2025-07-24T06:32:01.240Z",
+      "name": "Flora mini studs",
+      "slug": "flora-mini-studs",
+      "description": "<p>18k gold plated </p><p>Anti tarnish </p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "71",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/254cd98eecc9204e43e7fc0cb166f652__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/254cd98eecc9204e43e7fc0cb166f652.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "71",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/254cd98eecc9204e43e7fc0cb166f652__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/254cd98eecc9204e43e7fc0cb166f652.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        },
+        {
+          "id": "72",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/3fc97520009a3122bb7d963e54f58ed4__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/3fc97520009a3122bb7d963e54f58ed4.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "62",
+          "createdAt": "2025-07-24T06:32:07.354Z",
+          "updatedAt": "2025-07-24T06:32:07.354Z",
+          "name": "Flora mini studs",
+          "sku": "FMS",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 62
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 62
+      }
+    },
+    {
+      "id": "63",
+      "createdAt": "2025-07-24T06:37:12.695Z",
+      "updatedAt": "2025-07-24T06:37:12.695Z",
+      "name": "Autumn Necklace",
+      "slug": "autumn-necklace",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "73",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_120230__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_120230.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "73",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_120230__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_120230.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "63",
+          "createdAt": "2025-07-24T06:37:18.727Z",
+          "updatedAt": "2025-07-24T06:37:18.727Z",
+          "name": "Autumn Necklace",
+          "sku": "AN",
+          "price": 27900,
+          "priceWithTax": 27900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 63
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 63
+      }
+    },
+    {
+      "id": "64",
+      "createdAt": "2025-07-24T06:42:33.434Z",
+      "updatedAt": "2025-07-24T06:42:33.434Z",
+      "name": "Sunlette studded Necklace",
+      "slug": "sunlette-studded-necklace",
+      "description": "",
+      "featuredAsset": {
+        "id": "74",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121151__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121151.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "74",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121151__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121151.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "64",
+          "createdAt": "2025-07-24T06:42:43.294Z",
+          "updatedAt": "2025-07-24T06:42:43.294Z",
+          "name": "Sunlette studded Necklace",
+          "sku": "SSN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 64
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 64
+      }
+    },
+    {
+      "id": "65",
+      "createdAt": "2025-07-24T06:45:14.009Z",
+      "updatedAt": "2025-07-24T06:45:14.009Z",
+      "name": "Moonmist",
+      "slug": "moonmist",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "75",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121435__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121435.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "75",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121435__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121435.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "65",
+          "createdAt": "2025-07-24T06:45:19.827Z",
+          "updatedAt": "2025-07-24T06:45:19.827Z",
+          "name": "Moonmist",
+          "sku": "MMN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 65
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 65
+      }
+    },
+    {
+      "id": "66",
+      "createdAt": "2025-07-24T06:46:42.813Z",
+      "updatedAt": "2025-07-24T06:46:42.813Z",
+      "name": "Ribbon Bow Necklace",
+      "slug": "ribbon-bow-necklace",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "76",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121454__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121454.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "76",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121454__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121454.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "66",
+          "createdAt": "2025-07-24T06:46:48.534Z",
+          "updatedAt": "2025-07-24T06:46:48.534Z",
+          "name": "Ribbon Bow Necklace",
+          "sku": "RBN",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 66
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 66
+      }
+    },
+    {
+      "id": "67",
+      "createdAt": "2025-07-24T06:50:16.869Z",
+      "updatedAt": "2025-07-24T06:50:16.869Z",
+      "name": "Teddy bow Necklace",
+      "slug": "teddy-bow-necklace",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic z</p>",
+      "featuredAsset": {
+        "id": "77",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121736__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121736.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "77",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121736__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121736.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "67",
+          "createdAt": "2025-07-24T06:50:22.829Z",
+          "updatedAt": "2025-07-24T06:50:22.829Z",
+          "name": "Teddy bow Necklace",
+          "sku": "TBN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 67
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 67
+      }
+    },
+    {
+      "id": "68",
+      "createdAt": "2025-07-24T06:52:08.195Z",
+      "updatedAt": "2025-07-24T06:52:08.195Z",
+      "name": "Studded Teddy Necklace",
+      "slug": "studded-teddy-necklace",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "78",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121841__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121841.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "78",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121841__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121841.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "68",
+          "createdAt": "2025-07-24T06:52:14.519Z",
+          "updatedAt": "2025-07-24T06:52:14.519Z",
+          "name": "Studded Teddy Necklace",
+          "sku": "STN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 68
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 68
+      }
+    },
+    {
+      "id": "69",
+      "createdAt": "2025-07-24T06:54:41.473Z",
+      "updatedAt": "2025-07-24T06:54:41.473Z",
+      "name": "Grace Flower Necklace",
+      "slug": "grace-flower-necklace",
+      "description": "",
+      "featuredAsset": {
+        "id": "79",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121902__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121902.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "79",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121902__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_121902.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "69",
+          "createdAt": "2025-07-24T06:54:47.389Z",
+          "updatedAt": "2025-07-24T06:54:47.389Z",
+          "name": "Grace Flower Necklace",
+          "sku": "GFN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 69
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 69
+      }
+    },
+    {
+      "id": "70",
+      "createdAt": "2025-07-24T06:59:10.353Z",
+      "updatedAt": "2025-07-24T06:59:10.353Z",
+      "name": "2in1 Magnetic Heart Necklace",
+      "slug": "2in1-magnetic-heart-necklace",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "80",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_122600__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_122600.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "80",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_122600__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_122600.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        },
+        {
+          "id": "82",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_122616__02__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_122616__02.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "70",
+          "createdAt": "2025-07-24T06:59:19.066Z",
+          "updatedAt": "2025-07-24T06:59:19.066Z",
+          "name": "2in1 Magnetic Heart Necklace",
+          "sku": "MHN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 70
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 70
+      }
+    },
+    {
+      "id": "71",
+      "createdAt": "2025-07-24T07:01:16.389Z",
+      "updatedAt": "2025-07-24T07:01:16.389Z",
+      "name": "Golden Squeeze",
+      "slug": "golden-squeeze",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "83",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_122534__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_122534.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "83",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_122534__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_122534.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "71",
+          "createdAt": "2025-07-24T07:01:22.044Z",
+          "updatedAt": "2025-07-24T07:01:22.044Z",
+          "name": "Golden Squeeze",
+          "sku": "THN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 71
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 71
+      }
+    },
+    {
+      "id": "72",
+      "createdAt": "2025-07-24T07:04:44.992Z",
+      "updatedAt": "2025-07-24T07:04:44.992Z",
+      "name": "Tangled Star Necklace",
+      "slug": "tangled-star-necklace",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "84",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0352__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0352.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "84",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0352__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0352.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "72",
+          "createdAt": "2025-07-24T07:04:50.438Z",
+          "updatedAt": "2025-07-24T07:04:50.438Z",
+          "name": "Tangled Star Necklace",
+          "sku": "TS",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 72
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 72
+      }
+    },
+    {
+      "id": "73",
+      "createdAt": "2025-07-24T07:08:22.606Z",
+      "updatedAt": "2025-07-24T07:08:22.606Z",
+      "name": "Adore mini Necklace",
+      "slug": "adore-mini-necklace",
+      "description": "<p>18k gold plated</p><p>Anti tarnish </p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "85",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0159__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0159.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "85",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0159__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0159.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "73",
+          "createdAt": "2025-07-24T07:08:28.341Z",
+          "updatedAt": "2025-07-24T07:08:28.341Z",
+          "name": "Adore mini Necklace",
+          "sku": "AMN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 73
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 73
+      }
+    },
+    {
+      "id": "74",
+      "createdAt": "2025-07-24T07:11:08.097Z",
+      "updatedAt": "2025-07-24T07:11:08.097Z",
+      "name": "Green stone necklace",
+      "slug": "green-stone-necklace",
+      "description": "<p>18k gold plated</p><p>Anti tarnish</p><p>Waterproof z</p>",
+      "featuredAsset": {
+        "id": "86",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0165__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0165.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "86",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0165__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0165.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "74",
+          "createdAt": "2025-07-24T07:11:14.159Z",
+          "updatedAt": "2025-07-24T07:11:14.159Z",
+          "name": "Green stone necklace",
+          "sku": "GSN",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 74
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 74
+      }
+    },
+    {
+      "id": "76",
+      "createdAt": "2025-07-24T07:12:51.583Z",
+      "updatedAt": "2025-07-24T07:12:51.583Z",
+      "name": "Star kada Bracelet",
+      "slug": "star-kada-bracelet",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "87",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0160__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0160.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "87",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0160__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0160.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "76",
+          "createdAt": "2025-07-24T07:12:57.327Z",
+          "updatedAt": "2025-07-24T07:12:57.327Z",
+          "name": "Star kada Bracelet",
+          "sku": "SKB",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 76
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 76
+      }
+    },
+    {
+      "id": "77",
+      "createdAt": "2025-07-24T07:14:01.363Z",
+      "updatedAt": "2025-07-24T07:14:01.363Z",
+      "name": "Roman Bracelet",
+      "slug": "roman-bracelet",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "88",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0162__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0162.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "88",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0162__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0162.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "77",
+          "createdAt": "2025-07-24T07:14:07.168Z",
+          "updatedAt": "2025-07-24T07:14:07.168Z",
+          "name": "Roman Bracelet",
+          "sku": "RB",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 77
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 77
+      }
+    },
+    {
+      "id": "78",
+      "createdAt": "2025-07-24T07:15:48.385Z",
+      "updatedAt": "2025-07-24T07:15:48.385Z",
+      "name": "Love Band Bracelet",
+      "slug": "love-band-bracelet",
+      "description": "",
+      "featuredAsset": {
+        "id": "89",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0163__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0163.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "89",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0163__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0163.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [
+        {
+          "id": "1",
+          "code": "baby-size",
+          "name": "Baby size",
+          "options": [
+            {
+              "id": "3",
+              "code": "299",
+              "name": "299"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "code": "regular-size",
+          "name": "Regular size",
+          "options": [
+            {
+              "id": "2",
+              "code": "299",
+              "name": "299"
+            }
+          ]
+        }
+      ],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "78",
+          "createdAt": "2025-07-24T07:15:54.216Z",
+          "updatedAt": "2025-07-24T07:15:54.216Z",
+          "name": "Love Band Bracelet",
+          "sku": "LBB",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 78
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 78
+      }
+    },
+    {
+      "id": "79",
+      "createdAt": "2025-07-24T07:17:12.072Z",
+      "updatedAt": "2025-07-24T07:17:12.072Z",
+      "name": "Silver Bracelet",
+      "slug": "silver-bracelet",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "90",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0161__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0161.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "90",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0161__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0161.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "79",
+          "createdAt": "2025-07-24T07:17:18.267Z",
+          "updatedAt": "2025-07-24T07:17:18.267Z",
+          "name": "Silver Bracelet",
+          "sku": "SK",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 79
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 79
+      }
+    },
+    {
+      "id": "80",
+      "createdAt": "2025-07-24T07:23:00.312Z",
+      "updatedAt": "2025-07-24T07:23:00.312Z",
+      "name": "Crescent Moon Stone Necklace",
+      "slug": "crescent-moon-stone-necklace",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "91",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0417__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0417.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "91",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0417__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0417.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "80",
+          "createdAt": "2025-07-24T07:23:06.123Z",
+          "updatedAt": "2025-07-24T07:23:06.123Z",
+          "name": "Crescent Moon Stone Necklace",
+          "sku": "CMN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 80
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 80
+      }
+    },
+    {
+      "id": "81",
+      "createdAt": "2025-07-24T07:24:30.356Z",
+      "updatedAt": "2025-07-24T07:24:30.356Z",
+      "name": "Cherry necklace",
+      "slug": "cherry-necklace",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "92",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0403__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0403.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "92",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0403__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0403.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "81",
+          "createdAt": "2025-07-24T07:24:36.245Z",
+          "updatedAt": "2025-07-24T07:24:36.245Z",
+          "name": "Cherry necklace",
+          "sku": "CN",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 81
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 81
+      }
+    },
+    {
+      "id": "82",
+      "createdAt": "2025-07-24T07:26:15.341Z",
+      "updatedAt": "2025-07-24T07:26:15.341Z",
+      "name": "Droplet Necklace",
+      "slug": "droplet-necklace",
+      "description": "<p>Anti tarnish</p><p>Waterproof </p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "93",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0461__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0461.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "93",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0461__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0461.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "82",
+          "createdAt": "2025-07-24T07:26:20.812Z",
+          "updatedAt": "2025-07-24T07:26:20.812Z",
+          "name": "Droplet Necklace",
+          "sku": "DLN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 82
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 82
+      }
+    },
+    {
+      "id": "83",
+      "createdAt": "2025-07-24T07:30:14.748Z",
+      "updatedAt": "2025-07-24T07:30:14.748Z",
+      "name": "Moon Star ring",
+      "slug": "moon-star-ring",
+      "description": "<p>Adjustable</p><p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "94",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0395__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0395.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "94",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0395__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0395.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "11",
+          "code": "ring",
+          "name": "Ring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "5",
+          "name": "Rings",
+          "slug": "rings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "83",
+          "createdAt": "2025-07-24T07:30:20.567Z",
+          "updatedAt": "2025-07-24T07:30:20.567Z",
+          "name": "Moon Star ring",
+          "sku": "MSR",
+          "price": 22900,
+          "priceWithTax": 22900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 83
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 83
+      }
+    },
+    {
+      "id": "84",
+      "createdAt": "2025-07-24T07:32:05.190Z",
+      "updatedAt": "2025-07-24T07:32:05.190Z",
+      "name": "Bang Ring - Rose Gold size 7 ",
+      "slug": "bang-ring-rose-gold-size-7-",
+      "description": "<p>Size 7 </p><p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "95",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0388__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0388.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "95",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0388__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0388.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "11",
+          "code": "ring",
+          "name": "Ring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "5",
+          "name": "Rings",
+          "slug": "rings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "84",
+          "createdAt": "2025-07-24T07:32:10.998Z",
+          "updatedAt": "2025-07-24T07:32:10.998Z",
+          "name": "Bang Ring - Rose Gold size 7 ",
+          "sku": "RGR",
+          "price": 19900,
+          "priceWithTax": 19900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 84
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 84
+      }
+    },
+    {
+      "id": "85",
+      "createdAt": "2025-07-24T07:35:02.592Z",
+      "updatedAt": "2025-07-24T07:35:02.592Z",
+      "name": "Aura Bracelet",
+      "slug": "aura-bracelet",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "96",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0405__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0405.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "96",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0405__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0405.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "85",
+          "createdAt": "2025-07-24T07:35:08.335Z",
+          "updatedAt": "2025-07-24T07:35:08.335Z",
+          "name": "Aura Bracelet",
+          "sku": "AK",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 85
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 85
+      }
+    },
+    {
+      "id": "86",
+      "createdAt": "2025-07-24T07:37:35.820Z",
+      "updatedAt": "2025-07-24T07:37:35.820Z",
+      "name": "Bamboo Earrings",
+      "slug": "bamboo-earrings",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "97",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_130556__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_130556.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "97",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_130556__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_130556.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "86",
+          "createdAt": "2025-07-24T07:37:42.365Z",
+          "updatedAt": "2025-07-24T07:37:42.365Z",
+          "name": "Bamboo Earrings",
+          "sku": "BH",
+          "price": 19900,
+          "priceWithTax": 19900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 86
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 86
+      }
+    },
+    {
+      "id": "87",
+      "createdAt": "2025-07-24T07:39:04.919Z",
+      "updatedAt": "2025-07-24T07:39:04.919Z",
+      "name": "Round hoops",
+      "slug": "round-hoops",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "98",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_130620__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_130620.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "98",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_130620__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_130620.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "87",
+          "createdAt": "2025-07-24T07:39:10.790Z",
+          "updatedAt": "2025-07-24T07:39:10.790Z",
+          "name": "Round hoops",
+          "sku": "RH",
+          "price": 19900,
+          "priceWithTax": 19900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 87
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 87
+      }
+    },
+    {
+      "id": "88",
+      "createdAt": "2025-07-24T07:41:25.408Z",
+      "updatedAt": "2025-07-24T07:41:25.408Z",
+      "name": "White Gold Clover Bracelet",
+      "slug": "white-gold-clover-bracelet",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "99",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131021__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131021.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "99",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131021__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131021.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "88",
+          "createdAt": "2025-07-24T07:41:32.060Z",
+          "updatedAt": "2025-07-24T07:41:32.060Z",
+          "name": "White Gold Clover Bracelet",
+          "sku": "WCB",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 88
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 88
+      }
+    },
+    {
+      "id": "89",
+      "createdAt": "2025-07-24T07:43:42.430Z",
+      "updatedAt": "2025-07-24T07:43:42.430Z",
+      "name": "Spiral Hoops",
+      "slug": "spiral-hoops-2",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "100",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131319__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131319.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "100",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131319__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131319.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "89",
+          "createdAt": "2025-07-24T07:43:48.440Z",
+          "updatedAt": "2025-07-24T07:43:48.440Z",
+          "name": "Spiral Hoops",
+          "sku": "SH",
+          "price": 19900,
+          "priceWithTax": 19900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 89
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 89
+      }
+    },
+    {
+      "id": "90",
+      "createdAt": "2025-07-24T07:45:12.038Z",
+      "updatedAt": "2025-07-24T07:45:12.038Z",
+      "name": "Hampered Hoops",
+      "slug": "hampered-hoops",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "101",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131411__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131411.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "101",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131411__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250724_131411.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "90",
+          "createdAt": "2025-07-24T07:45:18.587Z",
+          "updatedAt": "2025-07-24T07:45:18.587Z",
+          "name": "Hampered Hoops",
+          "sku": "HH",
+          "price": 19900,
+          "priceWithTax": 19900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 90
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 90
+      }
+    },
+    {
+      "id": "92",
+      "createdAt": "2025-07-24T08:55:13.972Z",
+      "updatedAt": "2025-07-24T08:55:13.972Z",
+      "name": "Italian Bracelet - Vintage Gold",
+      "slug": "italian-bracelet-vintage-gold",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "102",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0387__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0387.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "102",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0387__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250723-wa0387.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "92",
+          "createdAt": "2025-07-24T08:55:19.737Z",
+          "updatedAt": "2025-07-24T08:55:19.737Z",
+          "name": "Italian Bracelet - Vintage Gold",
+          "sku": "IB",
+          "price": 37900,
+          "priceWithTax": 37900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 92
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 92
+      }
+    },
+    {
+      "id": "93",
+      "createdAt": "2025-07-24T08:57:03.200Z",
+      "updatedAt": "2025-07-24T08:57:03.200Z",
+      "name": "Evil eye bracelet",
+      "slug": "evil-eye-bracelet",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "103",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/dff6d583d1ae7228d26f7a96cc33fe5c__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/dff6d583d1ae7228d26f7a96cc33fe5c.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "103",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/dff6d583d1ae7228d26f7a96cc33fe5c__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/dff6d583d1ae7228d26f7a96cc33fe5c.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "93",
+          "createdAt": "2025-07-24T08:57:09.435Z",
+          "updatedAt": "2025-07-24T08:57:09.435Z",
+          "name": "Evil eye bracelet",
+          "sku": "EEB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 93
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 93
+      }
+    },
+    {
+      "id": "94",
+      "createdAt": "2025-07-24T09:06:57.527Z",
+      "updatedAt": "2025-07-24T09:06:57.527Z",
+      "name": "Flower bracelet",
+      "slug": "flower-bracelet",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "104",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250722-wa0143__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250722-wa0143.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "104",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250722-wa0143__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250722-wa0143.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [
+        {
+          "id": "3",
+          "code": "baby-size",
+          "name": "Baby size",
+          "options": []
+        }
+      ],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "94",
+          "createdAt": "2025-07-24T09:07:03.640Z",
+          "updatedAt": "2025-07-24T09:07:03.640Z",
+          "name": "Flower bracelet",
+          "sku": "",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 94
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 94
+      }
+    },
+    {
+      "id": "95",
+      "createdAt": "2025-07-24T09:11:03.373Z",
+      "updatedAt": "2025-07-24T09:11:03.373Z",
+      "name": "Sea Charms Necklace",
+      "slug": "sea-charms-necklace",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "105",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250722-wa0062__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250722-wa0062.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "105",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250722-wa0062__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250722-wa0062.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "8",
+          "code": "necklace",
+          "name": "Necklace",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "2",
+          "name": "Necklaces",
+          "slug": "necklaces"
+        }
+      ],
+      "variants": [
+        {
+          "id": "95",
+          "createdAt": "2025-07-24T09:11:15.645Z",
+          "updatedAt": "2025-07-24T09:11:15.645Z",
+          "name": "Sea Charms Necklace",
+          "sku": "SCN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 95
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 95
+      }
+    },
+    {
+      "id": "96",
+      "createdAt": "2025-07-24T10:11:48.942Z",
+      "updatedAt": "2025-07-24T10:11:48.942Z",
+      "name": "Snake chain",
+      "slug": "snake-chain",
+      "description": "<p>18k gold plated </p><p>Anti tarnish </p><p>Waterproof</p>",
+      "featuredAsset": {
+        "id": "106",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/96ae8871285453ede8a1b3bbb164dc6a__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/96ae8871285453ede8a1b3bbb164dc6a.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "106",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/96ae8871285453ede8a1b3bbb164dc6a__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/96ae8871285453ede8a1b3bbb164dc6a.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "14",
+          "code": "mens-jewellery",
+          "name": "Mens Jewellery",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "8",
+          "name": "Mens Jewellery",
+          "slug": "mens-jewellery"
+        }
+      ],
+      "variants": [
+        {
+          "id": "96",
+          "createdAt": "2025-07-24T10:11:54.757Z",
+          "updatedAt": "2025-07-24T10:11:54.757Z",
+          "name": "Snake chain",
+          "sku": "MSC",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "IN_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 96
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 96
+      }
+    },
+    {
+      "id": "97",
+      "createdAt": "2025-07-24T10:15:32.849Z",
+      "updatedAt": "2025-07-24T10:15:32.849Z",
+      "name": "Luxe diamond bracelet",
+      "slug": "luxe-diamond-bracelet",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "107",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0213__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0213.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "107",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0213__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0213.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "97",
+          "createdAt": "2025-07-24T10:15:38.550Z",
+          "updatedAt": "2025-07-24T10:15:38.550Z",
+          "name": "Luxe diamond bracelet",
+          "sku": "LDB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 97
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 97
+      }
+    },
+    {
+      "id": "98",
+      "createdAt": "2025-07-24T12:03:19.603Z",
+      "updatedAt": "2025-07-24T12:03:19.603Z",
+      "name": "Baby size bracelet -1",
+      "slug": "baby-size-bracelet-1",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "108",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0250__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0250.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "108",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0250__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0250.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "98",
+          "createdAt": "2025-07-24T12:03:26.072Z",
+          "updatedAt": "2025-07-24T12:03:26.072Z",
+          "name": "Baby size bracelet -1",
+          "sku": "BB1",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 98
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 98
+      }
+    },
+    {
+      "id": "99",
+      "createdAt": "2025-07-24T12:04:35.704Z",
+      "updatedAt": "2025-07-24T12:04:35.704Z",
+      "name": "Baby size bracelet -2",
+      "slug": "baby-size-bracelet-2",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "109",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0271__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0271.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "109",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0271__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0271.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "99",
+          "createdAt": "2025-07-24T12:04:41.520Z",
+          "updatedAt": "2025-07-24T12:04:41.520Z",
+          "name": "Baby size bracelet -2",
+          "sku": "BB2",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 99
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 99
+      }
+    },
+    {
+      "id": "100",
+      "createdAt": "2025-07-24T12:05:59.269Z",
+      "updatedAt": "2025-07-24T12:05:59.269Z",
+      "name": "Baby size bracelet -3",
+      "slug": "baby-size-bracelet-3",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "110",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0255__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0255.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "110",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0255__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0255.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "100",
+          "createdAt": "2025-07-24T12:06:05.274Z",
+          "updatedAt": "2025-07-24T12:06:05.274Z",
+          "name": "Baby size bracelet -3",
+          "sku": "BB3",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 100
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 100
+      }
+    },
+    {
+      "id": "101",
+      "createdAt": "2025-07-24T12:08:33.667Z",
+      "updatedAt": "2025-07-24T12:08:33.667Z",
+      "name": "Baby size bracelet -4",
+      "slug": "baby-size-bracelet-4",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic </p>",
+      "featuredAsset": {
+        "id": "111",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0264__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0264.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "111",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0264__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0264.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "101",
+          "createdAt": "2025-07-24T12:08:39.537Z",
+          "updatedAt": "2025-07-24T12:08:39.537Z",
+          "name": "Baby size bracelet -4",
+          "sku": "BB4",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 101
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 101
+      }
+    },
+    {
+      "id": "102",
+      "createdAt": "2025-07-24T12:10:08.036Z",
+      "updatedAt": "2025-07-24T12:10:08.036Z",
+      "name": "Baby size bracelet -5",
+      "slug": "baby-size-bracelet-5",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "112",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0253__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0253.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "112",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0253__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0253.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "102",
+          "createdAt": "2025-07-24T12:10:13.813Z",
+          "updatedAt": "2025-07-24T12:10:13.813Z",
+          "name": "Baby size bracelet -5",
+          "sku": "BB5",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 102
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 102
+      }
+    },
+    {
+      "id": "103",
+      "createdAt": "2025-07-24T12:11:24.288Z",
+      "updatedAt": "2025-07-24T12:11:24.288Z",
+      "name": "Baby size bracelet -6",
+      "slug": "baby-size-bracelet-6",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "113",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0252__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0252.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "113",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0252__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0252.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "103",
+          "createdAt": "2025-07-24T12:11:30.238Z",
+          "updatedAt": "2025-07-24T12:11:30.238Z",
+          "name": "Baby size bracelet -6",
+          "sku": "BB6",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 103
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 103
+      }
+    },
+    {
+      "id": "104",
+      "createdAt": "2025-07-24T12:16:23.261Z",
+      "updatedAt": "2025-07-24T12:16:23.261Z",
+      "name": "Baby size bracelet -7",
+      "slug": "baby-size-bracelet-7",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "114",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0272__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0272.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "114",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0272__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250724-wa0272.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [
+        {
+          "id": "4",
+          "code": "gold",
+          "name": "Gold",
+          "options": [
+            {
+              "id": "4",
+              "code": "349",
+              "name": "349"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "code": "rose-gold",
+          "name": "Rose gold",
+          "options": [
+            {
+              "id": "5",
+              "code": "349",
+              "name": "349"
+            }
+          ]
+        }
+      ],
+      "facetValues": [
+        {
+          "id": "9",
+          "code": "bracelet",
+          "name": "Bracelet",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "3",
+          "name": "Bracelets",
+          "slug": "bracelets"
+        }
+      ],
+      "variants": [
+        {
+          "id": "104",
+          "createdAt": "2025-07-24T12:16:32.384Z",
+          "updatedAt": "2025-07-24T12:16:32.384Z",
+          "name": "Baby size bracelet -7 349 349",
+          "sku": "BB7",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [
+            {
+              "id": "4",
+              "code": "349",
+              "name": "349"
+            },
+            {
+              "id": "5",
+              "code": "349",
+              "name": "349"
+            }
+          ],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 104
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 104
+      }
+    },
+    {
+      "id": "105",
+      "createdAt": "2025-07-25T05:34:34.422Z",
+      "updatedAt": "2025-07-25T05:34:34.422Z",
+      "name": "Flora Earrings",
+      "slug": "flora-earrings",
+      "description": "<p>Anti tarnish</p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "115",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250723_194635__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250723_194635.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "115",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250723_194635__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img_20250723_194635.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "105",
+          "createdAt": "2025-07-25T05:34:40.475Z",
+          "updatedAt": "2025-07-25T05:34:40.475Z",
+          "name": "Flora Earrings",
+          "sku": "FEz",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 105
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 105
+      }
+    },
+    {
+      "id": "106",
+      "createdAt": "2025-07-25T05:40:51.878Z",
+      "updatedAt": "2025-07-25T05:40:51.878Z",
+      "name": "Dual Tone Hoop",
+      "slug": "dual-tone-hoop",
+      "description": "<p>Anti tarnish </p><p>Waterproof</p><p>Hypoallergenic</p>",
+      "featuredAsset": {
+        "id": "116",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250628-wa0005__preview.jpg?_a=BAMAK+ZW0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250628-wa0005.jpg?_a=BAMAK+ZW0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "116",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250628-wa0005__preview.jpg?_a=BAMAK+ZW0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/img-20250628-wa0005.jpg?_a=BAMAK+ZW0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [
+        {
+          "id": "10",
+          "code": "earring",
+          "name": "Earring",
+          "facet": {
+            "id": "3",
+            "code": "category",
+            "name": "Category"
+          }
+        }
+      ],
+      "collections": [
+        {
+          "id": "4",
+          "name": "Earrings",
+          "slug": "earrings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "106",
+          "createdAt": "2025-07-25T05:40:58.037Z",
+          "updatedAt": "2025-07-25T05:40:58.037Z",
+          "name": "Dual Tone Hoop",
+          "sku": "DTH",
+          "price": 24900,
+          "priceWithTax": 24900,
+          "currencyCode": "INR",
+          "stockLevel": "LOW_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 106
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 106
+      }
+    }
+  ]
+}

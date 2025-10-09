@@ -1,0 +1,2887 @@
+{
+  "exportedAt": "2025-10-09T07:24:03.639Z",
+  "source": "http://localhost:10000/shop-api",
+  "totalItems": 60,
+  "products": [
+    {
+      "id": "1",
+      "createdAt": "2025-08-28T01:36:30.239Z",
+      "updatedAt": "2025-08-28T07:07:04.776Z",
+      "name": "Hexa Heart Necklace ",
+      "slug": "hexa-heart-necklace",
+      "description": "Beautiful hexa heart necklace ",
+      "featuredAsset": {
+        "id": "1",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hexa-heart-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hexa-heart-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "1",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hexa-heart-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hexa-heart-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "1",
+          "createdAt": "2025-08-28T01:36:39.420Z",
+          "updatedAt": "2025-08-28T11:29:09.825Z",
+          "name": "Hexa Heart Necklace ",
+          "sku": "HN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "IN_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 1
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 1
+      }
+    },
+    {
+      "id": "2",
+      "createdAt": "2025-08-28T01:36:40.758Z",
+      "updatedAt": "2025-08-28T07:07:14.664Z",
+      "name": "Tangled Heart Necklace",
+      "slug": "tangled-heart-necklace",
+      "description": "Beautiful tangled heart necklace",
+      "featuredAsset": {
+        "id": "2",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tangled-heart-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tangled-heart-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "2",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tangled-heart-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tangled-heart-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "2",
+          "createdAt": "2025-08-28T01:36:49.292Z",
+          "updatedAt": "2025-08-28T11:28:36.086Z",
+          "name": "Tangled Heart Necklace",
+          "sku": "TNN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "IN_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 2
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 2
+      }
+    },
+    {
+      "id": "3",
+      "createdAt": "2025-08-28T01:36:50.623Z",
+      "updatedAt": "2025-08-28T07:07:25.101Z",
+      "name": "Baby Bow Necklace",
+      "slug": "baby-bow-necklace",
+      "description": "Beautiful baby bow necklace",
+      "featuredAsset": {
+        "id": "3",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/baby-bow-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/baby-bow-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "3",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/baby-bow-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/baby-bow-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "3",
+          "createdAt": "2025-08-28T01:36:59.739Z",
+          "updatedAt": "2025-08-28T11:28:45.314Z",
+          "name": "Baby Bow Necklace",
+          "sku": "BBN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "IN_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 3
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 3
+      }
+    },
+    {
+      "id": "4",
+      "createdAt": "2025-08-28T01:37:01.077Z",
+      "updatedAt": "2025-08-28T07:07:35.042Z",
+      "name": "Reversible Clover Necklace ",
+      "slug": "reversible-clover-necklace",
+      "description": "Beautiful reversible clover necklace ",
+      "featuredAsset": {
+        "id": "4",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-clover-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-clover-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "4",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-clover-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-clover-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "4",
+          "createdAt": "2025-08-28T01:37:09.692Z",
+          "updatedAt": "2025-08-28T01:37:09.692Z",
+          "name": "Reversible Clover Necklace ",
+          "sku": "RCN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 4
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 4
+      }
+    },
+    {
+      "id": "5",
+      "createdAt": "2025-08-28T01:37:11.018Z",
+      "updatedAt": "2025-08-28T07:07:44.883Z",
+      "name": "Spiral Hoops",
+      "slug": "spiral-hoops",
+      "description": "Beautiful spiral hoops",
+      "featuredAsset": {
+        "id": "5",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-hoops-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-hoops-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "5",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-hoops-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-hoops-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "5",
+          "createdAt": "2025-08-28T01:37:19.517Z",
+          "updatedAt": "2025-08-28T01:37:19.517Z",
+          "name": "Spiral Hoops",
+          "sku": "32",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 5
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 5
+      }
+    },
+    {
+      "id": "6",
+      "createdAt": "2025-08-28T01:37:20.854Z",
+      "updatedAt": "2025-08-28T07:08:04.093Z",
+      "name": "Mini Bow Necklace",
+      "slug": "mini-bow-necklace",
+      "description": "Beautiful mini bow necklace",
+      "featuredAsset": {
+        "id": "6",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/mini-bow-necklace-1__02__preview.png?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/mini-bow-necklace-1__02.png?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "6",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/mini-bow-necklace-1__02__preview.png?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/mini-bow-necklace-1__02.png?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "6",
+          "createdAt": "2025-08-28T01:37:38.681Z",
+          "updatedAt": "2025-08-28T01:37:38.681Z",
+          "name": "Mini Bow Necklace",
+          "sku": "MBN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 6
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 6
+      }
+    },
+    {
+      "id": "7",
+      "createdAt": "2025-08-28T01:37:39.955Z",
+      "updatedAt": "2025-08-28T07:08:13.829Z",
+      "name": "Bamboo Bracelet",
+      "slug": "bamboo-bracelet",
+      "description": "Beautiful bamboo bracelet",
+      "featuredAsset": {
+        "id": "7",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bamboo-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bamboo-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "7",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bamboo-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bamboo-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "7",
+          "createdAt": "2025-08-28T01:37:48.416Z",
+          "updatedAt": "2025-08-28T01:37:48.416Z",
+          "name": "Bamboo Bracelet",
+          "sku": "BB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 7
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 7
+      }
+    },
+    {
+      "id": "8",
+      "createdAt": "2025-08-28T01:37:49.708Z",
+      "updatedAt": "2025-08-28T07:08:24.247Z",
+      "name": "Knot Cuff Bracelet",
+      "slug": "knot-cuff-bracelet",
+      "description": "Beautiful knot cuff bracelet",
+      "featuredAsset": {
+        "id": "8",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/knot-cuff-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/knot-cuff-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "8",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/knot-cuff-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/knot-cuff-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "8",
+          "createdAt": "2025-08-28T01:37:58.828Z",
+          "updatedAt": "2025-08-28T01:37:58.828Z",
+          "name": "Knot Cuff Bracelet",
+          "sku": "KCB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 8
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 8
+      }
+    },
+    {
+      "id": "9",
+      "createdAt": "2025-08-28T01:38:00.092Z",
+      "updatedAt": "2025-08-28T07:08:33.682Z",
+      "name": "Rozel Necklace",
+      "slug": "rozel-necklace",
+      "description": "Beautiful rozel necklace",
+      "featuredAsset": {
+        "id": "9",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rozel-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rozel-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "9",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rozel-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rozel-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "9",
+          "createdAt": "2025-08-28T01:38:08.635Z",
+          "updatedAt": "2025-08-28T01:38:08.635Z",
+          "name": "Rozel Necklace",
+          "sku": "RN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 9
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 9
+      }
+    },
+    {
+      "id": "10",
+      "createdAt": "2025-08-28T01:38:09.974Z",
+      "updatedAt": "2025-08-28T07:08:43.337Z",
+      "name": "Rozel Gold",
+      "slug": "rozel-gold",
+      "description": "Beautiful rozel gold",
+      "featuredAsset": {
+        "id": "10",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rozel-gold-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rozel-gold-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "10",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rozel-gold-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rozel-gold-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "10",
+          "createdAt": "2025-08-28T01:38:17.884Z",
+          "updatedAt": "2025-08-28T01:38:17.884Z",
+          "name": "Rozel Gold",
+          "sku": "RGN",
+          "price": 32900,
+          "priceWithTax": 32900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 10
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 10
+      }
+    },
+    {
+      "id": "11",
+      "createdAt": "2025-08-28T01:38:19.159Z",
+      "updatedAt": "2025-08-28T07:08:59.526Z",
+      "name": "Spiral Earrings",
+      "slug": "spiral-earrings",
+      "description": "Beautiful spiral earrings",
+      "featuredAsset": {
+        "id": "11",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-earrings-1__02__preview.png?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-earrings-1__02.png?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "11",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-earrings-1__02__preview.png?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-earrings-1__02.png?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "11",
+          "createdAt": "2025-08-28T01:38:34.100Z",
+          "updatedAt": "2025-08-28T01:38:34.100Z",
+          "name": "Spiral Earrings",
+          "sku": "SE",
+          "price": 27900,
+          "priceWithTax": 27900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 11
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 11
+      }
+    },
+    {
+      "id": "12",
+      "createdAt": "2025-08-28T01:38:35.398Z",
+      "updatedAt": "2025-08-28T07:09:10.079Z",
+      "name": "Puffy Hearts",
+      "slug": "puffy-hearts",
+      "description": "Beautiful puffy hearts",
+      "featuredAsset": {
+        "id": "12",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/puffy-hearts-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/puffy-hearts-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "12",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/puffy-hearts-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/puffy-hearts-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "12",
+          "createdAt": "2025-08-28T01:38:44.654Z",
+          "updatedAt": "2025-08-28T01:38:44.654Z",
+          "name": "Puffy Hearts",
+          "sku": "PHE",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 12
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 12
+      }
+    },
+    {
+      "id": "13",
+      "createdAt": "2025-08-28T01:38:45.929Z",
+      "updatedAt": "2025-08-28T07:09:19.605Z",
+      "name": "Reversible Baby Heart Necklace",
+      "slug": "reversible-baby-heart-necklace",
+      "description": "Beautiful reversible baby heart necklace",
+      "featuredAsset": {
+        "id": "13",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-baby-heart-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-baby-heart-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "13",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-baby-heart-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-baby-heart-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "13",
+          "createdAt": "2025-08-28T01:38:54.162Z",
+          "updatedAt": "2025-08-28T01:38:54.162Z",
+          "name": "Reversible Baby Heart Necklace",
+          "sku": "RBHN",
+          "price": 32900,
+          "priceWithTax": 32900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 13
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 13
+      }
+    },
+    {
+      "id": "14",
+      "createdAt": "2025-08-28T01:38:55.428Z",
+      "updatedAt": "2025-08-28T07:09:28.952Z",
+      "name": "Sunny Necklace",
+      "slug": "sunny-necklace",
+      "description": "Beautiful sunny necklace",
+      "featuredAsset": {
+        "id": "14",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/sunny-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/sunny-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "14",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/sunny-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/sunny-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "14",
+          "createdAt": "2025-08-28T01:39:03.561Z",
+          "updatedAt": "2025-08-28T01:39:03.561Z",
+          "name": "Sunny Necklace",
+          "sku": "SN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 14
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 14
+      }
+    },
+    {
+      "id": "15",
+      "createdAt": "2025-08-28T01:39:04.852Z",
+      "updatedAt": "2025-08-28T07:09:40.783Z",
+      "name": "Diamor Necklace",
+      "slug": "diamor-necklace",
+      "description": "Beautiful diamor necklace",
+      "featuredAsset": {
+        "id": "15",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/diamor-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/diamor-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "15",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/diamor-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/diamor-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "15",
+          "createdAt": "2025-08-28T01:39:15.365Z",
+          "updatedAt": "2025-08-28T01:39:15.365Z",
+          "name": "Diamor Necklace",
+          "sku": "DN",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 15
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 15
+      }
+    },
+    {
+      "id": "16",
+      "createdAt": "2025-08-28T01:39:16.642Z",
+      "updatedAt": "2025-08-28T07:09:50.139Z",
+      "name": "Bangle Bracelet",
+      "slug": "bangle-bracelet",
+      "description": "Beautiful bangle bracelet",
+      "featuredAsset": {
+        "id": "16",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bangle-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bangle-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "16",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bangle-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bangle-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "16",
+          "createdAt": "2025-08-28T01:39:24.700Z",
+          "updatedAt": "2025-08-28T01:39:24.700Z",
+          "name": "Bangle Bracelet",
+          "sku": "BB",
+          "price": 39900,
+          "priceWithTax": 39900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 16
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 16
+      }
+    },
+    {
+      "id": "17",
+      "createdAt": "2025-08-28T01:39:25.967Z",
+      "updatedAt": "2025-08-28T07:09:59.512Z",
+      "name": "Wavy Bracelet",
+      "slug": "wavy-bracelet",
+      "description": "Beautiful wavy bracelet",
+      "featuredAsset": {
+        "id": "17",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/wavy-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/wavy-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "17",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/wavy-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/wavy-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "17",
+          "createdAt": "2025-08-28T01:39:34.062Z",
+          "updatedAt": "2025-08-28T01:39:34.062Z",
+          "name": "Wavy Bracelet",
+          "sku": "WB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 17
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 17
+      }
+    },
+    {
+      "id": "18",
+      "createdAt": "2025-08-28T01:39:35.355Z",
+      "updatedAt": "2025-08-28T07:10:09.100Z",
+      "name": "Aurelia Link Bracelet",
+      "slug": "aurelia-link-bracelet",
+      "description": "Beautiful aurelia link bracelet",
+      "featuredAsset": {
+        "id": "18",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/aurelia-link-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/aurelia-link-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "18",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/aurelia-link-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/aurelia-link-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "18",
+          "createdAt": "2025-08-28T01:39:44.098Z",
+          "updatedAt": "2025-08-28T01:39:44.098Z",
+          "name": "Aurelia Link Bracelet",
+          "sku": "ALB",
+          "price": 36500,
+          "priceWithTax": 36500,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 18
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 18
+      }
+    },
+    {
+      "id": "19",
+      "createdAt": "2025-08-28T01:39:45.375Z",
+      "updatedAt": "2025-08-28T07:10:19.253Z",
+      "name": "Daisy Necklace",
+      "slug": "daisy-necklace",
+      "description": "Beautiful daisy necklace",
+      "featuredAsset": {
+        "id": "19",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/daisy-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/daisy-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "19",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/daisy-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/daisy-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "19",
+          "createdAt": "2025-08-28T01:39:54.195Z",
+          "updatedAt": "2025-08-28T01:39:54.195Z",
+          "name": "Daisy Necklace",
+          "sku": "DN",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 19
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 19
+      }
+    },
+    {
+      "id": "20",
+      "createdAt": "2025-08-28T01:39:55.733Z",
+      "updatedAt": "2025-08-28T07:10:29.766Z",
+      "name": "Hexa Heart Studs",
+      "slug": "hexa-heart-studs",
+      "description": "Beautiful hexa heart studs",
+      "featuredAsset": {
+        "id": "20",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hexa-heart-studs-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hexa-heart-studs-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "20",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hexa-heart-studs-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hexa-heart-studs-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "20",
+          "createdAt": "2025-08-28T01:40:04.338Z",
+          "updatedAt": "2025-08-28T01:40:04.338Z",
+          "name": "Hexa Heart Studs",
+          "sku": "HHS",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 20
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 20
+      }
+    },
+    {
+      "id": "21",
+      "createdAt": "2025-08-28T01:40:05.647Z",
+      "updatedAt": "2025-08-28T07:10:39.387Z",
+      "name": "Textured Square Earring",
+      "slug": "textured-square-earring",
+      "description": "Beautiful textured square earring",
+      "featuredAsset": {
+        "id": "21",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/textured-square-earring-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/textured-square-earring-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "21",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/textured-square-earring-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/textured-square-earring-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "21",
+          "createdAt": "2025-08-28T01:40:13.950Z",
+          "updatedAt": "2025-08-28T01:40:13.950Z",
+          "name": "Textured Square Earring",
+          "sku": "TSE",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 21
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 21
+      }
+    },
+    {
+      "id": "22",
+      "createdAt": "2025-08-28T01:40:15.614Z",
+      "updatedAt": "2025-08-28T07:10:50.103Z",
+      "name": "Sunlette Studded Necklace",
+      "slug": "sunlette-studded-necklace",
+      "description": "Beautiful sunlette studded necklace",
+      "featuredAsset": {
+        "id": "22",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/sunlette-studded-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/sunlette-studded-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "22",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/sunlette-studded-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/sunlette-studded-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "22",
+          "createdAt": "2025-08-28T01:40:24.665Z",
+          "updatedAt": "2025-08-28T01:40:24.665Z",
+          "name": "Sunlette Studded Necklace",
+          "sku": "SSN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 22
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 22
+      }
+    },
+    {
+      "id": "23",
+      "createdAt": "2025-08-28T01:40:26.028Z",
+      "updatedAt": "2025-08-28T07:10:59.846Z",
+      "name": "2in1 Magnetic Heart Necklace",
+      "slug": "2in1-magnetic-heart-necklace",
+      "description": "Beautiful 2in1 magnetic heart necklace",
+      "featuredAsset": {
+        "id": "23",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/2in1-magnetic-heart-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/2in1-magnetic-heart-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "23",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/2in1-magnetic-heart-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/2in1-magnetic-heart-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "23",
+          "createdAt": "2025-08-28T01:40:34.416Z",
+          "updatedAt": "2025-08-28T01:40:34.416Z",
+          "name": "2in1 Magnetic Heart Necklace",
+          "sku": "MHN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 23
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 23
+      }
+    },
+    {
+      "id": "24",
+      "createdAt": "2025-08-28T01:40:35.701Z",
+      "updatedAt": "2025-08-28T07:11:09.909Z",
+      "name": "Bow Tiful Earrings",
+      "slug": "bow-tiful-earrings",
+      "description": "Beautiful bow tiful earrings",
+      "featuredAsset": {
+        "id": "24",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bow-tiful-earrings-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bow-tiful-earrings-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "24",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bow-tiful-earrings-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bow-tiful-earrings-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "24",
+          "createdAt": "2025-08-28T01:40:44.654Z",
+          "updatedAt": "2025-08-28T01:40:44.654Z",
+          "name": "Bow Tiful Earrings",
+          "sku": "BHE",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 24
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 24
+      }
+    },
+    {
+      "id": "25",
+      "createdAt": "2025-08-28T01:40:46.323Z",
+      "updatedAt": "2025-08-28T07:11:21.142Z",
+      "name": "Hearty Hoops",
+      "slug": "hearty-hoops",
+      "description": "Beautiful hearty hoops",
+      "featuredAsset": {
+        "id": "25",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hearty-hoops-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hearty-hoops-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "25",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hearty-hoops-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hearty-hoops-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "25",
+          "createdAt": "2025-08-28T01:40:55.717Z",
+          "updatedAt": "2025-08-28T01:40:55.717Z",
+          "name": "Hearty Hoops",
+          "sku": "HH",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 25
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 25
+      }
+    },
+    {
+      "id": "26",
+      "createdAt": "2025-08-28T01:40:57.000Z",
+      "updatedAt": "2025-08-28T07:11:31.640Z",
+      "name": "Flora Mini Studs",
+      "slug": "flora-mini-studs",
+      "description": "Beautiful flora mini studs",
+      "featuredAsset": {
+        "id": "26",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/flora-mini-studs-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/flora-mini-studs-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "26",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/flora-mini-studs-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/flora-mini-studs-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "26",
+          "createdAt": "2025-08-28T01:41:06.208Z",
+          "updatedAt": "2025-08-28T01:41:06.208Z",
+          "name": "Flora Mini Studs",
+          "sku": "FMS",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 26
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 26
+      }
+    },
+    {
+      "id": "27",
+      "createdAt": "2025-08-28T01:41:07.486Z",
+      "updatedAt": "2025-08-28T07:11:42.031Z",
+      "name": "Moonmist",
+      "slug": "moonmist",
+      "description": "Beautiful moonmist",
+      "featuredAsset": {
+        "id": "27",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/moonmist-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/moonmist-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "27",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/moonmist-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/moonmist-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "27",
+          "createdAt": "2025-08-28T01:41:17.315Z",
+          "updatedAt": "2025-08-28T01:41:17.315Z",
+          "name": "Moonmist",
+          "sku": "MMN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 27
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 27
+      }
+    },
+    {
+      "id": "28",
+      "createdAt": "2025-08-28T01:41:18.597Z",
+      "updatedAt": "2025-08-28T07:11:52.843Z",
+      "name": "Ribbon Bow Necklace",
+      "slug": "ribbon-bow-necklace",
+      "description": "Beautiful ribbon bow necklace",
+      "featuredAsset": {
+        "id": "28",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/ribbon-bow-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/ribbon-bow-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "28",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/ribbon-bow-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/ribbon-bow-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "28",
+          "createdAt": "2025-08-28T01:41:27.410Z",
+          "updatedAt": "2025-08-28T01:41:27.410Z",
+          "name": "Ribbon Bow Necklace",
+          "sku": "RBN",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 28
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 28
+      }
+    },
+    {
+      "id": "29",
+      "createdAt": "2025-08-28T01:41:28.685Z",
+      "updatedAt": "2025-08-28T07:12:02.824Z",
+      "name": "Grace Flower Necklace",
+      "slug": "grace-flower-necklace",
+      "description": "Beautiful grace flower necklace",
+      "featuredAsset": {
+        "id": "29",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/grace-flower-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/grace-flower-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "29",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/grace-flower-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/grace-flower-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "29",
+          "createdAt": "2025-08-28T01:41:38.244Z",
+          "updatedAt": "2025-08-28T01:41:38.244Z",
+          "name": "Grace Flower Necklace",
+          "sku": "GFN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 29
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 29
+      }
+    },
+    {
+      "id": "30",
+      "createdAt": "2025-08-28T01:41:40.062Z",
+      "updatedAt": "2025-08-28T07:12:14.681Z",
+      "name": "Golden Squeeze",
+      "slug": "golden-squeeze",
+      "description": "Beautiful golden squeeze",
+      "featuredAsset": {
+        "id": "30",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/golden-squeeze-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/golden-squeeze-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "30",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/golden-squeeze-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/golden-squeeze-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "30",
+          "createdAt": "2025-08-28T01:41:49.685Z",
+          "updatedAt": "2025-08-28T01:41:49.685Z",
+          "name": "Golden Squeeze",
+          "sku": "THN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 30
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 30
+      }
+    },
+    {
+      "id": "31",
+      "createdAt": "2025-08-28T01:41:51.006Z",
+      "updatedAt": "2025-08-28T07:12:25.058Z",
+      "name": "1111 Manifest Necklace",
+      "slug": "1111-manifest-necklace",
+      "description": "Beautiful 1111 manifest necklace",
+      "featuredAsset": {
+        "id": "31",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/1111-manifest-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/1111-manifest-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "31",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/1111-manifest-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/1111-manifest-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "31",
+          "createdAt": "2025-08-28T01:41:59.818Z",
+          "updatedAt": "2025-08-28T01:41:59.818Z",
+          "name": "1111 Manifest Necklace",
+          "sku": "MN",
+          "price": 32900,
+          "priceWithTax": 32900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 31
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 31
+      }
+    },
+    {
+      "id": "32",
+      "createdAt": "2025-08-28T01:42:01.126Z",
+      "updatedAt": "2025-08-28T07:12:35.094Z",
+      "name": "1111 Heart Manifest Necklace",
+      "slug": "1111-heart-manifest-necklace",
+      "description": "Beautiful 1111 heart manifest necklace",
+      "featuredAsset": {
+        "id": "32",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/1111-heart-manifest-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/1111-heart-manifest-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "32",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/1111-heart-manifest-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/1111-heart-manifest-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "32",
+          "createdAt": "2025-08-28T01:42:09.741Z",
+          "updatedAt": "2025-08-28T01:42:09.741Z",
+          "name": "1111 Heart Manifest Necklace",
+          "sku": "MHNz",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 32
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 32
+      }
+    },
+    {
+      "id": "33",
+      "createdAt": "2025-08-28T01:42:11.009Z",
+      "updatedAt": "2025-08-28T07:12:45.127Z",
+      "name": "Rosy Necklace",
+      "slug": "rosy-necklace",
+      "description": "Beautiful rosy necklace",
+      "featuredAsset": {
+        "id": "33",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rosy-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rosy-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "33",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rosy-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/rosy-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "33",
+          "createdAt": "2025-08-28T01:42:20.168Z",
+          "updatedAt": "2025-08-28T01:42:20.168Z",
+          "name": "Rosy Necklace",
+          "sku": "R",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 33
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 33
+      }
+    },
+    {
+      "id": "34",
+      "createdAt": "2025-08-28T01:42:21.451Z",
+      "updatedAt": "2025-08-28T07:12:57.077Z",
+      "name": "Hearty Necklace",
+      "slug": "hearty-necklace",
+      "description": "Beautiful hearty necklace",
+      "featuredAsset": {
+        "id": "34",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hearty-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hearty-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "34",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hearty-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hearty-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "34",
+          "createdAt": "2025-08-28T01:42:31.986Z",
+          "updatedAt": "2025-08-28T01:42:31.986Z",
+          "name": "Hearty Necklace",
+          "sku": "HN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 34
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 34
+      }
+    },
+    {
+      "id": "35",
+      "createdAt": "2025-08-28T01:42:33.269Z",
+      "updatedAt": "2025-08-28T07:13:06.501Z",
+      "name": "Tennis Bracelet",
+      "slug": "tennis-bracelet",
+      "description": "Beautiful tennis bracelet",
+      "featuredAsset": {
+        "id": "35",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tennis-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tennis-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "35",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tennis-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tennis-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "35",
+          "createdAt": "2025-08-28T01:42:41.402Z",
+          "updatedAt": "2025-08-28T01:42:41.402Z",
+          "name": "Tennis Bracelet",
+          "sku": "TB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 35
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 35
+      }
+    },
+    {
+      "id": "36",
+      "createdAt": "2025-08-28T01:42:42.970Z",
+      "updatedAt": "2025-08-28T07:13:16.477Z",
+      "name": "Autumn Necklace",
+      "slug": "autumn-necklace",
+      "description": "Beautiful autumn necklace",
+      "featuredAsset": {
+        "id": "36",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/autumn-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/autumn-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "36",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/autumn-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/autumn-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "36",
+          "createdAt": "2025-08-28T01:42:52.309Z",
+          "updatedAt": "2025-08-28T01:42:52.309Z",
+          "name": "Autumn Necklace",
+          "sku": "AN",
+          "price": 27900,
+          "priceWithTax": 27900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 36
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 36
+      }
+    },
+    {
+      "id": "37",
+      "createdAt": "2025-08-28T01:42:54.052Z",
+      "updatedAt": "2025-08-28T07:13:28.338Z",
+      "name": "Gold Clover Bracelet",
+      "slug": "gold-clover-bracelet",
+      "description": "Beautiful gold clover bracelet",
+      "featuredAsset": {
+        "id": "37",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/gold-clover-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/gold-clover-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "37",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/gold-clover-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/gold-clover-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "37",
+          "createdAt": "2025-08-28T01:43:03.629Z",
+          "updatedAt": "2025-08-28T01:43:03.629Z",
+          "name": "Gold Clover Bracelet",
+          "sku": "GCB",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 37
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 37
+      }
+    },
+    {
+      "id": "38",
+      "createdAt": "2025-08-28T01:43:05.209Z",
+      "updatedAt": "2025-08-28T07:13:39.029Z",
+      "name": "Reversible Clover Bracelet",
+      "slug": "reversible-clover-bracelet",
+      "description": "Beautiful reversible clover bracelet",
+      "featuredAsset": {
+        "id": "38",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-clover-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-clover-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "38",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-clover-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/reversible-clover-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "38",
+          "createdAt": "2025-08-28T01:43:13.734Z",
+          "updatedAt": "2025-08-28T01:43:13.734Z",
+          "name": "Reversible Clover Bracelet",
+          "sku": "RCB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 38
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 38
+      }
+    },
+    {
+      "id": "39",
+      "createdAt": "2025-08-28T01:43:15.009Z",
+      "updatedAt": "2025-08-28T07:13:49.358Z",
+      "name": "Teddy Bow Necklace",
+      "slug": "teddy-bow-necklace",
+      "description": "Beautiful teddy bow necklace",
+      "featuredAsset": {
+        "id": "39",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/teddy-bow-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/teddy-bow-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "39",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/teddy-bow-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/teddy-bow-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "39",
+          "createdAt": "2025-08-28T01:43:24.626Z",
+          "updatedAt": "2025-08-28T01:43:24.626Z",
+          "name": "Teddy Bow Necklace",
+          "sku": "TBN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 39
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 39
+      }
+    },
+    {
+      "id": "40",
+      "createdAt": "2025-08-28T01:43:25.964Z",
+      "updatedAt": "2025-08-28T07:13:59.583Z",
+      "name": "Studded Teddy Necklace",
+      "slug": "studded-teddy-necklace",
+      "description": "Beautiful studded teddy necklace",
+      "featuredAsset": {
+        "id": "40",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/studded-teddy-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/studded-teddy-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "40",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/studded-teddy-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/studded-teddy-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "40",
+          "createdAt": "2025-08-28T01:43:34.204Z",
+          "updatedAt": "2025-08-28T01:43:34.204Z",
+          "name": "Studded Teddy Necklace",
+          "sku": "STN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 40
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 40
+      }
+    },
+    {
+      "id": "41",
+      "createdAt": "2025-08-28T01:43:35.510Z",
+      "updatedAt": "2025-08-28T07:14:11.135Z",
+      "name": "Green Stone Necklace",
+      "slug": "green-stone-necklace",
+      "description": "Beautiful green stone necklace",
+      "featuredAsset": {
+        "id": "41",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/green-stone-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/green-stone-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "41",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/green-stone-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/green-stone-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "41",
+          "createdAt": "2025-08-28T01:43:45.845Z",
+          "updatedAt": "2025-08-28T01:43:45.845Z",
+          "name": "Green Stone Necklace",
+          "sku": "GSN",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 41
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 41
+      }
+    },
+    {
+      "id": "42",
+      "createdAt": "2025-08-28T01:43:47.137Z",
+      "updatedAt": "2025-08-28T07:14:20.935Z",
+      "name": "Silver Bracelet",
+      "slug": "silver-bracelet",
+      "description": "Beautiful silver bracelet",
+      "featuredAsset": {
+        "id": "42",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/silver-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/silver-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "42",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/silver-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/silver-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "42",
+          "createdAt": "2025-08-28T01:43:55.967Z",
+          "updatedAt": "2025-08-28T01:43:55.967Z",
+          "name": "Silver Bracelet",
+          "sku": "SK",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 42
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 42
+      }
+    },
+    {
+      "id": "43",
+      "createdAt": "2025-08-28T01:43:57.265Z",
+      "updatedAt": "2025-08-28T07:14:31.894Z",
+      "name": "Cherry Necklace",
+      "slug": "cherry-necklace",
+      "description": "Beautiful cherry necklace",
+      "featuredAsset": {
+        "id": "43",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/cherry-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/cherry-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "43",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/cherry-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/cherry-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "43",
+          "createdAt": "2025-08-28T01:44:06.452Z",
+          "updatedAt": "2025-08-28T01:44:06.452Z",
+          "name": "Cherry Necklace",
+          "sku": "CN",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 43
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 43
+      }
+    },
+    {
+      "id": "44",
+      "createdAt": "2025-08-28T01:44:07.738Z",
+      "updatedAt": "2025-08-28T07:14:41.815Z",
+      "name": "Hampered Hoops",
+      "slug": "hampered-hoops",
+      "description": "Beautiful hampered hoops",
+      "featuredAsset": {
+        "id": "44",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hampered-hoops-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hampered-hoops-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "44",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hampered-hoops-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/hampered-hoops-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "44",
+          "createdAt": "2025-08-28T01:44:16.355Z",
+          "updatedAt": "2025-08-28T01:44:16.355Z",
+          "name": "Hampered Hoops",
+          "sku": "HH",
+          "price": 19900,
+          "priceWithTax": 19900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 44
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 44
+      }
+    },
+    {
+      "id": "45",
+      "createdAt": "2025-08-28T01:44:17.628Z",
+      "updatedAt": "2025-08-28T07:14:51.450Z",
+      "name": "Adore Mini Necklace",
+      "slug": "adore-mini-necklace",
+      "description": "Beautiful adore mini necklace",
+      "featuredAsset": {
+        "id": "45",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/adore-mini-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/adore-mini-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "45",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/adore-mini-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/adore-mini-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "45",
+          "createdAt": "2025-08-28T01:44:26.379Z",
+          "updatedAt": "2025-08-28T01:44:26.379Z",
+          "name": "Adore Mini Necklace",
+          "sku": "AMN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 45
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 45
+      }
+    },
+    {
+      "id": "46",
+      "createdAt": "2025-08-28T01:44:27.651Z",
+      "updatedAt": "2025-08-28T07:15:02.821Z",
+      "name": "Star Kada Bracelet",
+      "slug": "star-kada-bracelet",
+      "description": "Beautiful star kada bracelet",
+      "featuredAsset": {
+        "id": "46",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/star-kada-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/star-kada-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "46",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/star-kada-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/star-kada-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "46",
+          "createdAt": "2025-08-28T01:44:37.380Z",
+          "updatedAt": "2025-08-28T01:44:37.380Z",
+          "name": "Star Kada Bracelet",
+          "sku": "SKB",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 46
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 46
+      }
+    },
+    {
+      "id": "47",
+      "createdAt": "2025-08-28T01:44:38.657Z",
+      "updatedAt": "2025-08-28T07:15:14.071Z",
+      "name": "Roman Bracelet",
+      "slug": "roman-bracelet",
+      "description": "Beautiful roman bracelet",
+      "featuredAsset": {
+        "id": "47",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/roman-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/roman-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "47",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/roman-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/roman-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "47",
+          "createdAt": "2025-08-28T01:44:48.625Z",
+          "updatedAt": "2025-08-28T01:44:48.625Z",
+          "name": "Roman Bracelet",
+          "sku": "RB",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 47
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 47
+      }
+    },
+    {
+      "id": "48",
+      "createdAt": "2025-08-28T01:44:49.883Z",
+      "updatedAt": "2025-08-28T07:15:26.515Z",
+      "name": "Droplet Necklace",
+      "slug": "droplet-necklace",
+      "description": "Beautiful droplet necklace",
+      "featuredAsset": {
+        "id": "48",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/droplet-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/droplet-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "48",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/droplet-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/droplet-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "48",
+          "createdAt": "2025-08-28T01:45:01.110Z",
+          "updatedAt": "2025-08-28T01:45:01.110Z",
+          "name": "Droplet Necklace",
+          "sku": "DLN",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 48
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 48
+      }
+    },
+    {
+      "id": "49",
+      "createdAt": "2025-08-28T01:45:02.391Z",
+      "updatedAt": "2025-08-28T07:15:38.511Z",
+      "name": "Moon Star Ring",
+      "slug": "moon-star-ring",
+      "description": "Beautiful moon star ring",
+      "featuredAsset": {
+        "id": "49",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/moon-star-ring-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/moon-star-ring-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "49",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/moon-star-ring-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/moon-star-ring-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "49",
+          "createdAt": "2025-08-28T01:45:13.086Z",
+          "updatedAt": "2025-08-28T01:45:13.086Z",
+          "name": "Moon Star Ring",
+          "sku": "MSR",
+          "price": 22900,
+          "priceWithTax": 22900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 49
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 49
+      }
+    },
+    {
+      "id": "50",
+      "createdAt": "2025-08-28T01:45:14.405Z",
+      "updatedAt": "2025-08-28T07:15:49.038Z",
+      "name": "Bang Ring Rose Gold Size 7 ",
+      "slug": "bang-ring-rose-gold-size-7",
+      "description": "Beautiful bang ring rose gold size 7 ",
+      "featuredAsset": {
+        "id": "50",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bang-ring-rose-gold-size-7-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bang-ring-rose-gold-size-7-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "50",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bang-ring-rose-gold-size-7-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bang-ring-rose-gold-size-7-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "50",
+          "createdAt": "2025-08-28T01:45:23.597Z",
+          "updatedAt": "2025-08-28T01:45:23.597Z",
+          "name": "Bang Ring Rose Gold Size 7 ",
+          "sku": "RGR",
+          "price": 19900,
+          "priceWithTax": 19900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 50
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 50
+      }
+    },
+    {
+      "id": "51",
+      "createdAt": "2025-08-28T01:45:24.880Z",
+      "updatedAt": "2025-08-28T07:15:59.297Z",
+      "name": "Aura Bracelet",
+      "slug": "aura-bracelet",
+      "description": "Beautiful aura bracelet",
+      "featuredAsset": {
+        "id": "51",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/aura-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/aura-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "51",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/aura-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/aura-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "51",
+          "createdAt": "2025-08-28T01:45:33.865Z",
+          "updatedAt": "2025-08-28T01:45:33.865Z",
+          "name": "Aura Bracelet",
+          "sku": "AK",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 51
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 51
+      }
+    },
+    {
+      "id": "52",
+      "createdAt": "2025-08-28T01:45:35.133Z",
+      "updatedAt": "2025-08-28T07:16:08.966Z",
+      "name": "Bamboo Earrings",
+      "slug": "bamboo-earrings",
+      "description": "Beautiful bamboo earrings",
+      "featuredAsset": {
+        "id": "52",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bamboo-earrings-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bamboo-earrings-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "52",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bamboo-earrings-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/bamboo-earrings-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "52",
+          "createdAt": "2025-08-28T01:45:43.543Z",
+          "updatedAt": "2025-08-28T01:45:43.543Z",
+          "name": "Bamboo Earrings",
+          "sku": "BH",
+          "price": 19900,
+          "priceWithTax": 19900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 52
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 52
+      }
+    },
+    {
+      "id": "53",
+      "createdAt": "2025-08-28T01:45:44.889Z",
+      "updatedAt": "2025-08-28T07:16:18.868Z",
+      "name": "Round Hoops",
+      "slug": "round-hoops",
+      "description": "Beautiful round hoops",
+      "featuredAsset": {
+        "id": "53",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/round-hoops-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/round-hoops-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "53",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/round-hoops-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/round-hoops-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "53",
+          "createdAt": "2025-08-28T01:45:53.434Z",
+          "updatedAt": "2025-08-28T01:45:53.434Z",
+          "name": "Round Hoops",
+          "sku": "RH",
+          "price": 19900,
+          "priceWithTax": 19900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 53
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 53
+      }
+    },
+    {
+      "id": "54",
+      "createdAt": "2025-08-28T01:45:54.706Z",
+      "updatedAt": "2025-08-28T07:16:28.595Z",
+      "name": "White Gold Clover Bracelet",
+      "slug": "white-gold-clover-bracelet",
+      "description": "Beautiful white gold clover bracelet",
+      "featuredAsset": {
+        "id": "54",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/white-gold-clover-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/white-gold-clover-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "54",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/white-gold-clover-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/white-gold-clover-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "54",
+          "createdAt": "2025-08-28T01:46:03.558Z",
+          "updatedAt": "2025-08-28T01:46:03.558Z",
+          "name": "White Gold Clover Bracelet",
+          "sku": "WCB",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 54
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 54
+      }
+    },
+    {
+      "id": "55",
+      "createdAt": "2025-08-28T01:46:04.832Z",
+      "updatedAt": "2025-08-28T07:16:39.712Z",
+      "name": "Italian Bracelet Vintage Gold",
+      "slug": "italian-bracelet-vintage-gold",
+      "description": "Beautiful italian bracelet vintage gold",
+      "featuredAsset": {
+        "id": "55",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/italian-bracelet-vintage-gold-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/italian-bracelet-vintage-gold-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "55",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/italian-bracelet-vintage-gold-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/italian-bracelet-vintage-gold-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "55",
+          "createdAt": "2025-08-28T01:46:14.305Z",
+          "updatedAt": "2025-08-28T01:46:14.305Z",
+          "name": "Italian Bracelet Vintage Gold",
+          "sku": "IB",
+          "price": 37900,
+          "priceWithTax": 37900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 55
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 55
+      }
+    },
+    {
+      "id": "56",
+      "createdAt": "2025-08-28T01:46:15.573Z",
+      "updatedAt": "2025-08-28T07:16:50.774Z",
+      "name": "Tangled Star Necklace",
+      "slug": "tangled-star-necklace",
+      "description": "Beautiful tangled star necklace",
+      "featuredAsset": {
+        "id": "56",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tangled-star-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tangled-star-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "56",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tangled-star-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/tangled-star-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "56",
+          "createdAt": "2025-08-28T01:46:25.405Z",
+          "updatedAt": "2025-08-28T01:46:25.405Z",
+          "name": "Tangled Star Necklace",
+          "sku": "TS",
+          "price": 31900,
+          "priceWithTax": 31900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 56
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 56
+      }
+    },
+    {
+      "id": "57",
+      "createdAt": "2025-08-28T01:46:26.685Z",
+      "updatedAt": "2025-08-28T07:17:02.069Z",
+      "name": "Love Band Bracelet",
+      "slug": "love-band-bracelet",
+      "description": "Beautiful love band bracelet",
+      "featuredAsset": {
+        "id": "57",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/love-band-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/love-band-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "57",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/love-band-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/love-band-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "57",
+          "createdAt": "2025-08-28T01:46:36.652Z",
+          "updatedAt": "2025-08-28T01:46:36.652Z",
+          "name": "Love Band Bracelet",
+          "sku": "LBB",
+          "price": 29900,
+          "priceWithTax": 29900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 57
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 57
+      }
+    },
+    {
+      "id": "58",
+      "createdAt": "2025-08-28T01:46:37.951Z",
+      "updatedAt": "2025-08-28T07:17:13.137Z",
+      "name": "Crescent Moon Stone Necklace",
+      "slug": "crescent-moon-stone-necklace",
+      "description": "Beautiful crescent moon stone necklace",
+      "featuredAsset": {
+        "id": "58",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/crescent-moon-stone-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/crescent-moon-stone-necklace-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "58",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/crescent-moon-stone-necklace-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/crescent-moon-stone-necklace-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "58",
+          "createdAt": "2025-08-28T01:46:47.702Z",
+          "updatedAt": "2025-08-28T01:46:47.702Z",
+          "name": "Crescent Moon Stone Necklace",
+          "sku": "CMN",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 58
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 58
+      }
+    },
+    {
+      "id": "59",
+      "createdAt": "2025-08-28T01:46:48.978Z",
+      "updatedAt": "2025-08-28T07:17:22.798Z",
+      "name": "Spiral Hoops 2",
+      "slug": "spiral-hoops-2",
+      "description": "Beautiful spiral hoops 2",
+      "featuredAsset": {
+        "id": "59",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-hoops-2-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-hoops-2-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "59",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-hoops-2-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/spiral-hoops-2-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "59",
+          "createdAt": "2025-08-28T01:46:57.392Z",
+          "updatedAt": "2025-08-28T01:46:57.392Z",
+          "name": "Spiral Hoops 2",
+          "sku": "SH",
+          "price": 19900,
+          "priceWithTax": 19900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 59
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 59
+      }
+    },
+    {
+      "id": "60",
+      "createdAt": "2025-08-28T01:46:58.676Z",
+      "updatedAt": "2025-08-28T07:17:32.826Z",
+      "name": "Evil Eye Bracelet",
+      "slug": "evil-eye-bracelet",
+      "description": "Beautiful evil eye bracelet",
+      "featuredAsset": {
+        "id": "60",
+        "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/evil-eye-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+        "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/evil-eye-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+        "focalPoint": null
+      },
+      "assets": [
+        {
+          "id": "60",
+          "preview": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/evil-eye-bracelet-1__02__preview.jpg?_a=BAMAK+Oc0",
+          "source": "https://res.cloudinary.com/dhlbajjum/image/upload/v1/younique/evil-eye-bracelet-1__02.jpg?_a=BAMAK+Oc0",
+          "focalPoint": null
+        }
+      ],
+      "optionGroups": [],
+      "facetValues": [],
+      "collections": [],
+      "variants": [
+        {
+          "id": "60",
+          "createdAt": "2025-08-28T01:47:07.355Z",
+          "updatedAt": "2025-08-28T01:47:07.355Z",
+          "name": "Evil Eye Bracelet",
+          "sku": "EEB",
+          "price": 34900,
+          "priceWithTax": 34900,
+          "currencyCode": "INR",
+          "stockLevel": "OUT_OF_STOCK",
+          "featuredAsset": null,
+          "assets": [],
+          "options": [],
+          "facetValues": [],
+          "customFields": {
+            "__entityId__": 60
+          }
+        }
+      ],
+      "customFields": {
+        "__entityId__": 60
+      }
+    }
+  ]
+}
