@@ -66,6 +66,16 @@ npm run dev
 will start the Vendure server and [worker](https://www.vendure.io/docs/developer-guide/vendure-worker/) processes from
 the `src` directory.
 
+### Product data dump
+
+Export the full product catalog from the public Shop API and write a timestamped JSON snapshot:
+
+```
+npm run dump:products
+```
+
+The script hits `https://youniqueindia.onrender.com/shop-api` by default (override with `SHOP_API_URL`) and stores the output in `data-dumps/shop-products/`.
+
 ## Build
 
 ```
