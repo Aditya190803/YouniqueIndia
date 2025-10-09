@@ -12,11 +12,15 @@
     "start": "concurrently npm:start:*",
     "setup": "ts-node ./src/scripts/1-setup-vendure.ts",
     "seed": "ts-node ./src/scripts/import-seed-products.ts",
-    "seed:local": "ts-node ./src/scripts/2-seed-products.ts",
+  "seed:local": "ts-node ./src/scripts/2-seed-products.ts",
+  "seed:generate": "ts-node ./src/scripts/generate-seed-from-dump.ts",
+  "seed:generate-with-images": "ts-node ./src/scripts/generate-seed-with-local-images.ts",
+  "seed:wipe-and-import": "ts-node ./src/scripts/seed-with-wipe.ts",
     "db:wipe": "ts-node ./src/scripts/wipe-db.ts",
     "reset:store": "npm run db:wipe && npm run setup",
     "setup:complete": "npm run db:wipe && npm run setup && npm run seed",
     "import:products": "ts-node ./src/scripts/import-seed-products.ts",
+    "dump:products": "ts-node ./src/scripts/dumps/shop-product-dump.ts",
     "clean": "node -e \"require('fs').rmSync('./dist',{recursive:true,force:true});console.log('dist cleared');\"",
     "email:test": "ts-node ./src/scripts/send-test-email.ts"
   },
@@ -41,7 +45,8 @@
     "nodemailer": "^7.0.5",
     "pg": "8.16.2",
     "prompt-sync": "^4.2.0",
-    "resend": "^6.0.1"
+    "resend": "^6.0.1",
+    "undici": "^6.19.4"
   },
   "overrides": {
     "multer": "2.0.2",
