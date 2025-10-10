@@ -6,34 +6,45 @@ declare global {
     namespace NodeJS {
         interface ProcessEnv {
             APP_ENV: string;
-            PORT: string;
+            NODE_ENV: string;
+            PORT?: string;
             COOKIE_SECRET: string;
             TRUST_PROXY_SETTING?: string;
+            EMAIL_DEV_MAILBOX?: string;
             SUPERADMIN_USERNAME: string;
             SUPERADMIN_PASSWORD: string;
-            DB_HOST: string;
-            DB_PORT: number;
-            DB_NAME: string;
-            DB_USERNAME: string;
-            DB_PASSWORD: string;
-            DB_SCHEMA: string;
-            DB_SSL: string;
-            ASSET_URL_PREFIX?: string;
-            AWS_ACCESS_KEY_ID?: string;
-            AWS_SECRET_ACCESS_KEY?: string;
-            AWS_REGION?: string;
-            AWS_S3_BUCKET?: string;
-            CLOUDINARY_CLOUD_NAME?: string;
-            CLOUDINARY_API_KEY?: string;
-            CLOUDINARY_API_SECRET?: string;
+            DATABASE_URL?: string;
+            DB_HOST?: string;
+            DB_PORT?: string;
+            DB_NAME?: string;
+            DB_USERNAME?: string;
+            DB_PASSWORD?: string;
+            DB_SCHEMA?: string;
+            DB_SSL?: string;
+            DB_POOL_MAX?: string;
+            DB_CONNECTION_TIMEOUT_MS?: string;
+            DB_IDLE_TIMEOUT_MS?: string;
+            CLOUDINARY_CLOUD_NAME: string;
+            CLOUDINARY_API_KEY: string;
+            CLOUDINARY_API_SECRET: string;
             CLOUDINARY_FOLDER?: string;
-            SMTP_HOST?: string;
-            SMTP_PORT?: string;
-            SMTP_USER?: string;
-            SMTP_PASS?: string;
+            FROM_EMAIL?: string;
             VERIFY_EMAIL_URL?: string;
             PASSWORD_RESET_URL?: string;
             CHANGE_EMAIL_URL?: string;
+            RESEND_API_KEY?: string;
+            SHOP_API_URL?: string;
+            SHOP_API_PAGE_SIZE?: string;
+            TEST_EMAIL?: string;
+            STELLATE_SERVICE_NAME?: string;
+            STELLATE_PURGE_API_TOKEN?: string;
+            STELLATE_PURGE_TOKEN?: string;
+            STELLATE_DEBUG_MODE?: string;
+            STELLATE_DEV_MODE?: string;
+            STELLATE_PURGE_BUFFER_MS?: string;
+            VITE_STELLATE_SHOP_API_URL?: string;
+            STELLATE_SHOP_API_URL?: string;
+            NODE_TLS_REJECT_UNAUTHORIZED?: string;
         }
     }
 }
