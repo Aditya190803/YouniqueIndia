@@ -36,7 +36,6 @@
     "@vendure/elasticsearch-plugin": "^3.3.7",
     "@vendure/email-plugin": "^3.4.0",
     "@vendure/graphiql-plugin": "3.3.4",
-    "@vendure/stellate-plugin": "^3.3.4",
     "apollo-server-core": "^3.13.0",
     "cloudinary": "^2.7.0",
     "concurrently": "9.1.2",
@@ -46,7 +45,6 @@
     "pg": "8.16.2",
     "prompt-sync": "^4.2.0",
     "resend": "^6.0.1",
-    "stellate": "^3.2.3",
     "undici": "^6.19.4"
   },
   "overrides": {
