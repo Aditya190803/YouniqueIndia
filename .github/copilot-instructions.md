@@ -19,7 +19,6 @@ Use this as your quick-start map for making useful, correct changes fast.
   - `settleWithoutPaymentHandler` (immediate settle)
   - `isCustomerInGroupPaymentChecker` (eligibility by customer group)
 - Shipping: Always-eligible free shipping checkers (`plugins/shipping/*`) + `manualFulfillmentHandler`.
-- Optional: Stellate GraphQL cache plugin when env vars present.
 
 ## Data & migrations
 - Migrations are run on server start (`runMigrations`).
@@ -41,7 +40,6 @@ Use this as your quick-start map for making useful, correct changes fast.
 - Auth: `SUPERADMIN_USERNAME, SUPERADMIN_PASSWORD, COOKIE_SECRET`.
 - Cloudinary: `CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET, CLOUDINARY_FOLDER`.
 - Email/Resend: `RESEND_API_KEY, FROM_EMAIL, EMAIL_DEV_MAILBOX` and URLs `VERIFY_EMAIL_URL, PASSWORD_RESET_URL, CHANGE_EMAIL_URL`.
-- Stellate (optional): `STELLATE_SERVICE_NAME, STELLATE_PURGE_API_TOKEN, STELLATE_DEBUG_MODE`.
 
 ## Conventions & patterns
 - Use `vendure-config.ts` for most cross-cutting changes (CORS, plugins, payment/shipping, Email).
