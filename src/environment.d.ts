@@ -36,14 +36,6 @@ declare global {
             SHOP_API_URL?: string;
             SHOP_API_PAGE_SIZE?: string;
             TEST_EMAIL?: string;
-            STELLATE_SERVICE_NAME?: string;
-            STELLATE_PURGE_API_TOKEN?: string;
-            STELLATE_PURGE_TOKEN?: string;
-            STELLATE_DEBUG_MODE?: string;
-            STELLATE_DEV_MODE?: string;
-            STELLATE_PURGE_BUFFER_MS?: string;
-            VITE_STELLATE_SHOP_API_URL?: string;
-            STELLATE_SHOP_API_URL?: string;
             NODE_TLS_REJECT_UNAUTHORIZED?: string;
         }
     }

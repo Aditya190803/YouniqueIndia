@@ -7,17 +7,14 @@ import {
     LanguageCode,
     DefaultAssetNamingStrategy,
     manualFulfillmentHandler,
-    FacetEvent,
 } from '@vendure/core';
 import { defaultEmailHandlers, EmailPlugin, FileBasedTemplateLoader } from '@vendure/email-plugin';
-import { StellatePlugin, defaultPurgeRules, PurgeRule } from '@vendure/stellate-plugin';
 import { ResendEmailSender } from './config/resend-email-sender';
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
-// ...existing code...
+
 import 'dotenv/config';
-import { createRequire } from 'node:module';
 // If DB_SSL is enabled for development with a self-signed certificate,
 // disable Node's strict certificate chain checks so the Postgres client
 // can connect. This is only intended for local/dev environments.
@@ -48,101 +45,6 @@ const toNumber = (value: string | undefined, fallback: number): number => {
 const serverPort = toNumber(process.env.PORT, 3000);
 // Allow forcing the dev mailbox off to test real email sending with Resend in development
 const EMAIL_DEV_MAILBOX = (process.env.EMAIL_DEV_MAILBOX ?? (IS_DEV ? 'true' : 'false')).toLowerCase() === 'true';
-
-const parseBoolean = (value?: string | null): boolean => (value ?? '').toLowerCase() === 'true';
-
-const deriveStellateServiceName = (): string | undefined => {
-    if (process.env.STELLATE_SERVICE_NAME) {
-        return process.env.STELLATE_SERVICE_NAME;
-    }
-    const fallbackUrl = process.env.VITE_STELLATE_SHOP_API_URL || process.env.STELLATE_SHOP_API_URL;
-    if (!fallbackUrl) {
-        return undefined;
-    }
-    try {
-        const parsed = new URL(fallbackUrl);
-        const hostname = parsed.hostname;
-        if (!hostname) {
-            return undefined;
-        }
-        return hostname.split('.')[0];
-    } catch {
-        return undefined;
-    }
-};
-
-const stellateServiceName = deriveStellateServiceName();
-const stellateApiToken = process.env.STELLATE_PURGE_API_TOKEN || process.env.STELLATE_PURGE_TOKEN;
-const stellateDebugMode = parseBoolean(process.env.STELLATE_DEBUG_MODE);
-const stellateDevMode = process.env.STELLATE_DEV_MODE
-    ? parseBoolean(process.env.STELLATE_DEV_MODE)
-    : !IS_PRODUCTION || stellateDebugMode;
-const stellateDefaultBufferMs = process.env.STELLATE_PURGE_BUFFER_MS
-    ? Number(process.env.STELLATE_PURGE_BUFFER_MS)
-    : undefined;
-
-const localRequire = createRequire(__filename);
-
-type PackageJson = {
-    version?: string;
-    peerDependencies?: Record<string, string>;
-};
-
-const parseMajorVersion = (value?: string): number | undefined => {
-    if (!value) {
-        return undefined;
-    }
-    const cleaned = value.replace(/^[^0-9]*/, '');
-    const major = cleaned.split('.')[0];
-    const parsed = Number(major);
-    return Number.isNaN(parsed) ? undefined : parsed;
-};
-
-const vendurePackageJson = localRequire('@vendure/core/package.json') as PackageJson;
-const stellatePackageJson = (() => {
-    try {
-        return localRequire('@vendure/stellate-plugin/package.json') as PackageJson;
-    } catch {
-        return undefined;
-    }
-})();
-
-const vendureMajorVersion = parseMajorVersion(vendurePackageJson.version);
-const stellateCompatibilityRange = stellatePackageJson?.peerDependencies?.['@vendure/core'];
-const stellateExpectedMajor = parseMajorVersion(stellateCompatibilityRange);
-const stellateForceEnable = parseBoolean(process.env.STELLATE_FORCE_ENABLE);
-
-const isStellateCompatible =
-    vendureMajorVersion === undefined ||
-    stellateExpectedMajor === undefined ||
-    vendureMajorVersion === stellateExpectedMajor;
-
-const shouldEnableStellatePlugin =
-    (stellateServiceName && stellateApiToken && isStellateCompatible) ||
-    (stellateServiceName && stellateApiToken && stellateForceEnable);
-
-if (stellateServiceName && stellateApiToken && !isStellateCompatible && !stellateForceEnable) {
-    console.warn(
-        `Stellate plugin disabled: Vendure major version ${vendureMajorVersion ?? 'unknown'} ` +
-        `is outside the supported range ${stellateCompatibilityRange ?? 'unknown'}. Set STELLATE_FORCE_ENABLE=true to override.`
-    );
-}
-
-if (stellateServiceName && stellateApiToken && stellateForceEnable && !isStellateCompatible) {
-    console.warn(
-        `Stellate plugin force-enabled despite compatibility mismatch. Vendure major version ${vendureMajorVersion ?? 'unknown'}, ` +
-        `expected ${stellateCompatibilityRange ?? 'unknown'}.`
-    );
-}
-
-const additionalStellatePurgeRules: PurgeRule[] = [
-    new PurgeRule({
-        eventType: FacetEvent,
-        handler: async ({ stellateService }) => {
-            await stellateService.purgeAllOfType('SearchResponse');
-        },
-    }),
-];
 
 export const config: VendureConfig = {
     apiOptions: {
@@ -290,27 +192,9 @@ export const config: VendureConfig = {
         DefaultSchedulerPlugin.init(),
         DefaultJobQueuePlugin.init({ useDatabaseForBuffer: true }),
         DefaultSearchPlugin.init({ bufferUpdates: false, indexStockStatus: true }),
-    // Pinelab Payment Extensions Plugin
-    PaymentExtensionsPlugin,
+        // Pinelab Payment Extensions Plugin
+        PaymentExtensionsPlugin,
         WhatsappPaymentPlugin,
-        // Optional GraphQL edge cache integration via Stellate
-        ...(shouldEnableStellatePlugin
-            ? [
-                StellatePlugin.init({
-                    serviceName: stellateServiceName,
-                    apiToken: stellateApiToken,
-                    devMode: stellateDevMode,
-                    debugLogging: stellateDebugMode,
-                    ...(typeof stellateDefaultBufferMs === 'number' && !Number.isNaN(stellateDefaultBufferMs)
-                        ? { defaultBufferTimeMs: stellateDefaultBufferMs }
-                        : {}),
-                    purgeRules: [
-                        ...defaultPurgeRules,
-                        ...additionalStellatePurgeRules,
-                    ],
-                }),
-            ]
-            : []),
         EmailPlugin.init({
             ...(EMAIL_DEV_MAILBOX ? { devMode: true as const, route: 'mailbox' } : {}),
             outputPath: path.join(__dirname, '../static/email/test-emails'),

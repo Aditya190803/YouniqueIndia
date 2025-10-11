@@ -57,18 +57,6 @@ Once payment is confirmed in WhatsApp, staff can settle the order manually throu
 * `/src` contains the source code of your Vendure server. All your custom code and plugins should reside here.
 * `/static` contains static (non-code) files such as assets (e.g. uploaded images) and email templates.
 
-## Caching: Stellate GraphQL edge cache
-
-The server can automatically purge the [Stellate](https://stellate.co) cache whenever catalog data changes. The integration is provided by `@vendure/stellate-plugin` and is enabled when the required environment variables are present:
-
-- `STELLATE_SERVICE_NAME`: The Stellate service slug (e.g. `my-vendure` if the endpoint is `https://my-vendure.stellate.sh`). If omitted, the value is derived from `VITE_STELLATE_SHOP_API_URL` / `STELLATE_SHOP_API_URL`.
-- `STELLATE_PURGE_API_TOKEN` (or legacy `STELLATE_PURGE_TOKEN`): Purging API token generated in the Stellate dashboard.
-- `STELLATE_DEBUG_MODE` (optional): Set to `true` to log purge calls. Useful in dev while diagnosing rules.
-- `STELLATE_DEV_MODE` (optional): Overrides the default dev-mode detection; set to `false` in production if you need to force purges.
-- `STELLATE_PURGE_BUFFER_MS` (optional): Number of milliseconds to batch purge requests (defaults to Vendure's 2000ms).
-
-Whenever a `Facet` changes (for example toggling the `showOnProductDetail` field) the cache for the `SearchResponse` type is also purged so storefront search results stay in sync.
-
 ## Development
 
 ```
