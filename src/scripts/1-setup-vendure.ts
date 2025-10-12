@@ -94,7 +94,7 @@ async function setupBasicData() {
                             description: 'Shipping cost included in product price'
                         }
                     ],
-                    fulfillmentHandler: 'manual-fulfillment',
+                    fulfillmentHandler: 'india-manual-fulfillment',
                     checker: {
                         code: alwaysFreeShippingEligibilityChecker.code,
                         arguments: []
