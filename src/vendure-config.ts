@@ -6,7 +6,6 @@ import {
     NativeAuthenticationStrategy,
     LanguageCode,
     DefaultAssetNamingStrategy,
-    manualFulfillmentHandler,
 } from '@vendure/core';
 import { defaultEmailHandlers, EmailPlugin, FileBasedTemplateLoader } from '@vendure/email-plugin';
 import { ResendEmailSender } from './config/resend-email-sender';
@@ -30,6 +29,12 @@ import { PaymentExtensionsPlugin, isCustomerInGroupPaymentChecker, settleWithout
 import { indiaShippingEligibilityChecker } from './plugins/shipping/india-shipping-eligibility';
 import { alwaysFreeShippingEligibilityChecker } from './plugins/shipping/always-free-shipping-checker';
 import { WhatsappPaymentPlugin, whatsappPaymentHandler } from './plugins/whatsapp-payment/whatsapp-payment.plugin';
+// Payment method handlers for UPI, Card, and Cash
+import { upiPaymentHandler } from './plugins/payment-methods/upi-payment.handler';
+import { cardPaymentHandler } from './plugins/payment-methods/card-payment.handler';
+import { cashPaymentHandler } from './plugins/payment-methods/cash-payment.handler';
+// Fulfillment handlers with Indian courier providers
+import { indianCourierHandlers } from './plugins/fulfillment/india-manual-fulfillment.handler';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
@@ -152,12 +157,18 @@ export const config: VendureConfig = {
     },
     paymentOptions: {
         // Provide Pinelab payment extensions: settle without payment, and eligibility checker
-        paymentMethodHandlers: [settleWithoutPaymentHandler, whatsappPaymentHandler],
+        paymentMethodHandlers: [
+            settleWithoutPaymentHandler, 
+            whatsappPaymentHandler,
+            upiPaymentHandler,
+            cardPaymentHandler,
+            cashPaymentHandler,
+        ],
         paymentMethodEligibilityCheckers: [isCustomerInGroupPaymentChecker],
     },
     shippingOptions: {
         shippingEligibilityCheckers: [alwaysFreeShippingEligibilityChecker, indiaShippingEligibilityChecker],
-        fulfillmentHandlers: [manualFulfillmentHandler],
+        fulfillmentHandlers: indianCourierHandlers,
     },
 
     // Custom fields for Firebase authentication
