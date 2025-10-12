@@ -3,7 +3,7 @@ import { bootstrap, ProductService, ProductVariantService, TransactionalConnecti
 import path from 'path';
 import fs from 'fs';
 import { config as vendureConfig } from '../vendure-config';
-import { SEED_PRODUCTS } from './2-seed-products.generated';
+import { SEED_PRODUCTS } from './2-seed-products-with-local-images.generated';
 
 type CategoryDefinition = {
   name: string;
@@ -21,7 +21,7 @@ const CATEGORY_DEFINITIONS: CategoryDefinition[] = [
   { name: 'Gifts', slug: 'gifts' },
 ];
 
-const DEFAULT_STOCK_ON_HAND = 4;
+const DEFAULT_STOCK_ON_HAND = 5;
 
 function slugifyCategory(input: string): string {
   return input
@@ -53,7 +53,7 @@ async function ensureCategoryFacetAndCollections(args: {
         code: slugifyCategory(category.slug),
         translations: [{ languageCode: LanguageCode.en, name: category.name }],
       })),
-    } as any);
+    });
   }
 
   const facetEntity = await facetService.findOne(adminCtx, (facet as any).id, ['values']);
@@ -96,7 +96,7 @@ async function ensureCategoryFacetAndCollections(args: {
           slug: collectionSlug,
           description: `${category.name} products`,
         }],
-      } as any);
+      });
     } else {
       const translation = (collection as any)?.translations?.find((t: any) => t.languageCode === LanguageCode.en);
       if (!translation || translation.name !== category.name) {
@@ -109,7 +109,7 @@ async function ensureCategoryFacetAndCollections(args: {
               slug: collectionSlug,
               description: `${category.name} products`,
             }],
-          } as any);
+          });
         } catch (updateError) {
           console.log('⚠️  Unable to update collection translation (continuing):', (updateError as any)?.message || updateError);
         }
@@ -242,7 +242,7 @@ async function run() {
         } as any);
         if (createdLocation?.id) {
           defaultStockLocationId = String(createdLocation.id);
-          console.log('✅ Created default stock location "Stock"');
+          console.log('✅ Created default stock location "Stock" with ID:', defaultStockLocationId);
         }
       } catch (createErr: any) {
         console.log('⚠️  Unable to create default stock location (variants will seed without stock):', createErr?.message || createErr);
@@ -269,7 +269,10 @@ async function run() {
   }
 
   const applySeedStock = async (variantId: string, sku: string) => {
-    if (!defaultStockLocationId) return;
+    if (!defaultStockLocationId) {
+      console.log(`   ⚠️ No stock location available, skipping stock for ${sku}`);
+      return false;
+    }
     try {
       await stockMovementService.adjustProductVariantStock(adminCtx, variantId, [
         {
@@ -277,9 +280,11 @@ async function run() {
           stockOnHand: DEFAULT_STOCK_ON_HAND,
         } as any,
       ]);
-      console.log(`   📦 Stock set to ${DEFAULT_STOCK_ON_HAND} for ${sku}`);
+      console.log(`   📦 Stock set to ${DEFAULT_STOCK_ON_HAND} for ${sku} at location "Stock"`);
+      return true;
     } catch (stockErr: any) {
       console.log(`   ⚠️ Failed to set stock for ${sku}:`, stockErr?.message || stockErr);
+      return false;
     }
   };
 
@@ -363,6 +368,12 @@ async function run() {
     isAuthorized: true,
   } as any);
   await ensureDefaultStockLocation();
+  
+  if (defaultStockLocationId) {
+    console.log(`📦 Using stock location "Stock" (ID: ${defaultStockLocationId}) with ${DEFAULT_STOCK_ON_HAND} units per variant`);
+  } else {
+    console.log('⚠️  No stock location available - products will be imported without stock');
+  }
 
   // Basic preflight checks: DB connectivity, default channel and default tax zone
   async function preflightCheck() {
@@ -429,6 +440,7 @@ async function run() {
   let updated = 0;
   let variantCreated = 0;
   let variantUpdated = 0;
+  let stockApplied = 0;
   for (const seed of SEED_PRODUCTS) {
     const baseSlug = (seed.slug || seed.name || 'product')
       .toLowerCase()
@@ -436,8 +448,15 @@ async function run() {
       .replace(/-+/g, '-')
       .replace(/^-|-$/g, '');
     const slug = baseSlug || `product-${Date.now()}`;
-  const categories = determineCategories();
-    const facetValueIds = categories
+    // Get the specific categories for this product from the seed data
+    const productCategories = (seed.categories || []).map((catName: string) => {
+      const categoryDef = CATEGORY_DEFINITIONS.find(cat => 
+        cat.name === catName || cat.slug === catName.toLowerCase().replace(/\s+/g, '-')
+      );
+      return categoryDef || { name: catName, slug: catName.toLowerCase().replace(/\s+/g, '-') };
+    });
+    
+    const facetValueIds = productCategories
       .map(category => facetValueIdsBySlug.get(category.slug))
       .filter((id): id is string => Boolean(id));
     try {
@@ -450,7 +469,7 @@ async function run() {
           price: Number.isFinite((v as any).price) ? (v as any).price : 0,
           translations: [{ languageCode: LanguageCode.en, name: seed.name || slug }],
         }));
-  const res: any = await productService.create(adminCtx as any, {
+  const res = await productService.create(adminCtx, {
           translations: [{
             languageCode: LanguageCode.en,
             name: seed.name || slug,
@@ -458,11 +477,9 @@ async function run() {
             slug,
           }],
           facetValueIds,
-          // @ts-ignore
-          taxCategoryId,
         });
-        if (res && res.__typename && res.__typename !== 'Product') {
-          throw new Error('Create returned error result');
+        if (!res) {
+          throw new Error('Create returned no result');
         }
         const createdEntity = await productService.findOneBySlug(adminCtx, slug) as any;
         productId = createdEntity?.id;
@@ -479,12 +496,12 @@ async function run() {
             sku: v.sku,
             price: v.price,
             translations: v.translations,
-            trackInventory: true,
+            trackInventory: 'TRUE' as any,
             facetValueIds,
           };
           let createdVariantId: string | undefined;
           try {
-            const createdVariants = await variantService.create(adminCtx as any, [createInput] as any);
+            const createdVariants = await variantService.create(adminCtx, [createInput]);
             const createdVariant = Array.isArray(createdVariants) ? createdVariants[0] : undefined;
             if (createdVariant?.id) {
               createdVariantId = String(createdVariant.id);
@@ -506,7 +523,7 @@ async function run() {
                   isAuthorized: true,
                 } as any);
                 await ensureDefaultStockLocation();
-                const createdVariants = await variantService.create(adminCtx as any, [createInput] as any);
+                const createdVariants = await variantService.create(adminCtx, [createInput]);
                 const createdVariant = Array.isArray(createdVariants) ? createdVariants[0] : undefined;
                 if (createdVariant?.id) {
                   createdVariantId = String(createdVariant.id);
@@ -523,15 +540,16 @@ async function run() {
             }
           }
           if (createdVariantId) {
-            await applySeedStock(createdVariantId, v.sku);
+            const stockSuccess = await applySeedStock(createdVariantId, v.sku);
+            if (stockSuccess) stockApplied++;
           }
         }
-        await assignVariantsToCollections({ adminCtx, tx, categories, collectionIdsBySlug, variantIds: variantIdsForProduct });
+        await assignVariantsToCollections({ adminCtx, tx, categories: productCategories, collectionIdsBySlug, variantIds: variantIdsForProduct });
       } else {
         productId = (existing as any).id;
         // Update translations (slug fixed) – ignore errors silently
         try {
-          await productService.update(adminCtx as any, {
+          await productService.update(adminCtx, {
             id: productId,
             translations: [{
               languageCode: LanguageCode.en,
@@ -540,9 +558,7 @@ async function run() {
               slug,
             }],
             facetValueIds,
-            // @ts-ignore
-            taxCategoryId,
-          } as any);
+          });
           updated++;
           console.log(`🔁 Updated ${slug}`);
         } catch (e) {
@@ -566,12 +582,12 @@ async function run() {
               sku,
               price,
               translations: [{ languageCode: LanguageCode.en, name: seed.name || slug }],
-              trackInventory: true,
+              trackInventory: 'TRUE' as any,
               facetValueIds,
             };
             let variantSynced = false;
             try {
-              await variantService.update(adminCtx as any, [updateInput] as any);
+              await variantService.update(adminCtx, [updateInput]);
               variantSynced = true;
               variantUpdated++;
               addVariantIdOnce(variantIdsForProduct, variantId);
@@ -589,7 +605,7 @@ async function run() {
                     isAuthorized: true,
                   } as any);
                   await ensureDefaultStockLocation();
-                  await variantService.update(adminCtx as any, [updateInput] as any);
+                  await variantService.update(adminCtx, [updateInput]);
                   variantSynced = true;
                   variantUpdated++;
                   addVariantIdOnce(variantIdsForProduct, variantId);
@@ -603,7 +619,8 @@ async function run() {
               }
             }
             if (variantSynced) {
-              await applySeedStock(variantId, sku);
+              const stockSuccess = await applySeedStock(variantId, sku);
+              if (stockSuccess) stockApplied++;
             }
           } else {
             const createInput = {
@@ -611,16 +628,17 @@ async function run() {
               sku,
               price,
               translations: [{ languageCode: LanguageCode.en, name: seed.name || slug }],
-              trackInventory: true,
+              trackInventory: 'TRUE' as any,
               facetValueIds,
             };
             try {
-              const createdVariants = await variantService.create(adminCtx as any, [createInput] as any);
+              const createdVariants = await variantService.create(adminCtx, [createInput]);
               const createdVariant = Array.isArray(createdVariants) ? createdVariants[0] : undefined;
               if (createdVariant?.id) {
                 const variantId = String(createdVariant.id);
                 addVariantIdOnce(variantIdsForProduct, variantId);
-                await applySeedStock(variantId, sku);
+                const stockSuccess = await applySeedStock(variantId, sku);
+                if (stockSuccess) stockApplied++;
               }
               variantCreated++;
               console.log(`   ➕ Variant created ${sku}`);
@@ -637,12 +655,13 @@ async function run() {
                     isAuthorized: true,
                   } as any);
                   await ensureDefaultStockLocation();
-                  const createdVariants = await variantService.create(adminCtx as any, [createInput] as any);
+                  const createdVariants = await variantService.create(adminCtx, [createInput]);
                   const createdVariant = Array.isArray(createdVariants) ? createdVariants[0] : undefined;
                   if (createdVariant?.id) {
                     const variantId = String(createdVariant.id);
                     addVariantIdOnce(variantIdsForProduct, variantId);
-                    await applySeedStock(variantId, sku);
+                    const stockSuccess = await applySeedStock(variantId, sku);
+                    if (stockSuccess) stockApplied++;
                   }
                   variantCreated++;
                   console.log(`   ➕ Variant created on retry ${sku}`);
@@ -656,13 +675,13 @@ async function run() {
             }
           }
         }
-        await assignVariantsToCollections({ adminCtx, tx, categories, collectionIdsBySlug, variantIds: variantIdsForProduct });
+        await assignVariantsToCollections({ adminCtx, tx, categories: productCategories, collectionIdsBySlug, variantIds: variantIdsForProduct });
       }
     } catch (err: any) {
       console.error('❌ Failed', slug, '-', err?.message || err);
     }
   }
-  console.log(`🎉 Done. Products created: ${created}, updated: ${updated}. Variants created: ${variantCreated}, updated: ${variantUpdated}. Total products in seed: ${SEED_PRODUCTS.length}`);
+  console.log(`🎉 Done. Products created: ${created}, updated: ${updated}. Variants created: ${variantCreated}, updated: ${variantUpdated}. Stock applied to ${stockApplied} variants. Total products in seed: ${SEED_PRODUCTS.length}`);
   try {
     await app.close();
   } catch (e:any) {
