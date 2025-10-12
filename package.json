@@ -11,6 +11,7 @@
     "start:worker": "node ./dist/index-worker.js",
     "start": "concurrently npm:start:*",
     "setup": "ts-node ./src/scripts/1-setup-vendure.ts",
+    "setup:payment-methods": "ts-node ./src/scripts/setup-payment-methods.ts",
     "seed": "ts-node ./src/scripts/import-seed-products.ts",
     "seed:local": "ts-node ./src/scripts/2-seed-products.ts",
     "seed:generate": "ts-node ./src/scripts/generate-seed-from-dump.ts",
