@@ -10,7 +10,7 @@ type CategoryDefinition = {
   slug: string;
 };
 
-const CATEGORY_DEFINITIONS: CategoryDefinition[] = [
+const BASE_CATEGORY_DEFINITIONS: CategoryDefinition[] = [
   { name: 'Necklace', slug: 'necklace' },
   { name: 'Bracelet', slug: 'bracelet' },
   { name: 'Earring', slug: 'earring' },
@@ -31,15 +31,42 @@ function slugifyCategory(input: string): string {
     .replace(/^-|-$/g, '');
 }
 
-const determineCategories = (): CategoryDefinition[] => CATEGORY_DEFINITIONS;
+const determineCategories = (): CategoryDefinition[] => {
+  const bySlug = new Map<string, CategoryDefinition>();
+
+  const register = (def: CategoryDefinition) => {
+    const slug = slugifyCategory(def.slug || def.name);
+    if (!slug) return;
+    const name = def.name?.trim() || def.slug;
+    if (!name) return;
+    if (!bySlug.has(slug)) {
+      bySlug.set(slug, { name, slug });
+    }
+  };
+
+  for (const base of BASE_CATEGORY_DEFINITIONS) {
+    register(base);
+  }
+
+  for (const product of SEED_PRODUCTS) {
+    if (!Array.isArray(product.categories)) continue;
+    for (const rawCategory of product.categories) {
+      if (!rawCategory || typeof rawCategory !== 'string') continue;
+      register({ name: rawCategory.trim(), slug: slugifyCategory(rawCategory) });
+    }
+  }
+
+  return Array.from(bySlug.values());
+};
 
 async function ensureCategoryFacetAndCollections(args: {
   adminCtx: any;
   facetService: FacetService;
   facetValueService: FacetValueService;
   collectionService: CollectionService;
+  categoryDefinitions: CategoryDefinition[];
 }) {
-  const { adminCtx, facetService, facetValueService, collectionService } = args;
+  const { adminCtx, facetService, facetValueService, collectionService, categoryDefinitions } = args;
   const facetCode = 'category';
   const facetTranslations = [{ languageCode: LanguageCode.en, name: 'Category' }];
 
@@ -49,7 +76,7 @@ async function ensureCategoryFacetAndCollections(args: {
       code: facetCode,
       isPrivate: false,
       translations: facetTranslations,
-      values: CATEGORY_DEFINITIONS.map(category => ({
+      values: categoryDefinitions.map(category => ({
         code: slugifyCategory(category.slug),
         translations: [{ languageCode: LanguageCode.en, name: category.name }],
       })),
@@ -64,7 +91,7 @@ async function ensureCategoryFacetAndCollections(args: {
   facetEntity.values = facetEntity.values || [];
   const facetValueIdsBySlug = new Map<string, string>();
 
-  for (const category of CATEGORY_DEFINITIONS) {
+  for (const category of categoryDefinitions) {
     const valueCode = slugifyCategory(category.slug);
     let current = facetEntity.values.find((value: any) => value.code === valueCode);
     if (!current) {
@@ -81,7 +108,7 @@ async function ensureCategoryFacetAndCollections(args: {
   }
 
   const collectionIdsBySlug = new Map<string, string>();
-  for (const category of CATEGORY_DEFINITIONS) {
+  for (const category of categoryDefinitions) {
     const collectionSlug = slugifyCategory(category.slug);
     let collection = await collectionService.findOneBySlug(adminCtx, collectionSlug);
     if (!collection) {
@@ -417,11 +444,13 @@ async function run() {
     process.exit(1);
   }
 
+  const categoryDefinitions = determineCategories();
   const { facetValueIdsBySlug, collectionIdsBySlug } = await ensureCategoryFacetAndCollections({
     adminCtx,
     facetService,
     facetValueService,
     collectionService,
+    categoryDefinitions,
   });
 
   // Load default tax category id for assignment
@@ -450,7 +479,7 @@ async function run() {
     const slug = baseSlug || `product-${Date.now()}`;
     // Get the specific categories for this product from the seed data
     const productCategories = (seed.categories || []).map((catName: string) => {
-      const categoryDef = CATEGORY_DEFINITIONS.find(cat => 
+      const categoryDef = categoryDefinitions.find(cat => 
         cat.name === catName || cat.slug === catName.toLowerCase().replace(/\s+/g, '-')
       );
       return categoryDef || { name: catName, slug: catName.toLowerCase().replace(/\s+/g, '-') };
