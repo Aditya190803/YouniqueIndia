@@ -1,10 +1,7 @@
-import { bootstrap, ChannelService, CountryService, TaxCategoryService, ZoneService, ShippingMethodService, PaymentMethodService, TransactionalConnection, LanguageCode, CurrencyCode } from '@vendure/core';
+import { bootstrap, ChannelService, CountryService, TaxCategoryService, ZoneService, ShippingMethodService, PaymentMethodService, TransactionalConnection, LanguageCode, CurrencyCode, RoleService, Administrator, User, NativeAuthenticationMethod, ConfigService } from '@vendure/core';
 import { alwaysFreeShippingEligibilityChecker } from '../plugins/shipping/always-free-shipping-checker';
 import { config } from '../vendure-config';
 
-/**
- * Sets up basic data required for the store to function
- */
 async function setupBasicData() {
     console.log('🚀 Setting up basic store data...');
     
@@ -19,6 +16,8 @@ async function setupBasicData() {
             const taxCategoryService = app.get(TaxCategoryService);
             const shippingMethodService = app.get(ShippingMethodService);
             const paymentMethodService = app.get(PaymentMethodService);
+            const roleService = app.get(RoleService);
+            const configService = app.get(ConfigService);
             
             let india: any = null;
             let indiaZone: any = null;
@@ -159,6 +158,91 @@ async function setupBasicData() {
                 console.log('✅ Updated channel: INR currency & India as default tax/shipping zone');
             } catch (e:any) {
                 console.log('⚠️  Channel update (currency/zones) partial/failed (continuing):', e?.message);
+            }
+
+            console.log('👤 Ensuring additional superadmin account exists...');
+            try {
+                const adminIdentifier = 'YouniqueAdmin';
+                const adminRepository = connection.getRepository(ctx, Administrator);
+                const userRepository = connection.getRepository(ctx, User);
+                const nativeAuthRepository = connection.getRepository(ctx, NativeAuthenticationMethod);
+
+                const superAdminRole = await roleService.getSuperAdminRole(ctx);
+                const existingAdmin = await adminRepository.findOne({
+                    where: { emailAddress: adminIdentifier },
+                    relations: { user: { roles: true } },
+                });
+
+                const ensurePasswordHash = async (user: User) => {
+                    const passwordHash = await configService.authOptions.passwordHashingStrategy.hash('YouniqueIndia');
+                    let nativeAuth = await nativeAuthRepository.findOne({
+                        where: { user: { id: user.id } },
+                        relations: { user: true },
+                    });
+                    let created = false;
+                    if (!nativeAuth) {
+                        nativeAuth = nativeAuthRepository.create({
+                            user,
+                            passwordHash,
+                        });
+                        created = true;
+                    } else {
+                        nativeAuth.passwordHash = passwordHash;
+                    }
+                    await nativeAuthRepository.save(nativeAuth);
+                    return created ? 'created' : 'updated';
+                };
+
+                const assignSuperAdminRole = async (user: User) => {
+                    const hasRole = (user.roles ?? []).some(role => role.id === superAdminRole.id);
+                    let updated = false;
+                    if (!hasRole) {
+                        user.roles = [...(user.roles ?? []), superAdminRole];
+                        updated = true;
+                    }
+                    const saved = await userRepository.save(user);
+                    return { user: saved, roleAdded: updated };
+                };
+
+                if (existingAdmin) {
+                    const { user: userWithRole, roleAdded } = await assignSuperAdminRole(existingAdmin.user);
+                    const passwordStatus = await ensurePasswordHash(userWithRole);
+                    if (roleAdded) {
+                        console.log('ℹ️  Added missing superadmin role to existing "YouniqueAdmin" user');
+                    } else if (passwordStatus === 'updated') {
+                        console.log('ℹ️  Reset password for existing "YouniqueAdmin" superadmin');
+                    } else {
+                        console.log('ℹ️  Additional superadmin "YouniqueAdmin" already exists');
+                    }
+                } else {
+                    let user = await userRepository.findOne({
+                        where: { identifier: adminIdentifier },
+                        relations: { roles: true },
+                    });
+
+                    if (!user) {
+                        user = userRepository.create({
+                            identifier: adminIdentifier,
+                            verified: true,
+                            roles: [],
+                        });
+                        user = await userRepository.save(user);
+                    }
+
+                    const { user: userWithRole } = await assignSuperAdminRole(user);
+                    await ensurePasswordHash(userWithRole);
+
+                    const newAdministrator = adminRepository.create({
+                        firstName: 'Younique',
+                        lastName: 'Admin',
+                        emailAddress: adminIdentifier,
+                        user: userWithRole,
+                    });
+                    await adminRepository.save(newAdministrator);
+                    console.log('✅ Created additional superadmin "YouniqueAdmin"');
+                }
+            } catch (e: any) {
+                console.log('⚠️  Could not ensure additional superadmin (continuing):', e?.message);
             }
             
             console.log('✅ Basic store setup completed successfully!');

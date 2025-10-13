@@ -21,7 +21,7 @@
     "reset:store": "npm run db:wipe && npm run setup",
     "setup:complete": "npm run db:wipe && npm run setup && npm run seed",
     "import:products": "ts-node ./src/scripts/import-seed-products.ts",
-    "dump:products": "ts-node ./src/scripts/dumps/shop-product-dump.ts",
+    "dump:products": "ts-node ./src/scripts/dumps/shop-product-dump.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.864.0",
