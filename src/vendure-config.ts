@@ -14,12 +14,11 @@ import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
 
 import 'dotenv/config';
-// If DB_SSL is enabled for development with a self-signed certificate,
-// disable Node's strict certificate chain checks so the Postgres client
-// can connect. This is only intended for local/dev environments.
+import getRawBody from 'raw-body';
+import Redis from 'ioredis';
+import crypto from 'crypto';
+
 if (process.env.DB_SSL === 'true') {
-    // NOTE: Disables TLS certificate validation globally for this process.
-    // Do NOT enable this in production systems.
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 }
 import path from 'path';
@@ -77,14 +76,160 @@ export const config: VendureConfig = {
             allowedHeaders: 'Authorization,Content-Type,Accept,Accept-Language,Content-Language,Cache-Control,Cookie,X-Requested-With',
             exposedHeaders: 'Set-Cookie',
         },
-        // The following options are useful in development mode,
-        // but are best turned off for production for security
-        // reasons.
         ...(IS_DEV ? {
             adminApiDebug: true,
             shopApiDebug: true,
         } : {}),
         middleware: [
+            // Redis-backed cache for /shop-api
+            {
+                route: '/shop-api',
+                handler: async (req: any, res: any, next: any) => {
+                    try {
+                        // Only cache POST JSON GraphQL queries (avoid mutations)
+                        if (req.method !== 'POST' || !req.headers['content-type']?.includes('application/json')) {
+                            return next();
+                        }
+
+                        // Prefer a real Redis client when REDIS_URL is present (Redis Cloud)
+                        const redisUrlEnv = process.env.REDIS_URL;
+                        let redisClient: Redis | null = null;
+                        if (redisUrlEnv) {
+                            // Create a module-global singleton so the client is reused
+                            if (!(global as any).__vendure_redis_client) {
+                                (global as any).__vendure_redis_client = new Redis(redisUrlEnv);
+                            }
+                            redisClient = (global as any).__vendure_redis_client as Redis;
+                        }
+
+                        // In-memory cache implementation (process-local). This avoids
+                        // any external Redis dependency. It's appropriate for single-
+                        // instance deployments or as a fallback.
+                        type CacheEntry = { expiresAt: number; payload: string };
+                        // Keep the cache on the module so it survives across requests
+                        // within the same process.
+                        if (!(global as any).__vendure_memory_cache) {
+                            (global as any).__vendure_memory_cache = new Map<string, CacheEntry>();
+                        }
+                        const memoryCache: Map<string, CacheEntry> = (global as any).__vendure_memory_cache;
+
+                        const memoryGet = async (key: string): Promise<string | null> => {
+                            const entry = memoryCache.get(key);
+                            if (!entry) return null;
+                            if (Date.now() > entry.expiresAt) {
+                                memoryCache.delete(key);
+                                return null;
+                            }
+                            return entry.payload;
+                        };
+
+                        const memorySet = async (key: string, value: string, exSeconds?: number) => {
+                            const ttl = (exSeconds && exSeconds > 0) ? exSeconds : Number(process.env.REDIS_CACHE_TTL_SECONDS || 300);
+                            memoryCache.set(key, { expiresAt: Date.now() + ttl * 1000, payload: value });
+                        };
+
+                        // Read raw body safely (we'll attach parsed body back to req so downstream can use it)
+                        let rawBodyStr = '';
+                        try {
+                            const raw = await getRawBody(req);
+                            rawBodyStr = raw.toString('utf8');
+                            try {
+                                req.body = JSON.parse(rawBodyStr);
+                            } catch (e) {
+                                // leave req.body as-is if parse fails
+                            }
+                        } catch (e) {
+                            // Could not read body; skip caching
+                            return next();
+                        }
+
+                        const bodyQuery = (req.body && (req.body.query || '')) as string;
+                        if (!bodyQuery || /mutation/i.test(bodyQuery)) {
+                            // don't cache mutations or empty queries
+                            return next();
+                        }
+
+                        // Build cache key from URL + query + variables
+                        const keySource = JSON.stringify({ url: req.originalUrl || req.url, query: bodyQuery, variables: req.body.variables || {} });
+                        const cacheKey = 'shopapi:' + crypto.createHash('sha256').update(keySource).digest('hex');
+
+                        // Try to return cached response
+                        // Attempt Redis first, then memory cache fallback
+                        let cached: string | null = null;
+                        if (redisClient) {
+                            try {
+                                cached = await redisClient.get(cacheKey);
+                            } catch (e) {
+                                // Redis error -> fallback to memory
+                                // eslint-disable-next-line no-console
+                                console.error('Redis get error, falling back to memory cache', e);
+                                cached = await memoryGet(cacheKey);
+                            }
+                        } else {
+                            cached = await memoryGet(cacheKey);
+                        }
+                        if (cached) {
+                            try {
+                                const parsed = JSON.parse(cached);
+                                // Add HTTP caching headers as well
+                                res.setHeader('Cache-Control', 'public, max-age=300, stale-while-revalidate=60');
+                                res.setHeader('X-Cache', 'HIT');
+                                res.status(parsed.status || 200).set(parsed.headers || {}).send(parsed.body);
+                                return;
+                            } catch (e) {
+                                // fall through to next if cache parse fails
+                            }
+                        }
+
+                        // Capture response body for caching
+                        const originalSend = res.send.bind(res);
+                        let responseBody: any = undefined;
+                        res.send = (body?: any) => {
+                            responseBody = body;
+                            return originalSend(body);
+                        };
+
+                        // When response finishes, store in Redis if successful
+                        res.on('finish', async () => {
+                            try {
+                                if (res.statusCode === 200 && responseBody) {
+                                    const payload = JSON.stringify({ status: res.statusCode, headers: { 'content-type': res.getHeader('content-type') }, body: typeof responseBody === 'string' ? responseBody : JSON.stringify(responseBody) });
+                                    const ttl = +(process.env.REDIS_CACHE_TTL_SECONDS || 300);
+                                    if (redisClient) {
+                                        try {
+                                            await redisClient.set(cacheKey, payload, 'EX', ttl);
+                                        } catch (e) {
+                                            // fallback to memory if set fails
+                                            // eslint-disable-next-line no-console
+                                            console.error('Redis set error, using memory cache', e);
+                                            await memorySet(cacheKey, payload, ttl);
+                                        }
+                                    } else {
+                                        await memorySet(cacheKey, payload, ttl);
+                                    }
+                                }
+                            } catch (e) {
+                                // ignore cache set errors
+                                // eslint-disable-next-line no-console
+                                console.error('Redis cache set error', e);
+                            }
+                        });
+
+                        // Mark responses that we will attempt to cache
+                        res.setHeader('X-Cache', 'MISS');
+                        // Also set Cache-Control for downstream clients to pick up
+                        res.setHeader('Cache-Control', 'public, max-age=300, stale-while-revalidate=60');
+
+                        return next();
+                    } catch (err) {
+                        // If anything goes wrong, don't block the request
+                        // eslint-disable-next-line no-console
+                        console.error('Shop API cache middleware error', err);
+                        return next();
+                    }
+                },
+            },
+
             {
                 // Ensure Express trusts the proxy (needed on platforms like Render/Heroku)
                 handler: (req: any, res: any, next: any) => {
