@@ -69,6 +69,7 @@ export const config: VendureConfig = {
                 'http://youniqueindia.co.in',
                 'https://www.youniqueindia.co.in',
                 'http://www.youniqueindia.co.in',
+                'https://beta.youniqueindia.co.in'
             ],
             credentials: true,
             // Be explicit to ensure OPTIONS preflight succeeds on all platforms
