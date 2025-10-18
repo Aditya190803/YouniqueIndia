@@ -32,7 +32,6 @@ declare global {
             VERIFY_EMAIL_URL?: string;
             PASSWORD_RESET_URL?: string;
             CHANGE_EMAIL_URL?: string;
-            RESEND_API_KEY?: string;
             SHOP_API_URL?: string;
             SHOP_API_PAGE_SIZE?: string;
             TEST_EMAIL?: string;

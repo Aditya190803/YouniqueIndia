@@ -8,7 +8,6 @@ import {
     DefaultAssetNamingStrategy,
 } from '@vendure/core';
 import { defaultEmailHandlers, EmailPlugin, FileBasedTemplateLoader } from '@vendure/email-plugin';
-import { ResendEmailSender } from './config/resend-email-sender';
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { GraphiqlPlugin } from '@vendure/graphiql-plugin';
@@ -363,9 +362,9 @@ export const config: VendureConfig = {
                 passwordResetUrl: process.env.PASSWORD_RESET_URL || 'http://localhost:8080/password-reset',
                 changeEmailAddressUrl: process.env.CHANGE_EMAIL_URL || 'http://localhost:8080/verify-email-address-change'
             },
-            // Use custom EmailSender with Resend API (no SMTP)
+            // No external email provider configured; keep transport none so the
+            // EmailPlugin writes test emails to disk or uses the dev mailbox.
             transport: { type: 'none' },
-            emailSender: new ResendEmailSender(process.env.RESEND_API_KEY || ''),
         }),
     AdminUiPlugin.init({
             route: 'admin',
